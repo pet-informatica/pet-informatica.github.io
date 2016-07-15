@@ -47,3 +47,32 @@
   background: url(../images/dot.png) center repeat;
   opacity: 0.9;
 }
+
+/* http://www.bebzcozzy.com/css/ResponsiveElement.css */
+@media (min-width:480px){
+	/****************/
+
+	.OnlyforHandheld{
+		display:none;
+	}
+
+	.OnlyforWeb{
+		display:block;
+	}
+
+	/****************/
+}
+
+@media (max-width:480px){
+	/****************/
+
+	.OnlyforHandheld{
+		display:block;
+	}
+
+	.OnlyforWeb{
+		display:none;
+	}
+
+	/****************/
+}
