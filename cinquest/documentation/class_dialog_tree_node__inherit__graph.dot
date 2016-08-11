@@ -1,0 +1,16 @@
+digraph "DialogTreeNode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="DialogTreeNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ScriptableObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ConditionalTreeNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_conditional_tree_node.html",tooltip="Developed by: Higor (hcmb) A ConditionalTreeNode will receive and list of IPreConditions and will onl..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="EndQuestTreeNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_end_quest_tree_node.html",tooltip="Developed by: Higor (hcmb) A RewardTreeNode will have a list of rewards that will be given for the pl..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RewardTreeNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_reward_tree_node.html",tooltip="Developed by: Higor (hcmb) A RewardTreeNode will have a list of rewards that will be given for the pl..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="StartQuestTreeNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_start_quest_tree_node.html",tooltip="Developed by: Higor (hcmb) A RewardTreeNode will have a list of rewards that will be given for the pl..."];
+}

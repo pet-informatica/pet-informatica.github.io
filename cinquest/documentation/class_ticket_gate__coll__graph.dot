@@ -1,0 +1,30 @@
+digraph "TicketGate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="TicketGate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MonoBehaviour",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" speaker" ,fontname="Helvetica"];
+  Node3 [label="Speaker",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_speaker.html",tooltip="Developed by: Higor (hcmb) Speaker is an abstract class wich contains only a list of dialog trees tha..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dialogManager" ,fontname="Helvetica"];
+  Node4 [label="DialogManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dialog_manager.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" curSpeaker" ,fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" curDialog" ,fontname="Helvetica"];
+  Node5 [label="DialogTree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dialog_tree.html",tooltip="Developed by: Higor (hcmb) A DialogTree is a complex structure useful for creating dialogs across in ..."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ScriptableObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" head\nroot" ,fontname="Helvetica"];
+  Node7 [label="DialogTreeNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dialog_tree_node.html",tooltip="Developed by: Higor (hcmb) A DialogTreeNode is used for building a DialogTree. Shows text conversatio..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" target" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" noIdDialog" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" teleporter" ,fontname="Helvetica"];
+  Node8 [label="Teleporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_teleporter.html",tooltip="Developed by: Higor (hcmb) Telepor "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fader" ,fontname="Helvetica"];
+  Node9 [label="ScreenFader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_screen_fader.html",tooltip="Developed by: Higor (hcmb) ScreenFader can be used for fading the screen in/out whenever needed..."];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
