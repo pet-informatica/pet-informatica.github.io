@@ -1,5 +1,5 @@
 
-#team {
+#activities #team {
   padding-top: 4rem;
   background: rgb(247, 247, 247);
 }
@@ -41,4 +41,8 @@
 
 .card-avatar .card-content .card-title {
     line-height: 30px !important;
+}
+
+.icon-big{
+  font-size: 2.5rem;
 }
