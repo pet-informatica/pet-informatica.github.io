@@ -1,8 +1,18 @@
 
-#activities #team {
+
+#activities, #team, #about {
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#activities{
   background: rgb(247, 247, 247);
 }
+
+.top_margin{
+  margin-top: 40px;
+}
+
 .side_margin{
   margin-left: 10px;
   margin-right: 10px;
@@ -10,6 +20,10 @@
 
 .bkg_orange{
   background: #e65100 !important;
+}
+
+.bkg_amber{
+  background: #ff8f00 !important;
 }
 
 .text_orange{
@@ -53,4 +67,14 @@
 
 .icon-big{
   font-size: 2.5rem;
+}
+
+.promo i {
+    color: #ffffff;
+    font-size: 7rem;
+    display: block;
+}
+
+.page-footer {
+    margin-top: 0px !important;
 }
