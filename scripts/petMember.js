@@ -24,7 +24,7 @@ var PetMemberBoard = React.createClass({
     return(
       <div className="section scrollspy" id="team">
         <div className="container">
-          <h2 className="header text_b"> Petianos </h2>
+          <h2 className="header text_orange"> Petianos </h2>
           <div className="row">
             <PetMember name="Higor Cavalcanti" desc="hcmb" pic="http://joashpereira.com/templates/material_one_pager/img/avatar2.png" face=""/>
             <PetMember name="Ruy Brito" desc="rbb3" pic="http://joashpereira.com/templates/material_one_pager/img/avatar2.png" face=""/>

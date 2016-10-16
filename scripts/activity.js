@@ -30,7 +30,7 @@ var ActivityBoard = React.createClass({
     return(
       <div className="section scrollspy" id="activities">
         <div className="container">
-          <h2 className="header text_b">Atividades</h2>
+          <h2 className="header text_orange">Atividades</h2>
           <div className="row">
             <Activity desc="O cinquest é um jogo muito foda"
                       title="Cinquest"

@@ -3,9 +3,17 @@
   padding-top: 4rem;
   background: rgb(247, 247, 247);
 }
+.side_margin{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-.text_b{
-  color: #2196F3;
+.bkg_orange{
+  background: #e65100 !important;
+}
+
+.text_orange{
+  color: #e65100;
 }
 
 .card-content a {
