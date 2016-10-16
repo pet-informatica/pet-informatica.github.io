@@ -1,0 +1,44 @@
+
+#team {
+  padding-top: 4rem;
+  background: rgb(247, 247, 247);
+}
+
+.text_b{
+  color: #2196F3;
+}
+
+.card-content a {
+  color: #2196F3;
+}
+
+.card-content a:hover {
+  color: #2196F3;
+}
+
+.card-avatar .waves-effect {
+    text-align: center;
+}
+
+.card-avatar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    margin-top: 20px;
+}
+
+.card-avatar .card-content {
+    text-align: center;
+}
+
+.card .card-content p {
+    margin: 15px 0px;
+}
+
+.card-avatar .card-content i {
+   font-size: 1.5rem;
+}
+
+.card-avatar .card-content .card-title {
+    line-height: 30px !important;
+}
