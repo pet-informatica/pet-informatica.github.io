@@ -7,13 +7,16 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglifycss');
 var addSrc = require('gulp-add-src');
 
-gulp.task('development', 
+gulp.task('development',
 	[
-		'bundle', 
-		'html', 
-		'images', 
+		'bundle',
+		'watchBundle',
+		'html',
+		'watchHtml',
+		'images',
 		'fonts',
-		'sNcss'
+		'sNcss',
+		'watchsNcss'
 	]
 );
 
@@ -36,11 +39,19 @@ gulp.task('bundle', function() {
 				.pipe(gulp.dest(path.join(__dirname, 'bin')));
 });
 
+gulp.task('watchBundle', function(){
+	gulp.watch(path.join(__dirname, 'components', '**', '*.js'), ['bundle']);
+});
+
 gulp.task('html', function() {
 	return gulp
 				.src('_index.html')
 				.pipe(rename('index.html'))
 				.pipe(gulp.dest(path.join(__dirname, 'bin')));
+});
+
+gulp.task('watchHtml', function(){
+	gulp.watch(path.join(__dirname, '_index.html'), ['html']);
 });
 
 gulp.task('images', function() {
@@ -63,4 +74,9 @@ gulp.task('sNcss', function() {
 				.pipe(concat('bundle.css'))
 				.pipe(uglify())
 				.pipe(gulp.dest(path.join(__dirname, 'bin')));
+});
+
+gulp.task('watchsNcss', function(){
+	gulp.watch(path.join(path.join(__dirname, 'sass', 'materialize.scss'),
+											 path.join(__dirname, 'css', '**', '*.css')), ['sNcss']);
 });
