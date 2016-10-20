@@ -62,7 +62,7 @@ var Contact = React.createClass({
 var Copyright = React.createClass({
   render: function(){
     return(
-      <div className="footer-copyright bkg_orange">
+      <div className="footer-copyright">
         <div className="container">
           Made with <a className="white-text" href="http://materializecss.com/">materializecss</a>
         </div>
@@ -74,7 +74,7 @@ var Copyright = React.createClass({
 var Footer = React.createClass({
   render:function(){
     return(
-      <footer id="contact" className="page-footer bkg_orange scrollspy">
+      <footer id="contact" className="page-footer scrollspy">
         <div className="container">
           <div className="row">
             <Contact></Contact>

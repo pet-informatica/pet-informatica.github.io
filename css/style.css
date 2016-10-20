@@ -1,4 +1,8 @@
 
+body {
+    font-family: "LatoWeb" !important;
+    font-style: normal !important;
+}
 
 #faq, #activities, #team, #about {
   padding-top: 4rem;
@@ -13,10 +17,6 @@
 .side_margin{
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.bkg_orange{
-  background: #e65100 !important;
 }
 
 .bkg_amber{

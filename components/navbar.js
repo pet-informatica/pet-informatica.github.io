@@ -3,7 +3,7 @@ var Navbar = React.createClass({
     return(
       <div className="navbar-fixed">
         <nav>
-          <div className="nav-wrapper bkg_orange">
+          <div className="nav-wrapper">
             <a href="#" className="brand-logo center">
               <img src="images/petlogo.png"/>
             </a>

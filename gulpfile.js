@@ -79,4 +79,5 @@ gulp.task('sNcss', function() {
 gulp.task('watchsNcss', function(){
 	gulp.watch(path.join(__dirname, 'sass', 'materialize.scss'), ['sNcss']);
 	gulp.watch(path.join(__dirname, 'css', '**', '*.css'), ['sNcss']);
+	gulp.watch(path.join(__dirname, 'sass', 'components', '*.scss'), ['sNcss']);
 });

@@ -2,7 +2,7 @@ var Question = React.createClass({
   render: function(){
     return(
       <li>
-        <div className="collapsible-header"><i className="material-icons">more_vert</i>{this.props.title}</div>
+        <div className="collapsible-header"><i className="mdi mdi-dots-vertical"></i>{this.props.title}</div>
         <div className="collapsible-body">{this.props.children}</div>
       </li>
     );

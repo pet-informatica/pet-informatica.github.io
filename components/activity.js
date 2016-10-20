@@ -9,7 +9,7 @@ var Activity = React.createClass({
               <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4">
                     {this.props.title}
-                    <i className="mdi mdi-dialpad right"></i>
+                    <i className="mdi mdi-dots-vertical right"></i>
                   </span>
               </div>
               <div className="card-reveal">
