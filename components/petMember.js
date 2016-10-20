@@ -7,7 +7,7 @@ var PetMember = React.createClass({
             <a href={this.props.face}><img className="activator circle" src={this.props.pic} /></a>
           </div>
           <div className="card-content">
-            <span className="card-title activator grey-text text-darken-4">
+            <span className="card-title grey-text text-darken-4">
               {this.props.name}
               <br/>
               <small><em><p className="red-text text-darken-1">{this.props.desc}</p></em></small>

@@ -21,7 +21,7 @@ var FaqBoard = React.createClass({
     return(
       <div className="section scrollspy" id="faq">
         <div className="container">
-          <h2 className="header text_orange">Perguntas Frequentes</h2>
+          <h2 className="header text_orange">FAQ</h2>
           <div className="row">
             <ul className="collapsible popout" data-collapsible="accordion">
               <Question title="O que é o PET?">
@@ -59,8 +59,8 @@ var FaqBoard = React.createClass({
                 <p>
                   Se você é aluno: a inscrição para a OPEI é realizada por intermédio de um professor responsável. Caso você queira participar,
                   verifique com a escola se existe um professor responsável pelo cadastro de alunos. Caso não tenha, procure um professor
-                  que possa se responsabilizar pelo cadastro da escola através do formulário disponível no site da
-                   <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a>. É importante que o regulamento seja seguido por alunos e
+                  que possa se responsabilizar pelo cadastro da escola através do formulário disponível no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a>
+                  . É importante que o regulamento seja seguido por alunos e
                   professores. Se você é professor ou diretor: Leia o regulamento que está disponível na aba
                   "quero me inscrever" no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a> e cadastre a sua escola.
                 </p>

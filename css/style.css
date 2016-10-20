@@ -3,9 +3,6 @@
 #faq, #activities, #team, #about {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-#activities, #faq{
   background: rgb(247, 247, 247);
 }
 
@@ -62,7 +59,8 @@
 }
 
 .card-avatar .card-content .card-title {
-    line-height: 30px !important;
+    line-height: 100% !important;
+    font-size: 20px;
 }
 
 .icon-big{
