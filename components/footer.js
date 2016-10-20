@@ -8,17 +8,17 @@ var MailBox = React.createClass({
             <div className="input-field col s6">
               <i className="mdi mdi-account prefix white-text"></i>
               <input id="icon_prefix" name="name" type="text" className="validate white-text"/>
-              <label for="icon_prefix" className="white-text">Nome</label>
+              <label htmlFor="icon_prefix" className="white-text">Nome</label>
             </div>
             <div className="input-field col s6">
               <i className="mdi mdi-email prefix white-text"></i>
                 <input id="icon_email" name="email" type="email" className="validate white-text"/>
-                <label for="icon_email" className="white-text">Email</label>
+                <label htmlFor="icon_email" className="white-text">Email</label>
             </div>
             <div className="input-field col s12">
               <i className="mdi mdi-border-color prefix white-text"></i>
               <textarea id="icon_prefix2" name="message" className="materialize-textarea white-text"></textarea>
-              <label for="icon_prefix2" className="white-text">Mensagem</label>
+              <label htmlFor="icon_prefix2" className="white-text">Mensagem</label>
             </div>
               <div className="col offset-s7 s5">
                 <button className="btn waves-effect waves-light red darken-1" type="submit">Submit

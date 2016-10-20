@@ -78,7 +78,7 @@ var ActivityBoard = React.createClass({
                 prática de programação, com linguagens como JAVA, C/C++ e Python. Para saber como inscrever
                 sua escola, veja o passo-a-passo na aba FAQ.
                 <br/>
-                <a href="http://www.cin.ufpe.br/~pet/opei/" className="activator"><p>OPEI</p></a>
+                <a href="http://www.cin.ufpe.br/~pet/opei/" className="activator">OPEI</a>
               </p>
             </Activity>
             <Activity  title="Programa de Férias" pic="http://materializecss.com/images/office.jpg">
@@ -93,7 +93,7 @@ var ActivityBoard = React.createClass({
                 Site colaborativo no formato Wikipedia com informações sobre os cursos, disciplinas e quaisquer
                 atividades relacionadas ao centro de informática.
                 <br/>
-                <a href="http://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal" className="activator"><p>CinWiki</p></a>
+                <a href="http://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal" className="activator">CinWiki</a>
               </p>
             </Activity>
             <Activity title="Manual do Calouro" pic="http://materializecss.com/images/office.jpg">
@@ -102,7 +102,7 @@ var ActivityBoard = React.createClass({
                 principalmente o passo-a-passo de atividades e as oportunidades do Centro e da Universidade
                 de maneira simples e direta.
                 <br/>
-                <a href="http://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn" className="activator"><p>Manual</p></a>
+                <a href="http://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn" className="activator">Manual</a>
               </p>
             </Activity>
             <Activity title="CInQuest" pic="http://materializecss.com/images/office.jpg">
@@ -111,7 +111,7 @@ var ActivityBoard = React.createClass({
                 em no Centro de  Informática. Nele, o aluno fará tudo o que será necessário na vida de estudante
                 do CIn, realizando as atividades num cenário fiel ao Centro real.
                 <br/>
-                <a href="https://pet-informatica.github.io/cinquest/" className="activator"><p>Cinquest</p></a>
+                <a href="https://pet-informatica.github.io/cinquest/" className="activator">Cinquest</a>
               </p>
             </Activity>
             <Activity title="GeoQuest" pic="http://materializecss.com/images/office.jpg">
