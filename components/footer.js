@@ -3,7 +3,7 @@ var MailBox = React.createClass({
   render: function(){
     return(
       <div className="col l6 s12">
-        <form className="col s12" >
+        <form className="col s12" action="https://formspree.io/petcomputacao-l@cin.ufpe.br" method="POST">
           <div className="row">
             <div className="input-field col s6">
               <i className="mdi mdi-account prefix white-text"></i>
