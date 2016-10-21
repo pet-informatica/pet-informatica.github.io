@@ -2,9 +2,9 @@ var About = React.createClass({
   render: function(){
     return(
       <div className="col s12 center">
-        <h4 className="font-light white-text">
+        <h4 className="font-light white-text flow-text">
           Somos alunos do Centro de Informática que estão envolvidos em atividades de ensino, pesquisa e extensão,
-          buscando melhorar a experiência da graduação para todos os estudantes
+          buscando melhorar a experiência da graduação para todos os estudantes.
         </h4>
       </div>
     );
@@ -18,7 +18,7 @@ var Pilar = React.createClass({
         <div className="center promo promo-example">
           {this.props.children}
           <h4 className="promo-caption white-text">{this.props.title}</h4>
-          <h5 className="light center white-text">{this.props.desc}</h5>
+          <h4 className="font-light center white-text flow-text">{this.props.desc}</h4>
         </div>
       </div>
     );
@@ -30,7 +30,7 @@ var AboutBoard = React.createClass({
     return(
       <div id="about" className="section scrollspy">
         <div className="container">
-          <h2 className="center header white-text">O que é o PET?</h2>
+          <h2 className="center white-text">O que é o PET?</h2>
           <div className="row center">
               <About />
               <Pilar

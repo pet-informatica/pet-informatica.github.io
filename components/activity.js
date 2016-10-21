@@ -1,19 +1,19 @@
 var Activity = React.createClass({
   render: function(){
     return(
-      <div className="col s12 m4 l4">
+      <div className="col s12 m6 l6">
           <div className="card">
               <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={this.props.pic}/>
+                  <img className="activator aaaa" src={this.props.pic}/>
               </div>
               <div className="card-content">
-                  <span className="card-title activator grey-text text-darken-4">
+                  <span className="card-tit activator grey-text text-darken-4">
                     {this.props.title}
                     <i className="mdi mdi-dots-vertical right"></i>
                   </span>
               </div>
               <div className="card-reveal">
-                  <span className="card-title grey-text text-darken-4">
+                  <span className="card-tit card-title grey-text text-darken-4">
                     {this.props.title}
                     <i className="mdi mdi-close right"></i>
                   </span>

@@ -10,7 +10,7 @@ var Member = React.createClass({
             <img className="circle materialboxed center" src={this.props.pic} />
           </div>
           <div className="card-content">
-            <span className="card-title grey-text text-darken-4">
+            <span className="card-tit-sm grey-text text-darken-4">
               {this.props.name}
               <br/>
               <small><em><p className="red-text text-darken-1">{this.props.desc}        <a href={this.props.face}><i className="blue-text text-darken-4 mdi mdi-facebook-box">
