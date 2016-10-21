@@ -11,10 +11,8 @@ var Question = React.createClass({
 
 var FaqBoard = React.createClass({
   componentDidMount: function(){
-      $(document).ready(function(){
-      $('.collapsible').collapsible({
-        accordion : false
-      });
+    $('.collapsible').collapsible({
+      accordion : false
     });
   },
   render: function(){

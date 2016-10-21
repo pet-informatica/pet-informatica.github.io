@@ -10,6 +10,10 @@ body {
   background: rgb(247, 247, 247);
 }
 
+#about{
+  background: #ff9100;
+}
+
 .top_margin{
   margin-top: 40px;
 }
@@ -17,10 +21,6 @@ body {
 .side_margin{
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.bkg_amber{
-  background: #ff8f00 !important;
 }
 
 .text_orange{
@@ -67,6 +67,15 @@ body {
   font-size: 2.5rem;
 }
 
+.side-nav{
+  background: #ff5722 !important;
+}
+
+.side-nav-logo{
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
 .promo i {
     color: #ffffff;
     font-size: 7rem;
@@ -82,7 +91,7 @@ nav ul a {
     color: #FFF !important;
     letter-spacing: 2px !important;
     display: block !important;
-    font-weight: 300 !important;
+    font-weight: 900 !important;
     padding: 0px 15px !important;
 }
 
@@ -91,6 +100,7 @@ nav a.button-collapse {
 }
 
 .brand-logo{
+    padding: 30px !important;
     position: absolute;
     color: #fff;
     display: inline-block;
@@ -108,6 +118,7 @@ nav a.button-collapse {
 .font-thin{
   font-family: "LatoWebThin";
 }
+
 .font-light{
   font-family: "LatoWebLight";
 }

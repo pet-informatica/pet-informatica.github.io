@@ -26,8 +26,8 @@ gulp.task('bundle', function() {
 						path.join(__dirname,'node_modules','react','dist','react.js'),
 						path.join(__dirname,'node_modules','react-dom','dist','react-dom.js'),
 						path.join(__dirname,'node_modules','jquery','dist','jquery.js'),
-						path.join(__dirname, 'components', '**', '*.js'),
-						path.join(__dirname,'js','materialize.min.js')
+						path.join(__dirname,'js','materialize.min.js'),
+						path.join(__dirname, 'components', '**', '*.js')
 					])
 				.pipe(concat('bundle.js'))
 				.pipe(babel({

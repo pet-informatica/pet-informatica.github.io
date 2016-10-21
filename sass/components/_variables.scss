@@ -33,7 +33,7 @@
 /* 1. Colors
    ========================================================================== */
 
-$primary-color: color("amber", "darken-4") !default;
+$primary-color: #ff5722 !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
