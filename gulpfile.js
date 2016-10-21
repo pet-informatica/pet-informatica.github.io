@@ -13,7 +13,6 @@ gulp.task('development',
 		'watchBundle',
 		'html',
 		'watchHtml',
-		'images',
 		'fonts',
 		'sNcss',
 		'watchsNcss'

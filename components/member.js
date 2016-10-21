@@ -1,16 +1,20 @@
 var Member = React.createClass({
+  componentDidMount: function(){
+    $('.materialboxed').materialbox();
+  },
   render: function() {
     return(
       <div className="col s12 m3">
         <div className="card card-avatar">
-          <div className="waves-effect waves-block waves-light">
-            <a href={this.props.face}><img className="activator circle" src={this.props.pic} /></a>
+          <div className="center">
+            <img className="circle materialboxed center" src={this.props.pic} />
           </div>
           <div className="card-content">
             <span className="card-title grey-text text-darken-4">
               {this.props.name}
               <br/>
-              <small><em><p className="red-text text-darken-1">{this.props.desc}</p></em></small>
+              <small><em><p className="red-text text-darken-1">{this.props.desc}        <a href={this.props.face}><i className="blue-text text-darken-4 mdi mdi-facebook-box">
+              </i></a></p></em></small>
             </span>
           </div>
         </div>
@@ -24,24 +28,24 @@ var MemberBoard = React.createClass({
     return(
       <div className="section scrollspy" id="team">
         <div className="container">
-          <h2 className="header text_orange"> Petianos </h2>
+          <h2 className="header text_orange">Petianos</h2>
           <div className="row">
-            <Member name="Camila Brendel" desc="cscbb" pic="images/members/camila.png" face="https://www.facebook.com/camila.brendel"/>
-            <Member name="Divino Neto" desc="dgmn" pic="images/members/divino.png" face="https://www.facebook.com/dgmneto"/>
-            <Member name="Edjan Michiles" desc="esvm" pic="images/members/edjan.png" face="https://www.facebook.com/edjanmichiles"/>
-            <Member name="Higor Cavalcanti" desc="hcmb" pic="images/members/higor.png" face="https://www.facebook.com/HigorCMB"/>
-            <Member name="Lucas Santana" desc="lss5" pic="images/members/lucas.png" face="https://www.facebook.com/lucassantanadsilva"/>
-            <Member name="Lucas Valença" desc="lvrma" pic="images/members/val.png" face="https://www.facebook.com/lucas.valenca.589"/>
-            <Member name="Leonardo Galdino" desc="rbb3" pic="images/members/leogal.png" face="https://www.facebook.com/leonardo.galdino.142"/>
-            <Member name="Marcela Azevedo" desc="macm3" pic="images/members/marcela.png" face="https://www.facebook.com/marcelaazevedo6"/>
-            <Member name="Maria Júlia" desc="mjgfl" pic="images/members/julia.png" face="https://www.facebook.com/mariajuliagfl"/>
-            <Member name="Maria Luiza" desc="mlmv" pic="images/members/malu.png" face="https://www.facebook.com/mluiza.menezes"/>
-            <Member name="Marlon Reghert" desc="mlmv" pic="images/members/marlon.png" face="https://www.facebook.com/marlonreghert.ads"/>
-            <Member name="Pedro Rossi" desc="pgrr" pic="images/members/rossi.png" face="https://www.facebook.com/pgrr97"/>
-            <Member name="Rafael Nunes" desc="rngs" pic="images/members/peao.png" face="https://www.facebook.com/peaonunes"/>
-            <Member name="Rodrigo Calegario" desc="rcac" pic="images/members/calegario.png" face="https://www.facebook.com/rodrigo.calegario.5"/>
-            <Member name="Ruy Brito" desc="rbb3" pic="images/members/ruy.png" face="https://www.facebook.com/ruy.brito.3"/>
-            <Member name="Simone Cohen" desc="scc" pic="images/members/simone.png" face="https://www.facebook.com/scohen3594"/>
+            <Member name="Camila Brendel" desc="cscbb" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078745/pet/camila_ogqnbg.png" face="https://www.facebook.com/camila.brendel"/>
+            <Member name="Divino Neto" desc="dgmn" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078756/pet/divino_x0c8kp.png" face="https://www.facebook.com/dgmneto"/>
+            <Member name="Edjan Michiles" desc="esvm" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078739/pet/edjan_rdfnez.png" face="https://www.facebook.com/edjanmichiles"/>
+            <Member name="Higor Cavalcanti" desc="hcmb" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078705/pet/higor_trgodn.png" face="https://www.facebook.com/HigorCMB"/>
+            <Member name="Lucas Santana" desc="lss5" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078723/pet/lucas_plnf2x.png" face="https://www.facebook.com/lucassantanadsilva"/>
+            <Member name="Lucas Valença" desc="lvrma" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078786/pet/val_vwbuov.png" face="https://www.facebook.com/lucas.valenca.589"/>
+            <Member name="Leonardo Galdino" desc="rbb3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078735/pet/leo_bprqni.png" face="https://www.facebook.com/leonardo.galdino.142"/>
+            <Member name="Marcela Azevedo" desc="macm3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078762/pet/marcela_ga1upn.png" face="https://www.facebook.com/marcelaazevedo6"/>
+            <Member name="Maria Júlia" desc="mjgfl" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078775/pet/julia_csayn1.png" face="https://www.facebook.com/mariajuliagfl"/>
+            <Member name="Maria Luiza" desc="mlmv" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078740/pet/malu_qfwczh.png" face="https://www.facebook.com/mluiza.menezes"/>
+            <Member name="Marlon Reghert" desc="mlmv" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078791/pet/marlon_nhxx7l.png" face="https://www.facebook.com/marlonreghert.ads"/>
+            <Member name="Pedro Rossi" desc="pgrr" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078785/pet/rossi_iiqcfp.png" face="https://www.facebook.com/pgrr97"/>
+            <Member name="Rafael Nunes" desc="rngs" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078763/pet/peao_oje2db.png" face="https://www.facebook.com/peaonunes"/>
+            <Member name="Rodrigo Calegario" desc="rcac" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078707/pet/calegario_yf6nqx.png" face="https://www.facebook.com/rodrigo.calegario.5"/>
+            <Member name="Ruy Brito" desc="rbb3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078788/pet/ruy_bamenh.png" face="https://www.facebook.com/ruy.brito.3"/>
+            <Member name="Simone Cohen" desc="scc" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078797/pet/simone_rzxtmg.png" face="https://www.facebook.com/scohen3594"/>
           </div>
         </div>
       </div>
