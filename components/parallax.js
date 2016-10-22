@@ -5,7 +5,7 @@ var Parallax = React.createClass({
   render: function(){
     return(
       <div className="parallax-container">
-          <div className="parallax deep-orange"><img src={this.props.pic} className="overlay"/></div>
+          <div className="parallax deep-orange"><img src={this.props.pic} className="half-color"/></div>
       </div>
     );
   }

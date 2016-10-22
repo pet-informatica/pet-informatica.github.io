@@ -2,8 +2,7 @@ var Slide = React.createClass({
   render: function(){
     return(
       <li>
-        <img src={this.props.pic}/>
-
+        <img className="act-img" src={this.props.pic}/>
       </li>
     );
   }
@@ -24,29 +23,25 @@ var Slider = React.createClass({
 var Activity = React.createClass({
   render: function(){
     return(
-      <div className="col s12 m6 l6">
-          <div className="card">
-              <div>
-                  <Slider>
-                    <Slide pic="https://assets.servedby-buysellads.com/p/manage/asset/id/32054"/>
-                    <Slide pic="http://materializecss.com/images/office.jpg"/>
-                    <Slide pic="http://materializecss.com/images/sample-1.jpg"/>
-                  </Slider>
-              </div>
-              <div className="card-content">
-                  <span className="card-tit activator grey-text text-darken-4">
-                    {this.props.title}
-                    <i className="mdi mdi-dots-vertical right"></i>
-                  </span>
-              </div>
-              <div className="card-reveal">
-                  <span className="card-tit card-title grey-text text-darken-4">
-                    {this.props.title}
-                    <i className="mdi mdi-close right"></i>
-                  </span>
-                  {this.props.children}
-              </div>
+      <div className="col s12 m6 l4">
+        <div className="card">
+          <div className="card-image">
+            <img src="  http://materializecss.com/images/office.jpg"/>
           </div>
+          <div className="card-content">
+              <span className="card-title activator grey-text text-darken-4">
+                {this.props.title}
+                <i className="mdi mdi-dots-vertical right"></i>
+              </span>
+          </div>
+          <div className="card-reveal">
+              <span className="card-title grey-text text-darken-4">
+                {this.props.title}
+                <i className="mdi mdi-close right"></i>
+              </span>
+              {this.props.children}
+          </div>
+        </div>
       </div>
     );
   }
