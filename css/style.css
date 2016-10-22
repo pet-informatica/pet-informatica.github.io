@@ -124,6 +124,10 @@ nav a.button-collapse {
   font-weight: 300px;
 }
 
+.parallax-container{
+  height: 400px !important;
+}
+
 @media all and (min-width: 910px){
   .card .card-tit-sm{
       font-size: 18px !important;

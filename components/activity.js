@@ -1,10 +1,37 @@
+var Slide = React.createClass({
+  render: function(){
+    return(
+      <li>
+        <img src={this.props.pic}/>
+
+      </li>
+    );
+  }
+});
+
+var Slider = React.createClass({
+  render: function(){
+    return(
+      <div className="slider">
+        <ul className="slides">
+          {this.props.children}
+        </ul>
+      </div>
+    );
+  }
+});
+
 var Activity = React.createClass({
   render: function(){
     return(
       <div className="col s12 m6 l6">
           <div className="card">
-              <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator aaaa" src={this.props.pic}/>
+              <div>
+                  <Slider>
+                    <Slide pic="https://assets.servedby-buysellads.com/p/manage/asset/id/32054"/>
+                    <Slide pic="http://materializecss.com/images/office.jpg"/>
+                    <Slide pic="http://materializecss.com/images/sample-1.jpg"/>
+                  </Slider>
               </div>
               <div className="card-content">
                   <span className="card-tit activator grey-text text-darken-4">
@@ -26,6 +53,11 @@ var Activity = React.createClass({
 });
 
 var ActivityBoard = React.createClass({
+  componentDidMount: function(){
+    $('.slider').slider({
+      indicators: false
+    });
+  },
   render: function(){
     return(
       <div className="section scrollspy" id="activities">
