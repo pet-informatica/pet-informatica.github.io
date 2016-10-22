@@ -125,7 +125,11 @@ nav a.button-collapse {
 }
 
 .parallax-container{
-  height: 400px !important;
+  height: 500px !important;
+}
+
+.overlay{
+  opacity: 0.5;
 }
 
 @media all and (min-width: 910px){
