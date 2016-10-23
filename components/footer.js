@@ -21,8 +21,9 @@ var MailBox = React.createClass({
               <label htmlFor="icon_prefix2" className="white-text">Mensagem</label>
             </div>
               <div className="col offset-s7 s5">
-                <button className="btn waves-effect waves-light red darken-1" type="submit">Submit
-                  <i className="mdi mdi-send right white-text"></i>
+                <button className="btn waves-effect waves-light white" type="submit">
+                  <span className="font-normal deep-orange-text">Submit</span>
+                  <i className="mdi mdi-send right deep-orange-text"></i>
                 </button>
               </div>
             </div>
@@ -38,19 +39,55 @@ var Contact = React.createClass({
       <div className="col l3 s12">
         <h5 className="white-text">Contato</h5>
         <ul>
-          <li><p className="white-text">pet-informatica@cin.ufpe.com</p></li>
           <li>
-            <div>
+            <p className="white-text">pet-informatica@cin.ufpe.com</p>
+          </li>
+          <li>
               <a className="white-text side_margin" href="https://www.facebook.com/petinformatica">
-                <i className="small mdi mdi-facebook-box"></i>
+                <i className="small mdi mdi-facebook-box"></i> facebook
               </a>
-              <a className="white-text side_margin " href="https://github.com/pet-informatica">
-                <i className="small mdi mdi-github-box"></i>
+          </li>
+          <li>
+            <a className="white-text side_margin " href="https://github.com/pet-informatica">
+              <i className="small mdi mdi-github-box"></i> github
+            </a>
+          </li>
+          <li>
+            <a className="white-text side_margin" href="https://cin.ufpe.br/~pet">
+              <i className="small mdi mdi-book-open"></i>  cin
+            </a>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+});
+
+var Links = React.createClass({
+  render: function(){
+    return(
+      <div className="col l3 s12">
+        <h5 className="white-text">Links</h5>
+        <ul>
+          <li>
+              <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal">
+                <i className="small mdi mdi-flag"></i> CinWiki
               </a>
-              <a className="white-text side_margin" href="https://cin.ufpe.br/~pet">
-                <i className="small mdi mdi-book-open"></i>
+          </li>
+          <li>
+              <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/opei/">
+                <i className="small mdi mdi-flag"></i> OPEI
               </a>
-            </div>
+          </li>
+          <li>
+              <a className="white-text side_margin" href="https://pet-informatica.github.io/cinquest/">
+                <i className="small mdi mdi-flag"></i> CinQuest
+              </a>
+          </li>
+          <li>
+              <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn">
+                <i className="small mdi mdi-flag"></i> Manual
+              </a>
           </li>
         </ul>
       </div>
@@ -64,7 +101,7 @@ var Copyright = React.createClass({
     return(
       <div className="footer-copyright">
         <div className="container">
-          Made with <a className="white-text" href="http://materializecss.com/">materializecss</a>
+          Made by PET-Informática. Thanks to <a className="white-text" href="http://materializecss.com/">materializecss</a> and <a className="white-text" href="https://facebook.github.io/react/">react.</a>
         </div>
       </div>
     );
@@ -78,10 +115,11 @@ var Footer = React.createClass({
         <div className="container">
           <div className="row">
             <Contact></Contact>
+            <Links></Links>
             <MailBox></MailBox>
           </div>
-          <Copyright></Copyright>
         </div>
+        <Copyright></Copyright>
       </footer>
     );
   }

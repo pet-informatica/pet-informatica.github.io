@@ -18,7 +18,7 @@ var Pilar = React.createClass({
         <div className="center promo promo-example">
           {this.props.children}
           <h4 className="promo-caption white-text">{this.props.title}</h4>
-          <h4 className="font-light center white-text flow-text">{this.props.desc}</h4>
+          <h4 className="font-light justify center white-text flow-text">{this.props.desc}</h4>
         </div>
       </div>
     );
@@ -35,17 +35,17 @@ var AboutBoard = React.createClass({
               <About />
               <Pilar
                 title="Ensino"
-                desc="Buscamos contribuir com a formação intelectual dos alunos e da comunidade, oferecendo palestras, workshops, cursos e atividades relacionadas à difusão do conhecimento">
+                desc="Buscamos contribuir com a formação intelectual dos alunos e da comunidade local, oferecendo palestras, workshops, cursos e atividades relacionadas à difusão do conhecimento e da computação">
                 <i className="mdi mdi-bank"></i>
               </Pilar>
               <Pilar
                 title="Pesquisa"
-                desc="Realizamos internamente iniciações científicas tanto individuais como coletivas, com o objetivo de desenvolver as habilidades pessoais de cada petiano e contribuir com a produçao científica da universidade">
+                desc="Realizamos internamente iniciações científicas e projetos de pesquisa, tanto individuais como coletivos, com o objetivo de desenvolver as habilidades pessoais de cada petiano e contribuir com a produçao científica da universidade">
                 <i className="mdi mdi-flask"></i>
                 </Pilar>
               <Pilar
                 title="Extensão"
-                desc="Nossas atividades extrapolam os limites da universidade, buscando atingir também a comunidade local e engajar pessoas em projetos sociais e ambientais">
+                desc="Nossas atividades extrapolam os limites universitários, buscando atingir também a comunidade local e engajar pessoas em projetos profissionais, sociais e ambientais">
                 <i className="mdi mdi-map-marker-radius"></i>
               </Pilar>
           </div>

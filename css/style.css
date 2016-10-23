@@ -75,8 +75,13 @@ body {
     display: block;
 }
 
+.justify{
+  text-align: justify !important;
+}
+
 .page-footer {
     margin-top: 0px !important;
+    font-family: "LatoWebLight" !important;
 }
 
 nav ul a {
@@ -112,6 +117,10 @@ nav a.button-collapse {
   font-family: "LatoWebLight";
 }
 
+.font-normal{
+  font-family: "LatoWeb" !important;
+}
+
 .nav-mobile{
   margin-right: 150px !important;
 }
@@ -123,6 +132,8 @@ nav a.button-collapse {
 .half-color{
   opacity: 0.75;
 }
+
+
 
 .card-avatar img {
     height: 150px;
