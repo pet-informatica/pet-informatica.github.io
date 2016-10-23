@@ -73,26 +73,16 @@ var ActivityBoard = React.createClass({
         <div className="container">
           <h2 className="header text_orange">Atividades</h2>
           <div className="row">
+
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188922/pet/workshop-1_q7jy1v.png"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188920/pet/workshop-2_ch1gxk.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188918/pet/workshop-3_p0llcf.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188915/pet/workshop-4_rv3lih.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188917/pet/workshop-5_vjlsse.jpg"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477243125/pet/freshman-day_d6uo3h.jpg"/>
               </Slider>
-              <ActivityContent title="Palestra e Workshop"/>
-              <ActivityReveal title="Palestra e Workshop">
+              <ActivityContent title="Dia do Calouro"/>
+              <ActivityReveal title="Dia do Calouro">
                 <p>
-                  Buscando dar aos alunos do cIn novos conhecimentos, o <span className="deep-orange-text">PET-Informática</span> realiza bimestralmente
-                  palestras de temas relacionados tanto à computação quanto à temas diversificados, possibilitando
-                  uma troca de conhecimentos de uma grande variedade de assuntos.
-                </p>
-                <p>
-                  A cada bimestre, o <span className="deep-orange-text">PET-Informática</span>
-                  também promove workshops de temas relevantes, como javascript,
-                  github, e docker. Muitas vezes os workshops também são voltados para descontrair os estudantes,
-                  criando uma oportunidade de diversão e engajamento para fugir da rotina!
+                  Ocorrendo na primeira semana de aula de cada semestre, o <span className="deep-orange-text">Dia do Calouro</span> é quando os novos alunos
+                  são apresentados, pela visão de outros alunos, aos cursos, ao Centro e as oportunidades oferecidas pela universidade.
                 </p>
               </ActivityReveal>
             </ActivityCard>
@@ -120,8 +110,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477243774/pet/capacitacao_g8cvjw.jpg"/>
               </Slider>
               <ActivityContent title="Capacitação"/>
               <ActivityReveal title="Capacitação">
@@ -130,27 +119,26 @@ var ActivityBoard = React.createClass({
                   para servidores da UFPE e moradores da região onde são ensinadas noções básicas e a
                   vançadas de computador, como internet, office e Google Drive.
                 </p>
-
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
               <Slider>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477242071/pet/vacation-1_efeufj.jpg"/>
               </Slider>
-              <ActivityContent title="Dia do Calouro"/>
-              <ActivityReveal title="Dia do Calouro">
+              <ActivityContent title="Programa de Férias"/>
+              <ActivityReveal title="Programa de Férias">
                 <p>
-                  Ocorrendo na primeira semana de aula de cada semestre, o <span className="deep-orange-text">Dia do Calouro</span> é quando os novos alunos
-                  são apresentados, pela visão de outros alunos, aos cursos, ao Centro e as oportunidades oferecidas pela universidade.
+                  No período das férias escolares, o <span className="deep-orange-text">PET-Informática</span> ministra aulas de programação para alunos de ensino médio,
+                  para estimular o estudo da Ciência da Computação pelos alunos e ajudá-los desenvolverem uma base sólida de programação.
+                  É um curso de introdução à uma linguagem de programação, como C/C++ e Pyton.
                 </p>
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193036/pet/hemope-1_kol6vi.png"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193038/pet/hemope-2_outvy0.png"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193037/pet/hemope-3_lvntah.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193037/pet/hemope-4_d1qq9s.jpg"/>
@@ -167,7 +155,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193985/pet/opei-1_zf4nbv.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477243544/pet/opei-1_hlzmz9.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193983/pet/opei-3_yqsidh.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193981/pet/opei-2_rhcwm8.jpg"/>
               </Slider>
@@ -180,7 +168,7 @@ var ActivityBoard = React.createClass({
                   prática de programação, com linguagens como JAVA, C/C++ e Python. Para saber como inscrever
                   sua escola, veja o passo-a-passo na aba <a href="#faq-board">FAQ</a>.
                   <br/><br/>
-                  <a className="center deep-orange" href="http://www.cin.ufpe.br/~pet/opei/" className="activator">
+                  <a className="center deep-orange" href="https://www.cin.ufpe.br/~pet/opei/" className="activator">
                     <i className="mdi mdi-flag"></i>    OPEI
                   </a>
                 </p>
@@ -189,23 +177,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
-              </Slider>
-              <ActivityContent title="Programa de Férias"/>
-              <ActivityReveal title="Programa de Férias">
-                <p>
-                  No período das férias escolares, o <span className="deep-orange-text">PET-Informática</span> ministra aulas de programação para alunos de ensino médio,
-                  para estimular o estudo da Ciência da Computação pelos alunos e ajudá-los desenvolverem uma base sólida de programação.
-                  É um curso de introdução à uma linguagem de programação, como C/C++ e Pyton.
-                </p>
-              </ActivityReveal>
-            </ActivityCard>
-
-            <ActivityCard>
-              <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240117/pet/wiki_wzfbew.jpg"/>
               </Slider>
               <ActivityContent title="CinWiki"/>
               <ActivityReveal title="CinWiki">
@@ -214,7 +186,7 @@ var ActivityBoard = React.createClass({
                   atividades relacionadas ao centro de informática. Você é bem vindo para contribuir com nossa Wiki! Se achar que existem
                   informações desatualizadas, nos comunique!
                   <br/><br/>
-                  <a className="center deep-orange" href="http://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal" className="activator">
+                  <a className="center deep-orange" href="https://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal" className="activator">
                     <i className="mdi mdi-flag"></i>    CinWiki
                   </a>
                 </p>
@@ -223,8 +195,31 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188922/pet/workshop-1_q7jy1v.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188920/pet/workshop-2_ch1gxk.jpg"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188918/pet/workshop-3_p0llcf.jpg"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188915/pet/workshop-4_rv3lih.jpg"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477188917/pet/workshop-5_vjlsse.jpg"/>
+              </Slider>
+              <ActivityContent title="Palestra e Workshop"/>
+              <ActivityReveal title="Palestra e Workshop">
+                <p>
+                  Buscando dar aos alunos do cIn novos conhecimentos, o <span className="deep-orange-text">PET-Informática</span> realiza bimestralmente
+                  palestras de temas relacionados tanto à computação quanto à temas diversificados, possibilitando
+                  uma troca de conhecimentos de uma grande variedade de assuntos.
+                </p>
+                <p>
+                  A cada bimestre, o <span className="deep-orange-text">PET-Informática</span>
+                  também promove workshops de temas relevantes, como javascript,
+                  github, e docker. Muitas vezes os workshops também são voltados para descontrair os estudantes,
+                  criando uma oportunidade de diversão e engajamento para fugir da rotina!
+                </p>
+              </ActivityReveal>
+            </ActivityCard>
+
+            <ActivityCard>
+              <Slider>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477241396/pet/freshman-manual_b2uu23.jpg"/>
               </Slider>
               <ActivityContent title="Manual do Calouro"/>
               <ActivityReveal title="Manual do Calouro">
@@ -233,7 +228,7 @@ var ActivityBoard = React.createClass({
                   principalmente o passo-a-passo de atividades e as oportunidades do Centro e da Universidade
                   de maneira simples e direta.
                   <br/><br/>
-                  <a className="center deep-orange" href="http://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn" className="activator">
+                  <a className="center deep-orange" href="https://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn" className="activator">
                     <i className="mdi mdi-flag"></i>    Manual do Calouro
                   </a>
                 </p>
@@ -242,8 +237,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
               </Slider>
               <ActivityContent title="CInQuest"/>
               <ActivityReveal title="CInQuest">
@@ -260,9 +254,9 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <div className="card-image">
-                <img src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193038/pet/hemope-2_outvy0.png"/>
-              </div>
+              <Slider>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
+              </Slider>
               <ActivityContent title="GeoQuest"/>
               <ActivityReveal title="GeoQuest">
                 <p>
@@ -274,8 +268,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477194929/pet/vacation-1_zfcml3.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
               </Slider>
               <ActivityContent title="PetUtility"/>
               <ActivityReveal title="PetUtility">
@@ -286,6 +279,7 @@ var ActivityBoard = React.createClass({
                 </p>
               </ActivityReveal>
             </ActivityCard>
+
           </div>
         </div>
       </div>
