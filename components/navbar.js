@@ -10,10 +10,10 @@ var Navbar = React.createClass({
         <nav role="navigation">
           <div className="container">
             <div className="nav-wrapper">
+              <a data-activates="nav-mobile" className="button-collapse" href="#"><i className="mdi mdi-menu"></i></a>
               <a href="#" >
                 <img className="brand-logo circle" src="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477079274/pet/pet_wn9jqn.png"/>
               </a>
-              <a data-activates="nav-mobile" className="button-collapse" href="#"><i className="mdi mdi-menu"></i></a>
               <ul className="right hide-on-med-and-down">
                 <li><a className="font-light" href="#about-board">Sobre</a></li>
                 <li><a className="font-light" href="#activity-board">Atividades</a></li>

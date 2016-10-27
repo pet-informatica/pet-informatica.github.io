@@ -9,12 +9,20 @@ body {
   background: rgb(247, 247, 247);
 }
 
+#team{
+    background: rgb(255, 255, 255) !important;
+}
+
+#team .square{
+  background: rgb(247, 247, 247) !important;
+}
+
 #about{
   background: #ff9100;
 }
 
 .top_margin{
-  margin-top: 40px;
+  margin-top: 40px !important;
 }
 
 .bottom_margin{
@@ -98,11 +106,11 @@ nav a.button-collapse {
 }
 
 .brand-logo{
-    padding: 20px !important;
+    margin-top: 15px !important;
     position: absolute;
     display: inline-block;
-    width: 18vh !important;
-    height: 18vh !important;
+    width: 75px !important;
+    height: 75px !important;
 }
 
 .font-hairline{

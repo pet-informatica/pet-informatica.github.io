@@ -78,7 +78,7 @@ var FaqBoard = React.createClass({
               </Question>
               <Question title="Como entro em contato?">
                 <p>
-                  Você pode entrar em contato com o <span className="deep-orange-text">PET-Informática</span> através da nossa página no <a hreaf="https://www.facebook.com/petinformatica/">Facebook</a> ou mandar e-mail
+                  Você pode entrar em contato com o <span className="deep-orange-text">PET-Informática</span> através da nossa página no <a href="https://www.facebook.com/petinformatica/">Facebook</a> ou mandar e-mail
                   para a gente: <span className="deep-orange-text">petcomputacao-l@cin.ufpe.br</span>. No Cin, você pode visitar a nossa sala que fica no <span className="deep-orange-text">Bloco A</span>,
                   pertinho da <span className="deep-orange-text">Copa</span>. Você também pode falar diretamente com qualquer petiano pelos corredores ou redes sociais.
                 </p>

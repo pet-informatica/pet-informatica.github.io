@@ -40,21 +40,21 @@ var Contact = React.createClass({
         <h5 className="white-text">Contato</h5>
         <ul>
           <li>
-            <p className="white-text">pet-informatica@cin.ufpe.com</p>
+            <p className="white-text">petcomputacao-l@cin.ufpe.com</p>
           </li>
           <li>
               <a className="white-text side_margin" href="https://www.facebook.com/petinformatica">
-                <i className="small mdi mdi-facebook-box"></i> facebook
+                <i className="small mdi mdi-facebook-box"></i> Facebook
               </a>
           </li>
           <li>
             <a className="white-text side_margin " href="https://github.com/pet-informatica">
-              <i className="small mdi mdi-github-box"></i> github
+              <i className="small mdi mdi-github-box"></i> Github
             </a>
           </li>
           <li>
             <a className="white-text side_margin" href="https://cin.ufpe.br/~pet">
-              <i className="small mdi mdi-book-open"></i>  cin
+              <i className="small mdi mdi-book-open"></i>  Wiki
             </a>
           </li>
         </ul>
