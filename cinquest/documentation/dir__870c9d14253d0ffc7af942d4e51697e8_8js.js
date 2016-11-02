@@ -1,4 +1,0 @@
-var dir__870c9d14253d0ffc7af942d4e51697e8_8js =
-[
-    [ "dir_870c9d14253d0ffc7af942d4e51697e8", "dir__870c9d14253d0ffc7af942d4e51697e8_8js.html#a3619362057ef81b339fd029d6c605012", null ]
-];
