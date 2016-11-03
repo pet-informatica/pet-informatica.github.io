@@ -70,6 +70,11 @@ var Links = React.createClass({
         <h5 className="white-text">Links</h5>
         <ul>
           <li>
+              <a className="white-text side_margin" href="https://pet-informatica.github.io/programa-de-ferias">
+                <i className="small mdi mdi-flag"></i> Programa de Férias
+              </a>
+          </li>
+          <li>
               <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal">
                 <i className="small mdi mdi-flag"></i> CinWiki
               </a>

@@ -134,6 +134,10 @@ var ActivityBoard = React.createClass({
                   para estimular o estudo da Ciência da Computação pelos alunos e ajudá-los desenvolverem uma base sólida de programação.
                   É um curso de introdução à uma linguagem de programação, como C/C++ e Pyton.
                 </p>
+                <br/>
+                <a className="center deep-orange" href="https://pet-informatica.github.io/programa-de-ferias" className="activator">
+                  <i className="mdi mdi-flag"></i>    Programa de Férias
+                </a>
               </ActivityReveal>
             </ActivityCard>
 
@@ -209,8 +213,7 @@ var ActivityBoard = React.createClass({
                   uma troca de conhecimentos de uma grande variedade de assuntos.
                 </p>
                 <p>
-                  A cada bimestre, o <span className="deep-orange-text">PET-Informática</span>
-                  também promove workshops de temas relevantes, como javascript,
+                  A cada bimestre, o <span className="deep-orange-text">PET-Informática</span> também promove workshops de temas relevantes, como javascript,
                   github, e docker. Muitas vezes os workshops também são voltados para descontrair os estudantes,
                   criando uma oportunidade de diversão e engajamento para fugir da rotina!
                 </p>

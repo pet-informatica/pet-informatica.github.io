@@ -2,7 +2,7 @@ var About = React.createClass({
   render: function(){
     return(
       <div className="col s12 center">
-        <h4 className="font-light white-text flow-text">
+        <h4 className="header-1 white-text">
           Somos alunos do Centro de Informática que estão envolvidos em atividades de ensino, pesquisa e extensão,
           buscando melhorar a experiência da graduação para todos os estudantes.
         </h4>
@@ -17,8 +17,8 @@ var Pilar = React.createClass({
       <div  className="col s12 m4 l4 top_margin">
         <div className="center promo promo-example">
           {this.props.children}
-          <h4 className="promo-caption white-text">{this.props.title}</h4>
-          <h4 className="font-light justify center white-text flow-text">{this.props.desc}</h4>
+          <h3 className="header white-text">{this.props.title}</h3>
+          <h4 className="header-2 center white-text">{this.props.desc}</h4>
         </div>
       </div>
     );
@@ -30,7 +30,7 @@ var AboutBoard = React.createClass({
     return(
       <div id="about" className="section scrollspy">
         <div className="container">
-          <h2 className="center white-text">O que é o PET?</h2>
+          <h2 className="center header white-text">PET-Informática</h2>
           <div className="row center">
               <About />
               <Pilar

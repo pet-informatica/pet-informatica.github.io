@@ -17,8 +17,31 @@ body {
   background: rgb(247, 247, 247) !important;
 }
 
+.header-1{
+  font-weight: 100;
+  font-size: 40px;
+  font-family: "LatoWebLight";
+}
+
+nav {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0) !important;
+}
+
+.header-2{
+  font-size: 25px;
+  font-weight: 100;
+  font-family: "LatoWebLight";
+}
+
+.big-logo{
+  width: 150px !important;
+  height: 150px !important;
+}
+
 #about{
-  background: #ff9100;
+  background: #ff5722;
 }
 
 .top_margin{
@@ -89,16 +112,15 @@ body {
 
 .page-footer {
     margin-top: 0px !important;
-    font-family: "LatoWebLight" !important;
 }
 
 nav ul a {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     color: #FFF !important;
-    letter-spacing: 2px !important;
+    letter-spacing: 1px !important;
     display: block !important;
-    font-weight: 900 !important;
-    padding: 0px 15px !important;
+    font-weight: 600 !important;
+    padding: 0px 10px !important;
 }
 
 nav a.button-collapse {
