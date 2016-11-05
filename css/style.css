@@ -23,6 +23,12 @@ body {
   font-family: "LatoWebLight";
 }
 
+.iris {
+    background-image: url("http://cameronhamilton.com/wp-content/uploads/2016/02/iStock_000077454005_Full-contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
   -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
@@ -41,7 +47,7 @@ nav {
 }
 
 #about{
-  background: #ff5722;
+  background: rgba(255,87,34,0.75ment) !important;
 }
 
 .top_margin{
