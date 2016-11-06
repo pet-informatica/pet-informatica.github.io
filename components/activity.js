@@ -71,7 +71,7 @@ var ActivityBoard = React.createClass({
     return(
       <div className="section scrollspy" id="activities">
         <div className="container">
-          <h2 className="header text_orange">Atividades</h2>
+          <h2 className="header center text_orange">Atividades</h2>
           <div className="row">
 
             <ActivityCard>

@@ -87,8 +87,8 @@ var MemberBoard = React.createClass({
     return(
       <div className="section scrollspy" id="team">
         <div className="container">
-          <h2 className="header text_orange">Petianos</h2>
-          <div className="row square card">
+          <h2 className="header center text_orange">Petianos</h2>
+          <div className="row">
             <div className="col s12">
               <ul className="tabs">
                 <li className="tab col s3 active"><a href="#members">Membros</a></li>

@@ -6,15 +6,14 @@ body {
 #faq, #activities, #team, #about {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background: rgb(247, 247, 247);
 }
 
-#team{
-    background: rgb(255, 255, 255) !important;
+#faq, #activities, #team{
+    background: rgb(247, 247, 247);
 }
 
-#team .square{
-  background: rgb(247, 247, 247) !important;
+#about{
+  background: rgba(255, 87, 34, 0.60);
 }
 
 .header-1{
@@ -24,7 +23,7 @@ body {
 }
 
 .iris {
-    background-image: url("http://cameronhamilton.com/wp-content/uploads/2016/02/iStock_000077454005_Full-contact.jpg");
+    background-image: url("http://res.cloudinary.com/dkbuneg9h/image/upload/v1478452843/pet/background-img-3_ijh9li.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -166,7 +165,7 @@ nav a.button-collapse {
 }
 
 .half-color{
-  opacity: 0.75;
+  opacity: 0.50;
 }
 
 
