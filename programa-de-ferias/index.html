@@ -21,17 +21,17 @@
         <nav id="nav_f" role="navigation">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="#" id="logo-container" class="brand-logo">Programa de Férias</a>
+              <a href="#intro" id="logo-container" class="brand-logo">Programa de Férias</a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="#intro">Introdução</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#schedule">Inscrição</a></li>
+                <li><a href="#content">Conteúdo</a></li>
                 <li><a href="#contact">Contato</a></li>
               </ul>
               <ul id="nav-mobile" class="side-nav">
-                <li><a href="#intro">Introdução</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#schedule">Inscrição</a></li>
+                <li><a href="#content">Conteúdo</a></li>
                 <li><a href="#contact">Contato</a></li>
               </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
@@ -41,7 +41,7 @@
       </div>
       <!--Hero-->
       <div class="iris-1">
-        <div class="section no-pad-bot" id="index-banner">
+        <div class="section no-pad-bot scrollspy" id="index-banner">
           <div class="container">
             <h1 class="text_h center header cd-headline letters type">
               <span class="cd-words-wrapper waiting">
@@ -56,9 +56,9 @@
       </div>
 
       <!--Intro-->
-      <div id="intro" class="section scrollspy">
+      <div id="intro"  class="section scrollspy">
         <div class="container">
-          <div class="row">
+          <div class="row" >
             <div class="center col s12">
               <a href="https://pet-informatica.github.io">
                 <img src="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477079274/pet/pet_wn9jqn.png" class="circle" style="width:150px;"/>
@@ -79,8 +79,8 @@
         </div>
       </div>
       <!--About-->
-      <div class="section scrollspy" id="about">
-        <div class="container">
+      <div id="about" class="section scrollspy" style="background: rgb(247, 247, 247);">
+        <div class="container ">
           <h2 class="header text_b center">Sobre o Programa de Férias</h2>
           <div class="row">
             <div class="card col s12">
@@ -88,18 +88,18 @@
                 <i class="fa fa-question"  style="padding-top: 40px;"></i>
               </div>
               <div class="card-content">
-                <h4 class="header center text_h3" >Todo ano, durante o período de férias escolares, o <a href="https://pet-informatica.github.io">PET-Informática</a> ministra o programa de férias, um curso gratuito voltado para alunos do ensino fundamental e médio que se interessem por aprender programação. É uma forma de difundir o conhecimento da computação e aproximar estudantes do mundo universitário. Venha aprender uma linguagem de programação e fazer um aplicativo conosco!</h4>
+                <h4 class="header center text_h3" >Todo ano, durante o período de férias escolares, o <a href="https://pet-informatica.github.io">PET-Informática</a> ministra o programa de férias, um curso gratuito voltado para alunos do ensino médio que se interessem por aprender programação. É uma forma de difundir o conhecimento da computação e aproximar estudantes do mundo universitário. Venha aprender uma linguagem de programação e fazer um aplicativo conosco! Vamos te mostrar que programar não é só coisa de quem faz computação!</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--Schedule and Content-->
-      <div class="section scrollspy" id="schedule">
+      <!--Schedule-->
+      <div id="schedule" class="section scrollspy">
         <div class="container">
           <div class="row">
-            <div class="col s12 m12 l6">
-              <h2 class="header text_b center">Programação</h2>
+            <div>
+              <h2 class="header text_b center">Inscrição</h2>
               <div class="card">
                 <div class="card-avatar promo center">
                   <i class="fa fa-calendar-o"  style="padding-top: 40px;"></i>
@@ -112,7 +112,14 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m12 l6">
+          </div>
+        </div>
+      </div>
+      <!--Content-->
+      <div id="content" class="section scrollspy"  style="background: rgb(247, 247, 247);">
+        <div  class="container">
+          <div class="row">
+            <div>
               <h2 class="header text_b center">Conteúdo</h2>
               <div class="card">
                 <div class="card-avatar promo center">
@@ -129,17 +136,6 @@
           </div>
         </div>
       </div>
-      <!--No inscription MODAL-->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h5 class="span_h2">Eeps! Parece que você não pode se inscrever agora!</h5>
-          <p>Pode ser que ainda não estejamos em época de inscrição. Confere as datas no site, mas se tiver alguma dúvida, entra em contato com a gente atravéz de nosso <a href="https://www.facebook.com/petinformatica/">facebook</a> ou pelo email petcomputacao-l@cin.ufpe.br! Te respondemos em um minutinho!</p>
-          <div class="center promo"><i class="fa fa-frown-o" style="opacity: .5;"></i></div>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat blue-text">Entendi</a>
-        </div>
-    </div>
       <!--Contact-->
       <footer id="contact" class="page-footer scrollspy">
         <div class="container">
@@ -232,6 +228,17 @@
           </div>
         </div>
       </footer>
+      <!--No inscription MODAL-->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h5 class="span_h2">Eeps! Parece que você não pode se inscrever agora!</h5>
+          <p>Pode ser que ainda não estejamos em época de inscrição. Confere as datas no site, mas se tiver alguma dúvida, entra em contato com a gente atravéz de nosso <a href="https://www.facebook.com/petinformatica/">facebook</a> ou pelo email petcomputacao-l@cin.ufpe.br! Te respondemos em um minutinho!</p>
+          <div class="center promo"><i class="fa fa-frown-o" style="opacity: .5;"></i></div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat blue-text">Entendi</a>
+        </div>
+    </div>
       <!--End-->
       <script type="text/javascript" src="min/bundle.js"></script>
     </body>
