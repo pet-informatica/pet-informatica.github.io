@@ -16,6 +16,10 @@ body {
   background: rgba(255, 87, 34, 0.60);
 }
 
+.tabs{
+  background: rgba(255, 87, 34, 0.00) !important;
+}
+
 .header-1{
   font-weight: 100;
   font-size: 40px;
@@ -171,8 +175,6 @@ nav a.button-collapse {
 .half-color{
   opacity: 0.50;
 }
-
-
 
 .card-avatar img {
     height: 150px;

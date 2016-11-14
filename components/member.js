@@ -52,18 +52,16 @@ var ExMembers = React.createClass({
   render: function(){
     return(
       <div className="row">
-        <Member name="Divino Neto" desc="dgmn" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078756/pet/divino_x0c8kp.png" face="https://www.facebook.com/dgmneto"/>
-        <Member name="Lucas Santana" desc="lss5" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078723/pet/lucas_plnf2x.png" face="https://www.facebook.com/lucassantanadsilva"/>
-        <Member name="Leonardo Galdino" desc="lcgm" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078735/pet/leo_bprqni.png" face="https://www.facebook.com/leonardo.galdino.142"/>
-        <Member name="Marcela Azevedo" desc="macm3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078762/pet/marcela_ga1upn.png" face="https://www.facebook.com/marcelaazevedo6"/>
-        <Member name="Maria Júlia" desc="mjgfl" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078775/pet/julia_csayn1.png" face="https://www.facebook.com/mariajuliagfl"/>
-        <Member name="Maria Luiza" desc="mlmv" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078740/pet/malu_qfwczh.png" face="https://www.facebook.com/mluiza.menezes"/>
-        <Member name="Marlon Reghert" desc="mras" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078791/pet/marlon_nhxx7l.png" face="https://www.facebook.com/marlonreghert.ads"/>
-        <Member name="Pedro Rossi" desc="pgrr" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078785/pet/rossi_iiqcfp.png" face="https://www.facebook.com/pgrr97"/>
-        <Member name="Rafael Nunes" desc="rngs" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078763/pet/peao_oje2db.png" face="https://www.facebook.com/peaonunes"/>
-        <Member name="Rodrigo Calegario" desc="rcac" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078707/pet/calegario_yf6nqx.png" face="https://www.facebook.com/rodrigo.calegario.5"/>
-        <Member name="Ruy Brito" desc="rbb3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078788/pet/ruy_bamenh.png" face="https://www.facebook.com/ruy.brito.3"/>
-        <Member name="Simone Cohen" desc="scc" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078797/pet/simone_rzxtmg.png" face="https://www.facebook.com/scohen3594"/>
+        <Member name="Aline Correia" desc="afcs" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781671/pet/aline_id6oyv.jpg" face="https://www.facebook.com/aline.correia.332"/>
+        <Member name="Danilo Neves" desc="dnr2" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781671/pet/danilo_uukmn2.jpg" face="https://www.facebook.com/danilo.nevesribeiro"/>
+        <Member name="Ermano Arruda" desc="eaa3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781671/pet/ermano_iaur9a.jpg" face="https://www.facebook.com/ermano.arruda"/>
+        <Member name="Filipe Fernando" desc="ffcms" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781670/pet/filipe_yw1pgb.jpg" face="https://www.facebook.com/ffcms"/>
+        <Member name="Leonardo Andrade" desc="ljacs" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781670/pet/leoandrade_tc7kj8.jpg" face="https://www.facebook.com/leonardojacs"/>
+        <Member name="Maria Gabriela" desc="mgtmc" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781670/pet/gabi_jh56lw.jpg" face="https://www.facebook.com/MariaGabrielaCardoso"/>
+        <Member name="Marina Haack" desc="mmlh" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781670/pet/haack_fxg1zi.jpg" face="https://www.facebook.com/ninahaacks"/>
+        <Member name="Pedro Torres" desc="phtg" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781671/pet/torres_exzgle.jpg" face="https://www.facebook.com/pedrootorres"/>
+        <Member name="Tomer Simis" desc="tls" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781670/pet/tomer_gkmxf2.jpg" face="https://www.facebook.com/tomer.simis"/>
+        <Member name="Victor Monteiro" desc="vddm" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1478781671/pet/vddm_sjwx5p.jpg" face="https://www.facebook.com/victorddiniz"/>
       </div>
     );
   }
