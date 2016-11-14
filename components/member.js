@@ -43,6 +43,7 @@ var Members = React.createClass({
         <Member name="Rodrigo Calegario" desc="rcac" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078707/pet/calegario_yf6nqx.png" face="https://www.facebook.com/rodrigo.calegario.5"/>
         <Member name="Ruy Brito" desc="rbb3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078788/pet/ruy_bamenh.png" face="https://www.facebook.com/ruy.brito.3"/>
         <Member name="Simone Cohen" desc="scc" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477078797/pet/simone_rzxtmg.png" face="https://www.facebook.com/scohen3594"/>
+        <Member name="Fernando Fonseca" desc="fdfd" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1479137835/pet/fdfd_fe6zpw.jpg" face="http://www.cin.ufpe.br/~fdfd/"/>
       </div>
     );
   }
@@ -71,7 +72,20 @@ var ExMembers = React.createClass({
 var Tutor = React.createClass({
   render: function(){
     return(
-      <div className="row">
+      <div className="center col s12 m6 l6">
+        <div className="card card-avatar">
+          <div className="center">
+            <img className="circle materialboxed center" src={this.props.pic} />
+          </div>
+          <div className="card-content">
+            <span className="card-title grey-text text-darken-4">
+              {this.props.name}
+              <br/>
+              <small><em><p className="red-text text-darken-1">{this.props.desc}        <a href={this.props.face}><i className="blue-text text-darken-4 mdi mdi-facebook-box">
+              </i></a></p></em></small>
+            </span>
+          </div>
+        </div>
       </div>
     );
   }
@@ -91,12 +105,10 @@ var MemberBoard = React.createClass({
               <ul className="tabs">
                 <li className="tab col s3 active"><a href="#members">Membros</a></li>
                 <li className="tab col s3"><a href="#ex-members">Egressos</a></li>
-                <li className="tab col s3"><a href="#tutor">Tutor</a></li>
               </ul>
             </div>
             <div id="members" className="col s12 top_margin"><Members></Members></div>
             <div id="ex-members" className="col s12 top_margin"><ExMembers></ExMembers></div>
-            <div id="tutor" className="col s12 top_margin"><Tutor></Tutor></div>
           </div>
         </div>
       </div>
