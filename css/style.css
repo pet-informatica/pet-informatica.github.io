@@ -124,12 +124,16 @@ nav ul a {
     color: #FFF !important;
     letter-spacing: 1px !important;
     display: block !important;
-    font-weight: 600 !important;
-    padding: 0px 10px !important;
+    padding: 5px 10px 0 10px !important;
 }
 
 nav a.button-collapse {
     left: -25px;
+}
+
+.logo{
+  font-size: 25px !important;
+  letter-spacing: 3px !important;
 }
 
 .brand-logo{

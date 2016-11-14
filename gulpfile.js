@@ -35,7 +35,7 @@ gulp.task('bundle', function() {
 					compact: true,
 					presets:['react']
 				}))
-				.pipe(gulp.dest(path.join(__dirname, 'bin')));
+				.pipe(gulp.dest(path.join(__dirname, 'bin', 'min')));
 });
 
 gulp.task('watchBundle', function(){
@@ -72,7 +72,7 @@ gulp.task('sNcss', function() {
 				.pipe(addSrc(path.join(__dirname, 'css', '**', '*.css')))
 				.pipe(concat('bundle.css'))
 				.pipe(uglify())
-				.pipe(gulp.dest(path.join(__dirname, 'bin')));
+				.pipe(gulp.dest(path.join(__dirname, 'bin', 'min')));
 });
 
 gulp.task('watchsNcss', function(){
