@@ -258,7 +258,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1480342439/geoquest_nnw7up.jpg"/>
               </Slider>
               <ActivityContent title="GeoQuest"/>
               <ActivityReveal title="GeoQuest">
@@ -271,7 +271,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1480342526/petutility_skf1lu.jpg"/>
               </Slider>
               <ActivityContent title="PetUtility"/>
               <ActivityReveal title="PetUtility">
