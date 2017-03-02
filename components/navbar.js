@@ -15,23 +15,23 @@ var Navbar = React.createClass({
                 <img className="brand-logo center circle" src="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477079274/pet/pet_wn9jqn.png"/>
               </a>
               <ul className="left hide-on-med-and-down">
-                <li><a className="font-light logo" href="https://www.facebook.com/petinformatica">PET-Informática</a></li>
+                <li><a className="font-normal logo" href="https://www.facebook.com/petinformatica">PET-Informática</a></li>
               </ul>
               <ul className="right hide-on-med-and-down">
-                <li><a className="font-light" href="#activity-board">Atividades</a></li>
-                <li><a className="font-light" href="#member-board">Petianos</a></li>
-                <li><a className="font-light" href="#faq-board">FAQ</a></li>
-                <li><a className="font-light" href="#footer">Contato</a></li>
+                <li><a className="font-normal" href="#activity-board">Atividades</a></li>
+                <li><a className="font-normal" href="#member-board">Petianos</a></li>
+                <li><a className="font-normal" href="#faq-board">FAQ</a></li>
+                <li><a className="font-normal" href="#footer">Contato</a></li>
               </ul>
               <ul id="nav-mobile" className="side-nav">
-                <li><a className="font-light center" href="#about-board">Sobre</a></li>
-                <li><a className="font-light center" href="#activity-board">Atividades</a></li>
-                <li><a className="font-light center" href="#member-board">Petianos</a></li>
-                <li><a className="font-light center" href="#faq-board">FAQ</a></li>
-                <li><a className="font-light center" href="#footer">Contato</a></li>
+                <li><a className="font-normal center" href="#about-board">Sobre</a></li>
+                <li><a className="font-normal center" href="#activity-board">Atividades</a></li>
+                <li><a className="font-normal center" href="#member-board">Petianos</a></li>
+                <li><a className="font-normal center" href="#faq-board">FAQ</a></li>
+                <li><a className="font-normal center" href="#footer">Contato</a></li>
                 <li>
                     <a className="white-text side_margin" href="https://www.facebook.com/petinformatica">
-                      <div className="center"> <i className="font-light white-text small mdi mdi-facebook-box"></i> </div>
+                      <div className="center"> <i className="font-normal white-text small mdi mdi-facebook-box"></i> </div>
                     </a>
                 </li>
               </ul>

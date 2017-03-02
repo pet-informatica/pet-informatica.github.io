@@ -48,7 +48,7 @@ var FaqBoard = React.createClass({
               <Question title="Como agender uma visita institucional?">
                 <p>
                   Para agendar uma visita, o professor que deseja trazer a turma ao centro precisa mandar um <span className="deep-orange-text">email</span> para
-                  o CIn atravéz de <span className="deep-orange-text">ncsf@cin.ufpe.br</span> ou <span className="deep-orange-text">rvsj2@cin.ufpe.br</span> informando a instituição, o tamanho da turma, o dia e horários desejados.
+                  o CIn através de <span className="deep-orange-text">ncsf@cin.ufpe.br</span> ou <span className="deep-orange-text">rvsj2@cin.ufpe.br</span> informando a instituição, o tamanho da turma, o dia e horários desejados.
                   Nós, em conjunto com o Centro, veremos a possibilidade da vaga e confirmamos a visita.
                 </p>
               </Question>
@@ -57,8 +57,11 @@ var FaqBoard = React.createClass({
                   Se você é aluno: a inscrição para a <span className="deep-orange-text">OPEI</span> é realizada por intermédio de um professor responsável. Caso você queira participar,
                   verifique com a escola se existe um professor responsável pelo cadastro de alunos. Caso não tenha, procure um professor
                   que possa se responsabilizar pelo cadastro da escola através do formulário disponível no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a>. É importante que o regulamento seja seguido por alunos e
-                  professores. Se você é professor ou diretor: Leia o regulamento que está disponível na
-                  aba <span className="deep-orange-text">quero me inscrever</span> no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a> e cadastre a sua escola.
+                  professores.
+                </p>
+                <p>
+                  Se você é professor ou diretor: Leia o regulamento que está disponível na
+                 aba <span className="deep-orange-text">quero me inscrever</span> no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a> e cadastre a sua escola.
                 </p>
               </Question>
               <Question title="Quem pode participar do PET?">
