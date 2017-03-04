@@ -12,7 +12,7 @@ var Navbar = React.createClass({
             <div className="nav-wrapper">
               <a data-activates="nav-mobile" className="button-collapse" href="#"><i className="mdi mdi-menu"></i></a>
               <a href="#">
-                <img className="brand-logo center circle" src="http://res.cloudinary.com/dkbuneg9h/image/upload/v1477079274/pet/pet_wn9jqn.png"/>
+                <img className="brand-logo center circle" src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477079274/pet/pet_wn9jqn.png"/>
               </a>
               <ul className="left hide-on-med-and-down">
                 <li><a className="font-normal logo" href="https://www.facebook.com/petinformatica">PET-Informática</a></li>
