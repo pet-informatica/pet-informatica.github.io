@@ -56,12 +56,12 @@ var FaqBoard = React.createClass({
                 <p>
                   Se você é aluno: a inscrição para a <span className="deep-orange-text">OPEI</span> é realizada por intermédio de um professor responsável. Caso você queira participar,
                   verifique com a escola se existe um professor responsável pelo cadastro de alunos. Caso não tenha, procure um professor
-                  que possa se responsabilizar pelo cadastro da escola através do formulário disponível no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a>. É importante que o regulamento seja seguido por alunos e
+                  que possa se responsabilizar pelo cadastro da escola através do formulário disponível no site da <a href="https://www.cin.ufpe.br/~pet/opei/">OPEI</a>. É importante que o regulamento seja seguido por alunos e
                   professores.
                 </p>
                 <p>
                   Se você é professor ou diretor: Leia o regulamento que está disponível na
-                 aba <span className="deep-orange-text">quero me inscrever</span> no site da <a href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a> e cadastre a sua escola.
+                 aba <span className="deep-orange-text">quero me inscrever</span> no site da <a href="https://www.cin.ufpe.br/~pet/opei/">OPEI</a> e cadastre a sua escola.
                 </p>
               </Question>
               <Question title="Quem pode participar do PET?">

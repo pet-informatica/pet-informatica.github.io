@@ -106,7 +106,7 @@ var Copyright = React.createClass({
     return(
       <div className="footer-copyright">
         <div className="container">
-          Made by PET-Informática. Thanks to <a className="white-text" href="http://materializecss.com/">materializecss</a> and <a className="white-text" href="https://facebook.github.io/react/">react.</a>
+          Made by PET-Informática. Thanks to <a className="white-text" href="https://materializecss.com/">materializecss</a> and <a className="white-text" href="https://facebook.github.io/react/">react.</a>
         </div>
       </div>
     );
