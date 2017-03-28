@@ -1,4 +1,4 @@
-
+﻿
 var MailBox = React.createClass({
   render: function(){
     return(
@@ -75,7 +75,7 @@ var Links = React.createClass({
               </a>
           </li>
           <li>
-              <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/wiki/index.php/P%C3%A1gina_principal">
+              <a className="white-text side_margin" href="http://cin.ufpe.br/~pet/wiki2/">
                 <i className="small mdi mdi-flag"></i> CinWiki
               </a>
           </li>
