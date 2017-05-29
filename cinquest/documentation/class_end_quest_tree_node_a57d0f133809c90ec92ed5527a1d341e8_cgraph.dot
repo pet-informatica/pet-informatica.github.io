@@ -1,0 +1,23 @@
+digraph "EndQuestTreeNode.Execute"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="EndQuestTreeNode.Execute",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="User.GetQuest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_user.html#ac5b20cca62b8ea0f0802bb6ae105e32b",tooltip="Get a quest based on it&#39;s id "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Quest.Finish",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest.html#ae52cd04530fb65afaea6547cba288f8d",tooltip="Tries to set the Quest to done based on currentUserProfile generic items. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="User.AddItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_user.html#af244e875ca30da2d71196177b74ace9c",tooltip="Adds and generic item to players list of items "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="IPreCondition.checkIfMatches",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_i_pre_condition.html#af61f28b9da29cdcd726baec712991470"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AlertBox.OpenWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_alert_box.html#a2539247100ab8c09b10d838eebc50638",tooltip="Opens the window. "];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MusicPlayer.PlayFX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_music_player.html#ae64f83705fb319f7cabb29a7d04312b7",tooltip="Play an effect one shot "];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="GameManager.UpdateQuestUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_manager.html#ab9e592ef7b7cdb78f4c52b07f04260cc",tooltip="Calls for the QuestUI to update itself. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="QuestUI.UpdateQuestsFromUser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#a2f467f83e77058658b8a095cdc159999",tooltip="Get all the current quests from the user instance updated. "];
+}

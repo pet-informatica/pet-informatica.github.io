@@ -1,0 +1,13 @@
+digraph "Move.PlayerBlockingPath"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node15 [label="Move.PlayerBlockingPath",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Move.isMoving",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_move.html#a09338568ed44e5d65ced5a83b23cacda"];
+  Node15 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Move.StopMoving",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_move.html#a51d0445d6a9373deb8438bae9bda1ff6",tooltip="Pauses the movement, but can be started latter on. "];
+  Node15 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Move.StartMoving",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_move.html#a09dc6c5b78d656993068352b16f40a3e",tooltip="Starts or restarts the movement in the current assigned path queue "];
+}

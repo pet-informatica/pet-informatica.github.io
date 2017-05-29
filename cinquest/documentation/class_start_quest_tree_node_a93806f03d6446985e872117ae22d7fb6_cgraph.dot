@@ -1,0 +1,15 @@
+digraph "StartQuestTreeNode.Execute"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="StartQuestTreeNode.Execute",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="User.GetQuest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_user.html#ac5b20cca62b8ea0f0802bb6ae105e32b",tooltip="Get a quest based on it&#39;s id "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Quest.Activate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest.html#aba10441db0a182f936000f8ee2367c51",tooltip="Tries to activate the Quest based on a user profile preconditions. "];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GameManager.UpdateQuestUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_manager.html#ab9e592ef7b7cdb78f4c52b07f04260cc",tooltip="Calls for the QuestUI to update itself. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="QuestUI.UpdateQuestsFromUser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#a2f467f83e77058658b8a095cdc159999",tooltip="Get all the current quests from the user instance updated. "];
+}

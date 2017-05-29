@@ -1,0 +1,15 @@
+digraph "Move.StartMoving"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node21 [label="Move.StartMoving",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Mover.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mover.html#a121ea3cbc402bc4380515deb504b479f"];
+  Node21 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Move.PlayerBlockingPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_move.html#adf823a235d7d55a98db609866daf1204",tooltip="Checks if the player is in the way of the character by analising player position and character direct..."];
+  Node21 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="NPCMover.GoForTargetWaypoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_p_c_mover.html#a49e01056dfd3fda78baffae6fdfb9343",tooltip="Start walking the Move script to a target last waypoint, using it&#39;s previousw waypoints in order to b..."];
+  Node24 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="Quest1NPCFreshman.Broad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest1_n_p_c_freshman.html#a44143e1c3241f7fbcce3747c53d445a4",tooltip="Called by a broadcaster like the dialog tree node. "];
+}

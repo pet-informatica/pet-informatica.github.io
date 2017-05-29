@@ -1,0 +1,15 @@
+digraph "QuestRepositoryXML.deserialize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="QuestRepositoryXML.deserialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="QuestBuilderXML.buildQuest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_builder_x_m_l.html#a6098d83542583b2377b02bc2366666d4",tooltip="Developed by: Peao (rngs); Builds the quest from the Quest XML element. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PreConditionManager.getPre\lConditions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pre_condition_manager.html#a08b69e8ef45cfd39fffbeea2354a8143",tooltip="Gets the pre conditions. "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ItemManager.GetItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_item_manager.html#a8a647ef9905913f5b9526aa2c72844da",tooltip="Returns an item in the repository by identifier "];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="QuestRepositoryXML.addQuest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_repository_x_m_l.html#aba9f53780cad591032c01e017b87cb8e",tooltip="Adds the quest. "];
+}

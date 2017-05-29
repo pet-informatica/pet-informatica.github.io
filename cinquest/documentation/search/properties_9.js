@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['questcollectionpath',['questCollectionPath',['../class_game_configuration.html#a5bdfb0a193d95a998a0e3e0370b394f8',1,'GameConfiguration']]],
-  ['questdonemessage',['QuestDoneMessage',['../class_quest.html#a537e7b4f0937a414fc299710aec5f2fc',1,'Quest']]],
-  ['questid',['QuestID',['../class_end_quest_tree_node.html#ad7465c24ad5e919788b55f6bad067bfb',1,'EndQuestTreeNode.QuestID()'],['../class_start_quest_tree_node.html#a8153d8fad22fd8b9935da89354abb9e4',1,'StartQuestTreeNode.QuestID()']]],
-  ['questmanager',['questManager',['../class_game_manager.html#ace3001dbf38fde8f90c9fc76499739a3',1,'GameManager']]],
-  ['quests',['quests',['../interface_i_quest_repository.html#aa1124fb3ac95be3cfc102f81ea7dddcb',1,'IQuestRepository.quests()'],['../class_quest_repository_x_m_l.html#a20c4fb26b98a8716710f0a7343f9be97',1,'QuestRepositoryXML.quests()'],['../class_user.html#a769257571b6337a9bd835d95f8c59002',1,'User.Quests()']]]
+  ['playername',['PlayerName',['../class_game_data.html#a9f6e2bc18df03d14dd670cef9266bed8',1,'GameData']]],
+  ['preconditioncollectionpath',['preConditionCollectionPath',['../class_game_configuration.html#ac121d88befd28d2778a1e899ab3ca1ad',1,'GameConfiguration']]],
+  ['preconditionids',['PreconditionIds',['../class_dialog_tree_node.html#af93fad27de9402af365ee1f61b359c7a',1,'DialogTreeNode']]],
+  ['preconditionmanager',['preConditionManager',['../class_game_manager.html#a01f43e1219e2b02c54d6ee65da994d0b',1,'GameManager']]],
+  ['preconditions',['preConditions',['../interface_i_pre_condition_repository.html#a5274f10b2279130fb021eed566f32dd6',1,'IPreConditionRepository.preConditions()'],['../class_pre_condition_repository_x_m_l.html#ac6e5f5611a7af217078725b5b1e76ee1',1,'PreConditionRepositoryXML.preConditions()']]],
+  ['preconditionstodone',['PreconditionsToDone',['../class_quest.html#aed1c1c462b15f4359859b6fd30b1897d',1,'Quest']]],
+  ['preconditionstolock',['PreconditionsToLock',['../class_quest.html#a0508727b54f53560e6a9a3ccefb9ac13',1,'Quest']]],
+  ['preconditionstounlock',['PreconditionsToUnlock',['../class_quest.html#a784acc3bfd384bd527c4e142113b7257',1,'Quest']]],
+  ['priority',['Priority',['../class_dialog_tree.html#a0187ed652539617caf5d69c9d96a4279',1,'DialogTree']]]
 ];

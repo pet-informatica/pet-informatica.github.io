@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['scenechanger',['SceneChanger',['../class_scene_changer.html',1,'']]],
-  ['scenenamer',['SceneNamer',['../class_scene_namer.html',1,'']]],
-  ['screenfader',['ScreenFader',['../class_screen_fader.html',1,'']]],
-  ['speaker',['Speaker',['../class_speaker.html',1,'']]],
-  ['startgame',['StartGame',['../class_start_game.html',1,'']]],
-  ['startquesttreenode',['StartQuestTreeNode',['../class_start_quest_tree_node.html',1,'']]]
+  ['repositoriesfactory',['RepositoriesFactory',['../class_repositories_factory.html',1,'']]],
+  ['repositorybasefactory',['RepositoryBaseFactory',['../class_repository_base_factory.html',1,'']]],
+  ['repositoryxmlfactory',['RepositoryXMLFactory',['../class_repository_x_m_l_factory.html',1,'']]]
 ];

@@ -1,24 +1,21 @@
 var NAVTREE =
 [
-  [ "CInQuest Doc!", "index.html", [
-    [ "CinQuest", "md_README.html", null ],
+  [ "Cinquest", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", "globals_vars" ],
+        [ "All", "globals.html", null ],
         [ "Enumerations", "globals_enum.html", null ]
       ] ]
     ] ]
@@ -27,13 +24,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"__e__database__storage__type__8cs_8js.html",
-"class__character__chooser__manager_8js.html",
-"class_car_spawner.html#aa2d6b00099ae901aa80e7d1d75eb9a1a",
-"class_move.html#a8835a51b34bc33a9df40bb145ac13c7e",
-"classes.html",
-"functions__1_8js_source.html",
-"navtree_8js.html#a646cb31d83b39aafec92e0e1d123563a"
+"_alert_box_8cs.html",
+"class_car.html#ab0f6775b36eec9a5d4589b4afb13b085",
+"class_mover_spawner.html#aa8cfdf0adb046da8b09e8a243956e385",
+"interface_i_generic_item_repository.html#a6ac5d0adc321036db7a69f0c3904641e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

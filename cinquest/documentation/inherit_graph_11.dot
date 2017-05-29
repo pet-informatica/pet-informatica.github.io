@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="MapRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_map_repository.html",tooltip="Contains a dictionary of MapObjects for serving as a data base for the global map Developed by: Higor..."];
+  Node0 [label="MapModel.MapObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_map_model_1_1_map_object.html",tooltip="A dummy class to encapsulate the info needed to insert maps in the dictionary. We need it for being a..."];
 }

@@ -1,6 +1,9 @@
 var dir_ac475aab309ce8f05eb1b774a3aa00df =
 [
     [ "Tree", "dir_870c9d14253d0ffc7af942d4e51697e8.html", "dir_870c9d14253d0ffc7af942d4e51697e8" ],
+    [ "AutoSpeaker.cs", "_auto_speaker_8cs.html", [
+      [ "AutoSpeaker", "class_auto_speaker.html", "class_auto_speaker" ]
+    ] ],
     [ "DialogManager.cs", "_dialog_manager_8cs.html", [
       [ "DialogManager", "class_dialog_manager.html", "class_dialog_manager" ]
     ] ],

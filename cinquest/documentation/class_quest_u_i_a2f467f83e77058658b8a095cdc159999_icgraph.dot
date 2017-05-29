@@ -1,0 +1,13 @@
+digraph "QuestUI.UpdateQuestsFromUser"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node19 [label="QuestUI.UpdateQuestsFromUser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="GameManager.UpdateQuestUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_manager.html#ab9e592ef7b7cdb78f4c52b07f04260cc",tooltip="Calls for the QuestUI to update itself. "];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="EndQuestTreeNode.Execute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_end_quest_tree_node.html#a57d0f133809c90ec92ed5527a1d341e8",tooltip="When the node is reached, gives a list of rewards for the player "];
+  Node20 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="StartQuestTreeNode.Execute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_start_quest_tree_node.html#a93806f03d6446985e872117ae22d7fb6",tooltip="When the node is reached, gives a list of rewards for the player "];
+}

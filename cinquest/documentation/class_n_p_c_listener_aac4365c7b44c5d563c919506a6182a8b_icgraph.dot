@@ -1,0 +1,11 @@
+digraph "NPCListener.Disable"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NPCListener.Disable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NPCListener.DisableInstantly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_p_c_listener.html#ac27d09e8b7dd5724139a799ff1138957",tooltip="Adds a npc group a name in the list of toDisable and disables it instantly "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Quest1NPCSecGrad.Broad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest1_n_p_c_sec_grad.html#ac5816c76363bf7f6ea344f9335d8d280",tooltip="Called by a broadcaster like the dialog tree node. "];
+}

@@ -3,7 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="IGenericItemRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_i_generic_item_repository.html",tooltip="Developed by: Higor (hcmb); Generic definition of a Item Repository. "];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="GenericItemRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_generic_item_repository.html",tooltip="Developed by: Higor (hcmb) Item Repository "];
+  Node0 [label="GameData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_data.html",tooltip="Information on the player name "];
 }

@@ -1,0 +1,13 @@
+digraph "StartGame.startGame"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="StartGame.startGame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="GameManager.DeleteSavedData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_manager.html#a89adf004366cb1cf952400acfee134e0",tooltip="Deletes the saved data. "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DataAccess.DeleteSavedData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_access.html#a8b0a4bc3cc70d0fecc6179cdca943576",tooltip="Deletes the game saved at GameData.dat file. "];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SceneChanger.Change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_scene_changer.html#a871092b7ca252d24099b26fe13b0d916",tooltip="Checks if the changing scene isn&#39;t locked neither locally nor globally and changes the scene if not ..."];
+}

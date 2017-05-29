@@ -9,13 +9,13 @@ var dir_45fdd7dae16d247735369e63ecaf4b7e =
     [ "CarSpawner.cs", "_car_spawner_8cs.html", [
       [ "CarSpawner", "class_car_spawner.html", "class_car_spawner" ]
     ] ],
+    [ "CarWaypoint.cs", "_car_waypoint_8cs.html", [
+      [ "CarWaypoint", "class_car_waypoint.html", "class_car_waypoint" ]
+    ] ],
     [ "Mover.cs", "_mover_8cs.html", [
       [ "Mover", "class_mover.html", "class_mover" ]
     ] ],
     [ "MoverSpawner.cs", "_mover_spawner_8cs.html", [
       [ "MoverSpawner", "class_mover_spawner.html", "class_mover_spawner" ]
-    ] ],
-    [ "Waypoint.cs", "_waypoint_8cs.html", [
-      [ "Waypoint", "class_waypoint.html", "class_waypoint" ]
     ] ]
 ];

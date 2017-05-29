@@ -6,7 +6,7 @@ var dir_6d44c13a5cbf51b5aa44a64950bda386 =
       [ "Quest", "class_quest.html", "class_quest" ]
     ] ],
     [ "QuestBuilderXML.cs", "_quest_builder_x_m_l_8cs.html", [
-      [ "QuestBuilderXML", "class_quest_builder_x_m_l.html", "class_quest_builder_x_m_l" ]
+      [ "QuestBuilderXML", "class_quest_builder_x_m_l.html", null ]
     ] ],
     [ "QuestManager.cs", "_quest_manager_8cs.html", [
       [ "QuestManager", "class_quest_manager.html", "class_quest_manager" ]

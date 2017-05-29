@@ -3,7 +3,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="IPreCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_i_pre_condition.html",tooltip="Developed by: Peao (rngs); Gerenic definiton of a PreCondition; "];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="GenericPreCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_generic_pre_condition.html",tooltip="Developed by: Peao (rngs); Generic pre condition. "];
+  Node0 [label="IGenericItemRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_i_generic_item_repository.html",tooltip="Developed by: Higor (hcmb); Generic definition of a Item Repository. "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="GenericItemRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_generic_item_repository.html",tooltip="Developed by: Higor (hcmb) Item Repository "];
 }

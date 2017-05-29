@@ -1,0 +1,9 @@
+digraph "Quest1NPCSecGrad.Broad"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Quest1NPCSecGrad.Broad",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="NPCListener.Disable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_p_c_listener.html#aac4365c7b44c5d563c919506a6182a8b",tooltip="Adds a npc group a name in the list of toDisable group for disabling latter "];
+}

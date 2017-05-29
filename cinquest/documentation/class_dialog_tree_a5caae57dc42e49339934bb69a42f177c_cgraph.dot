@@ -1,0 +1,15 @@
+digraph "DialogTree.GoToChild"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="DialogTree.GoToChild",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DialogTreeNode.FetchAvaiable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dialog_tree_node.html#ad6d251b6091ec93f1cb1d0035f12d390",tooltip="Execute it when needed to traverse down the tree and go for a child node. Additional logic can be add..."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="DialogTreeNode.IsAvaiable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dialog_tree_node.html#a4896939b9b1b29c3b38d7a7fa19598a2",tooltip="Check if all the pre conditions are satisfied. "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PreConditionManager.getPre\lCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pre_condition_manager.html#a036fbcf1a5ffea8fcba11bcb0c851a2f",tooltip="Returns an preCondition in the repository by identifier "];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="IPreCondition.checkIfMatches",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_i_pre_condition.html#af61f28b9da29cdcd726baec712991470"];
+}

@@ -1,0 +1,11 @@
+digraph "IPreConditionRepository.deserialize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="IPreConditionRepository.deserialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PreConditionManager.load\lPreConditionsFromFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pre_condition_manager.html#a40ad0e766beab79dc66e60542a140498",tooltip="Loads the preconditions from xml file. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GameManager.AutoResize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_manager.html#a4f96a39e9bce46cd827713594478859a",tooltip="Developed by: Lucas (lss5); Adjusts width and height of a GUI for it stays in proportion with the use..."];
+}

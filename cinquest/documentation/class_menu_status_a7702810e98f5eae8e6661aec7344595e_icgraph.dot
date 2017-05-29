@@ -1,0 +1,17 @@
+digraph "MenuStatus.open"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node10 [label="MenuStatus.open",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PauseMenu.openFeedback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pause_menu.html#a6e9dcff080001afd31f23819ca6acd4e",tooltip="Opens the feedback menu "];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="InventoryUI.OpenWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_inventory_u_i.html#ac734089244a5ff9b2050927c41c4857d",tooltip="Open the Inventory Canvas, setting it&#39;s gameobject to active "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="InventoryUI.CloseWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_inventory_u_i.html#a179bdcdc576332837b52095172de68b0",tooltip="Closes the Inventory Canvas, setting it&#39;s gameobject to active "];
+  Node10 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="QuestUI.OpenWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#ac5daf6dbde8c58a00f2f47f1a6177a13",tooltip="Open the Quest Manager Canvas, setting it&#39;s gameobject to active "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="QuestUI.CloseInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#aa884d62a1f8f5afdb18a6ede0d27c45a",tooltip="Close only the QuestInfo Box "];
+}

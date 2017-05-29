@@ -1,0 +1,15 @@
+digraph "CarWaypoint"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="CarWaypoint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Waypoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_waypoint.html",tooltip="Can be used to create a path, using the previous waypoint to build a chain. Scripts like Move or NPCM..."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MonoBehaviour",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" carSpawner" ,fontname="Helvetica"];
+  Node6 [label="CarSpawner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_car_spawner.html",tooltip="This scripts randomly generates cars and assing a path for it to move on. The newly generated car can..."];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MoverSpawner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mover_spawner.html",tooltip="This classe is reponsible for spawning objects with the Move script attached to it. It spawns a mover, and them make it moves for a targetWaypoint, point by point according to the path that is made by it&#39;s previous waypoints. *See Waypoint class for more info. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

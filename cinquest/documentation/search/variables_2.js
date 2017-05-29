@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['b',['b',['../jquery_8js.html#aa4026ad5544b958e54ce5e106fa1c805',1,'jquery.js']]],
-  ['backtoorigin',['backToOrigin',['../class_look_at_character.html#af60b419c63dd03cf348e8f30f8288564',1,'LookAtCharacter']]],
-  ['bb',['bb',['../jquery_8js.html#a1d6558865876e1c8cca029fce41a4bdb',1,'jquery.js']]],
-  ['box',['box',['../class_dialog_manager.html#a668a5de62a09a16e4480e4db00b1532a',1,'DialogManager']]],
-  ['bq',['bq',['../jquery_8js.html#af6ee77c71b2c89bdb365145ac5ad1219',1,'jquery.js']]],
-  ['breaktime',['breakTime',['../class_car_sensor.html#a9041c53c97d7243408206191855c9d40',1,'CarSensor']]],
-  ['bs',['bs',['../jquery_8js.html#ae77642f8ef73fb9c20c2a737d956acda',1,'jquery.js']]],
-  ['buttons',['buttons',['../class_quest_u_i.html#aac2f9aec2cf606acfea46da1f2efe8bc',1,'QuestUI']]]
+  ['canmove',['canMove',['../class_move.html#a51b5d6e62490a22e9c249ca9bea4289e',1,'Move']]],
+  ['carscanpark',['carsCanPark',['../class_car_spawner.html#affdbb68ca7d2d4ef0abd450baf5d19f5',1,'CarSpawner']]],
+  ['carsparkpercentage',['carsParkPercentage',['../class_car_spawner.html#afa4d8a38b2cd992ceb790168e6fb3ea4',1,'CarSpawner']]],
+  ['carspawner',['carSpawner',['../class_car_waypoint.html#ad7acab5421ef50e9491623c07c71f2b4',1,'CarWaypoint']]],
+  ['carspeed',['carSpeed',['../class_car_spawner.html#a11931613046dbb41acf0471808f3c4c7',1,'CarSpawner']]],
+  ['carunparktimeinseconds',['carUnparkTimeInSeconds',['../class_car_spawner.html#a9437f856bd389151ef2fef28991c80be',1,'CarSpawner']]],
+  ['changefx',['changeFX',['../class_scene_changer.html#af827cd488dacee7423a2a26cedc7d2ed',1,'SceneChanger']]],
+  ['changetime',['changeTime',['../class_scene_changer.html#aec5ee1cf271e859a3b77e49522ab0630',1,'SceneChanger']]],
+  ['childrenobjects',['childrenObjects',['../class_game_manager.html#a212e7251f718879fc8f033f37a6db4f4',1,'GameManager']]],
+  ['clickedfx',['clickedFX',['../class_button_sound.html#aeacb0d9d43013f7dfb5f435f2f920a7c',1,'ButtonSound']]],
+  ['closebtn',['closeBtn',['../class_alert_box.html#ab5bef4a19e3dbb6f87fc920207fd325f',1,'AlertBox']]],
+  ['closering',['closeRing',['../class_alert_box.html#a0964cdbf5518b8b663b92b5aac193ed9',1,'AlertBox']]],
+  ['continuebtn',['continueBtn',['../class_tutorial.html#ae49dcac7213520ad09188064ff4edeed',1,'Tutorial']]],
+  ['controlcanvas',['controlCanvas',['../class_pause_menu.html#afd1b5df7e31b263a083569f7bfe2dcd3',1,'PauseMenu']]],
+  ['current',['current',['../class_character_slot.html#a9cb836925c5f96589dec4c9db0b0b8b1',1,'CharacterSlot']]]
 ];

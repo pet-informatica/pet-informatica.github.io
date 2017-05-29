@@ -6,9 +6,13 @@ var dir_a516f827b782a1743607cdc3877f3557 =
     [ "CameraUnfollower.cs", "_camera_unfollower_8cs.html", [
       [ "CameraUnfollower", "class_camera_unfollower.html", "class_camera_unfollower" ]
     ] ],
+    [ "Feedback.cs", "_feedback_8cs.html", [
+      [ "Feedback", "class_feedback.html", "class_feedback" ]
+    ] ],
     [ "GameManager.cs", "_game_manager_8cs.html", [
       [ "GameManager", "class_game_manager.html", "class_game_manager" ]
     ] ],
+    [ "GameStateMachine.cs", "_game_state_machine_8cs.html", "_game_state_machine_8cs" ],
     [ "Loader.cs", "_loader_8cs.html", [
       [ "Loader", "class_loader.html", "class_loader" ]
     ] ],
@@ -16,7 +20,7 @@ var dir_a516f827b782a1743607cdc3877f3557 =
       [ "PauseMenu", "class_pause_menu.html", "class_pause_menu" ]
     ] ],
     [ "PlayerSpawn.cs", "_player_spawn_8cs.html", [
-      [ "PlayerSpawn", "class_player_spawn.html", "class_player_spawn" ]
+      [ "PlayerSpawn", "class_player_spawn.html", null ]
     ] ],
     [ "SceneChanger.cs", "_scene_changer_8cs.html", [
       [ "SceneChanger", "class_scene_changer.html", "class_scene_changer" ]

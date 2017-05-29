@@ -1,0 +1,17 @@
+digraph "QuestUI.CloseInfo"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="QuestUI.CloseInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MenuStatus.openProblem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_menu_status.html#a5329fd3ccb9b9b02b8ea069b28a21712",tooltip="Check the rules over the open menu problem. "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="QuestUI.CloseWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#a08effbe2655a4c039fad37b345af7a28",tooltip="Close the Quest Manager Canvas, setting it&#39;s gameobject to inactive "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MenuStatus.close",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_menu_status.html#a4955171a81f002548daea605eef2ddd0",tooltip="Close the specified menu. "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="QuestUI.OpenWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#ac5daf6dbde8c58a00f2f47f1a6177a13",tooltip="Open the Quest Manager Canvas, setting it&#39;s gameobject to active "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MenuStatus.open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_menu_status.html#a7702810e98f5eae8e6661aec7344595e",tooltip="Open the specified menu. "];
+}

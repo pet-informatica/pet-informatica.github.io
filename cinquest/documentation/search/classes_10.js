@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waypoint',['Waypoint',['../class_waypoint.html',1,'']]]
+  ['user',['User',['../class_user.html',1,'']]]
 ];
