@@ -190,7 +190,7 @@ var ActivityBoard = React.createClass({
                   atividades relacionadas ao centro de informática. Você é bem vindo para contribuir com nossa Wiki! Se achar que existem
                   informações desatualizadas, nos comunique!
                   <br/><br/>
-                  <a className="center deep-orange" href="http://cin.ufpe.br/~pet/wiki2/" className="activator">
+                  <a className="center deep-orange" href="http://cinwiki.azurewebsites.net" className="activator">
                     <i className="mdi mdi-flag"></i>    CinWiki
                   </a>
                 </p>
