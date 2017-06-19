@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CinQuest - Design dos Sistemas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>CinQuest</strong>, design dos sistemas</a>
+									<ul class="icons">
+										<li><a href="https://github.com/pet-informatica/CinQuest" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://pet-informatica.github.io/cinquest" class="icon fa-home"><span class="label">Home</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section>
+										<header>
+											<h1>Sistema de Quests <i class="icon fa-book"></i></h1>
+										</header>
+										<p>
+											Esse documento detalha a criação de novas quests, e como elas são inseridas e exibidas dentro do
+											jogo. O sistema de quests envolve, dentre outros, os componentes abaixo:
+										</p>
+										<ul>
+											<li><a href="#preconditions">PreConditions</a></li>
+											<li><a href="#rewards">Rewards</a></li>
+											<li><a href="#questcs">Quest.cs</a></li>
+											<li><a href="#xmlcollections">Coleções XML</a></li>
+											<li><a href="#managers">Gerenciadores</a></li>
+											<li><a href="#ui">UI</a></li>
+										</ul>
+
+										<!-- precondition section -->
+										<h2 id="preconditions">PreConditions</h2>
+										<p>
+											A implementação das <a href="#">quests</a>, assim como o <a href="dialog.html#">sistema de diálogos</a>,
+											gira em torno de PreConditions. Uma PreCondition é um <a href="inventory.html#genericitem">GenericItem</a>
+											que pode ser adicionado ao <a href="inventory.html#">Inventory</a> do <a href="user.html#">User</a>.
+											Muitas quests, assim como opções de fala e interação com NPCs, só podem ser desbloqueadas após o usuário
+											ter feito determinadas ações dentro do jogo. Por exemplo: se para iniciar a quest X, é necessário
+											primeiro o usuário ter conversado com o npc Y, então o script de desbloqueio de quests vai checar
+											se o Inventory do usuário contém o GenericItem que representa a PreCondition de descrição “ter falado
+											com o npc y”. Caso sim, a quest será desbloqueada. Essa PreCondition pode ser obtida como um <a href="#rewards">Reward</a>
+											após o usuário finalizar um diálogo com o npc Y. A <a href="#xmlcollections">criação</a> de uma nova
+											PreCondition deve ser feita em XML.
+										</p>
+
+										<!-- reward section -->
+										<h2 id="rewards">Rewards</h2>
+										<p>
+											Ao concluir cada <a href="#"/>quest</a>, o jogador é recompensado com uma lista de Rewards.
+											Cada Reward é simplesmente um <a href="inventory.html#genericitem">GenericItem</a> que é
+											adicionado ao <a href="inventory.html#">Inventory</a> do <a href="user.html#">User</a>,
+											podendo ser tanto um item real, como o crachá ou um livro, quanto simplesmente uma PreCondition
+											que desbloqueia novos <a href="dialog.html#">diálogos</a>, interações ou novas quests.
+										</p>
+
+										<!-- questcs section -->
+										<h2 id="questcs">Quest.cs</h2>
+										<p>
+											Uma <a href="#">Quest</a> é um objeto que encapsula todas as informações descritivas
+											relacionadas à mesma:
+										</p>
+										<pre><code>
+public class Quest{
+  int identifier;
+  string name;
+  string description;
+  string questDoneMessage;
+  bool unlocked;
+  bool done;
+  List<IPreCondition> preconditionsToUnlock;
+  List<IPreCondition> preconditionsToLock;
+  List<IPreCondition> preconditionsToDone;
+  List<GenericItem> rewards;
+
+  public Quest() { … }
+
+  public bool Activate(User currentUserProfile) { … }
+  public bool Finish(User currentUserProfile) { … }
+}
+									</code></pre>
+									<p>
+										Os campos de <code>name</code>, <code>description</code> e <code>questDoneMessage</code> são
+										utilizados para exibição na <a href="#ui">User Interface</a>.
+									</p>
+									<p>
+										As listas de <a href="#preconditions">PreConditions</a> são divididas em três categorias:
+									</p>
+									<ul>
+										<li><code>ToUnlock</code><br/> PreConditions necessárias para que a quest seja desbloqueada</li>
+										<li><code>ToLock</code><br/>PreConditions que, caso o jogador possua, bloqueia a quest. Por exemplo: o jogador deve escolher entre fazer a quest X ou quest Y. Caso ele obtenha a precondição de conclusão da quest X, a quest Y será bloqueada.</li>
+										<li><code>ToDone</code><br/>PreConditions que o jogador deve obter antes que possa marcar uma quest como concluída e obter seus <a href="#rewards">Rewards</a>.</li>
+									</ul>
+									<p>
+										Os métodos <code>Activate()</code> e <code>Finish()</code> são responsáveis por iniciar e finalizar a quest. Ambos
+										recebem como parâmetro uma instância de <a href="user.html#">User</a>, para acessar o seu <a href="inventory.html#">Inventory</a>
+										e checar se ele possue as PreConditions necessárias para tal. O método <code>Activate()</code> desbloqueia a quest,
+										e o método <code>Finish()</code> marca a quest como concluída e adiciona a sua lista de rewards ao Inventory da
+										instância do User.
+									</p>
+
+									<!-- collections xml section -->
+									<h2 id="xmlcollections">PreConditionCollection.xml</h2>
+									<p>
+										Todas as <a href="preconditions">PreConditions</a> existentes no jogo devem ser declaradas no formato XML,
+										no arquivo <code>Resources > PreConditonCollection.xml</code>. Caso uma nova PreCondition não seja
+										declarada na coleção, ela não existirá como um objeto concreto dentro do jogo, e não poderá ser utilizada
+										pelas <a href="#">Quests</a> e <a href="dialog.html#">Diálogos</a> para criar interação.
+									</p>
+									<pre><code>
+&lt;PreConditionCollection&gt;
+  &lt;PreCondition identifier="1" name="q1-npc1" itemIdentifier="1"/&gt;
+  &lt;PreCondition identifier="2" name="enter-cin" itemIdentifier="2"/&gt;
+  &lt;PreCondition identifier="3" name="talk-npc-x" itemIdentifier="3"/&gt;
+  &lt;PreCondition identifier="4" name="got-login" itemIdentifier="4"/&gt;
+&lt;/PreConditionCollection&gt;
+									</code></pre>
+									<p>
+										A classe <a href="#managers">PreConditionManager</a> é responsável por ler este arquivo XML e
+										converter cada PreCondition em uma instância de objeto.
+									</p>
+
+									<!-- collections xml section -->
+									<h2>QuestCollection.xml</h2>
+									<p>
+										Todas as <a href="#">Quests</a> existentes no jogo devem ser declaradas no formato XML, no
+										arquivo <code>Resources > QuestCollection.xml</code>. Caso uma nova Quest não seja declarada
+										na coleção, ela não existirá como um objeto concreto dentro do jogo, e não poderá ser inicializada.
+									</p>
+									<pre><code>
+&lt;QuestCollection&gt;
+  &lt;Quest&gt;
+    &lt;Identifier&gt;1&lt;/Identifier&gt;
+      &lt;Name&gt;Temos que pegar... O Login!&lt;/Name&gt;
+      &lt;Description&gt;Todo aluno do CIn precisa...&lt;/Description&gt;
+      &lt;Unlocked&gt;false&lt;/Unlocked&gt;
+      &lt;PreConditionsToUnlock&gt;
+        &lt;PreCondition identifier="4"/&gt;
+      &lt;/PreConditionsToUnlock&gt;
+      &lt;PreConditionsToLock&gt;
+      &lt;/PreConditionsToLock&gt;
+      &lt;PreConditionsToDone&gt;
+        &lt;PreCondition identifier="6"/&gt;
+      &lt;/PreConditionsToDone&gt;
+      &lt;Rewards&gt;
+        &lt;Reward identifier="8"/&gt;
+      &lt;/Rewards&gt;
+      &lt;QuestDoneMessage&gt;Parabéns!...&lt;/QuestDoneMessage&gt;
+    &lt;/Quest&gt;
+&lt;/QuestCollection&gt;
+									</code></pre>
+									<p>
+										A classe <a href="#managers2">QuestManager</a> é responsável por ler este arquivo XML e
+										converter cada PreCondition em uma instância de objeto.
+									</p>
+
+								<!-- managers section -->
+								<h2 id="managers">PreConditionManager.cs</h2>
+								<p>
+									O gerenciador de <a href="preconditions">PreConditions</a> possui um repositório que armazena todas as PreConditions existentes no jogo. Ele utiliza a classe <code>PreConditionBuilderXML.cs</code> para deserializar a <a href="xmlcollections">coleção</a> de PreConditions e adicionar instâncias de PreCondições em seu repositório. Este processo acontece no início do jogo, no método <code>Start()</code> da classe <code>GameManager.cs</code>
+								</p>
+								<pre><code>
+private void startManagers(){
+  …
+
+  this.preConditionManager = new PreConditionManager(
+    RepositoriesFactory.createPreConditionRepository(
+      this.gameConfiguration.databaseType
+    )
+  );
+
+  this.preConditionManager.loadPreConditionsFromFile(
+    this.gameConfiguration.preConditionCollectionPath
+  );
+
+  …
+}
+								</code></pre>
+
+								<h2 id="managers2">QuestManager.cs</h2>
+								<p>
+									O gerenciador de <a href="#">Quests</a> possui um repositório que armazena todas as Quests existentes no jogo. Ele utiliza a classe <code>QuestBuilderXML.cs</code> para deserializar a <a href="xmlcollections">coleção</a> de Quests e adicionar instâncias de Quests em seu repositório. Este processo acontece no início do jogo, no método <code>Start()</code> da classe <code>GameManager.cs</code>
+								</p>
+								<pre><code>
+private void startManagers(){
+  …
+
+  this.questManager = new QuestManager (
+    RepositoriesFactory.createQuestRepository(
+      this.gameConfiguration.databaseType
+    )
+  );
+
+  this.questManager.loadQuestsFromFile (
+   this.gameConfiguration.questCollectionPath
+  );
+
+  …
+}
+
+								</code></pre>
+
+								<!-- quest UI section -->
+								<h2 id="ui">QuestUI.cs</h2>
+								<p>
+									Possue uma lista de <a href="#">Quests</a>, obtida de uma instância de <a href="user.html#">User</a>,
+									cujas informações de nome, descrição, e flag de desbloqueio são utilizadas para construir uma janela de
+									quests e exibir detalhes sobre o andamento das quests para o jogador. A atualização do estado das quests
+									é feita através do método <code>UpdateQuestsFromUser()</code>. Este método se conecta à instância estática
+									da classe User para obter a sua lista de quests, e atualiza as informações da UI de acordo.
+								</p>
+								</section>
+						</div>
+					</div>
+
+				<!-- SideBar -->
+					<div id="sidebar">
+						<div class="inner">
+
+
+							<!-- System Design section -->
+								<nav id="menu">
+									<h1><a href="index.html#" class="icon fa-home"></a></h1>
+									<header class="major">
+										<h2>Design dos Sistemas</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">Quest</span>
+											<ul>
+												<li><a href="#preconditions">PreConditions</a></li>
+												<li><a href="#rewards">Rewards</a></li>
+												<li><a href="#questcs">Quest.cs</a></li>
+												<li><a href="#xmlcollections">Coleções XML</a></li>
+												<li><a href="#managers">Gerenciadores</a></li>
+												<li><a href="#ui">UI</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Diálogo</span>
+											<ul>
+												<li><a href="dialog.html#tree">Dialog Tree</a></li>
+												<li><a href="dialog.html#treenode">Dialog Tree Node</a></li>
+												<li><a href="dialog.html#questnodes">Quest Nodes</a></li>
+												<li><a href="dialog.html#speaker">Speaker</a></li>
+												<li><a href="dialog.html#interativespeaker">Interative Speaker</a></li>
+												<li><a href="dialog.html#autospeaker">Auto Speaker</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Inventário</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Music Player</a></li>
+									</ul>
+
+									<br/>
+									<header class="major">
+										<h2>Tutoriais</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">Quest</span>
+											<ul>
+												<li><a href="#">PreConditions</a></li>
+												<li><a href="#">Rewards</a></li>
+												<li><a href="#">Quest.cs</a></li>
+												<li><a href="#">Coleções XML</a></li>
+												<li><a href="#">Gerenciadores</a></li>
+												<li><a href="#">UI</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Diálogo</span>
+											<ul>
+												<li><a href="#">Dialog Tree</a></li>
+												<li><a href="#">Dialog Tree Node</a></li>
+												<li><a href="#">Quest Nodes</a></li>
+												<li><a href="#">Speaker</a></li>
+												<li><a href="#">Interative Speaker</a></li>
+												<li><a href="#">Auto Speaker</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Inventário</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contate-nos</h2>
+									</header>
+									<p>O CinQuest foi desenvolvido pelo PET-Informática. Qualquer dúvida, pode falar com a gente!</p>
+									<ul class="contact">
+										<li class="fa-envelope-o">pet-informatica@cin.ufpe.br</li>
+										<li class="fa-home"><a href="https://pet-informatica.github.io">Website</a></li>
+										<li class="fa-facebook"><a href="https://www.facebook.com/petinformatica/">Facebook</a></li>
+									</ul>
+								</section>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
