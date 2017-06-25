@@ -20,91 +20,39 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>CinQuest</strong>, página inicial</a>
+									<a href="index.html" class="logo"><strong>CinQuest</strong>, design dos sistemas, sons</a>
 									<ul class="icons">
 										<li><a href="https://github.com/pet-informatica/CinQuest" class="icon fa-github"><span class="label">GitHub</span></a></li>
 										<li><a href="https://pet-informatica.github.io/cinquest" class="icon fa-home"><span class="label">Home</span></a></li>
 									</ul>
 								</header>
 
+							<!-- Banner -->
 								<section>
-									<header class="major">
-										<h2>Designs dos Sistemas</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<h1><i class="icon fa-book"></i></h1>
-											<h3>Sistema de Quests</h3>
-											<p>Esse documento detalha a criação de novas quests, e como elas são inseridas e exibidas dentro do jogo. </p>
-											<ul class="actions">
-												<li><a href="quest.html#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-
-								<section>
-									<header class="major">
-										<h2>Tutoriais</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
+										<header>
+											<h1>Sistema de Sons <i class="icon fa-book"></i></h1>
+										</header>
+										<h2>MusicPlayer.cs</h2>
+										<p>
+											Todo o gerenciamento de áudio do jogo é realizado pela classe MusicPlayer. Ela possue a capacidade de tocar faixas de músicas em loop, trocar músicas com um efeito de fade in/out e tocar efeitos sonoros de curta duração.
+										</p>
+										<pre><code>
+public void ChangeSong(string scene, float time);
+public void PlayFX(string name);
+										</code></pre>
+										<p>
+											Cada música e cada efeito sonoro que será utilizado em algum momento durante o jogo deve ser declarado no Inspector do GameObject onde o script está inserido. Eles então poderão ser acessados através de uma tabela hash utilizando uma string como identificação.
+										</p>
+										<pre><code>
+Dictionary<string, AudioClip> sceneSong;
+Dictionary<string, AudioClip> soundFX;
+										</code></pre>
+										<p>
+											Para tocar um som, então, basta executar os métodos da classe MusicPlayer estáticamente de qualquer script do código.
+										</p>
+										<pre><code>
+MusicPlayer.Instance.PlayFX (“BOOM”);
+										</code></pre>
 								</section>
 						</div>
 					</div>
@@ -116,6 +64,7 @@
 
 							<!-- System Design section -->
 								<nav id="menu">
+
 									<header class="major">
 										<h2>Design dos Sistemas</h2>
 									</header>
