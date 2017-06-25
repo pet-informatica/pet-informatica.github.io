@@ -20,91 +20,123 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>CinQuest</strong>, página inicial</a>
+									<a href="index.html" class="logo"><strong>CinQuest</strong>, design dos sistemas, inventário</a>
 									<ul class="icons">
 										<li><a href="https://github.com/pet-informatica/CinQuest" class="icon fa-github"><span class="label">GitHub</span></a></li>
 										<li><a href="https://pet-informatica.github.io/cinquest" class="icon fa-home"><span class="label">Home</span></a></li>
 									</ul>
 								</header>
 
+							<!-- Banner -->
 								<section>
-									<header class="major">
-										<h2>Designs dos Sistemas</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<h1><i class="icon fa-book"></i></h1>
-											<h3>Sistema de Quests</h3>
-											<p>Esse documento detalha a criação de novas quests, e como elas são inseridas e exibidas dentro do jogo. </p>
-											<ul class="actions">
-												<li><a href="quest.html#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
+										<header>
+											<h1>Sistema de Itens <i class="icon fa-book"></i></h1>
+										</header>
+										<p>
+											Este documento detalha o sistema de itens, e como os itens são exibidos no inventário do jogador. Ele é composto por:
+										</p>
+										<ul>
+											<li><a href="#genericitem">Itens Genéricos</a></li>
+											<li><a href="#userinventory">Inventário</a></li>
+											<li><a href="#item">Item.cs</a></li>
+											<li><a href="#slot">Slot.cs</a></li>
+											<li><a href="#inventoryui">UI</a></li>
+										</ul>
 
-								<section>
-									<header class="major">
-										<h2>Tutoriais</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<i class="icon fa-books"></i>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
+										<h2 id="genericitem">Itens Genéricos</h2>
+										<p>A forma mais básica de um item, onde só é armazenado seu identificador. Essa classe será usada para armazenar itens que não necessitam serem exibidos na <a href="#inventoryui">UI</a>, como as <a href="quest.html#precondition">PreConditions</a>.</p>
+										<pre><code>
+public class GenericItem : ScriptableObject
+{
+   public int identifier;
+   ...
+}
+										</code></pre>
+
+										<h2 id="userinventory">Inventário do Jogador</h2>
+										<p>O inventário do jogador é composto simplesmente por uma <code>List<GenericItem>()</code>, presente na classe <a href="user.html">User.cs</a> que armazena todas as <a href="quest.html#precondition">PreConditions</a> e <a href="#item">Items</a> que ele possue.
+
+										<h2 id="item">Item.cs</h2>
+										<p>Representa um item que poderá ser exibido na <a href="inventoryui">UI</a> do inventário.</p>
+										<pre><code>
+public class Item : GenericItem {
+
+    public Sprite sprite;
+    public string title;
+    public string description;
+
+    ...
+}
+										<p>Suas informações de <code>sprite</code>, <code>title</code> e <code>description</code> são utilizadas quando o item está inserido em um <a href="#slot">Slot</a>.
+										</code></pre>
+
+										<h2 id="slot">Slot.cs</h2>
+										<p>
+											Classe responsável pelas representações dos slots do inventário. Pode ficar vazio ou com um <a href="#item">item</a>. Recebe o item que ficará armazenado nele e o sprite do slot vazio. Quando o jogador passa o mouse por cima no slot do item, informações como nome e descrição serão buscadas.
+										</p>
+										<pre><code>
+public class Slot : MonoBehaviour, IPointerEnterHandler {
+
+    public Sprite empty;
+    public Item Item {    get; private set;    }
+    public Text itemName;
+    public Text itemDescription;
+
+    ...
+
+    public void OnPointerEnter(PointerEventData data){
+        if (Item != null) {
+            itemName.text = Item.title;
+            itemDescription.text = Item.description;
+       }
+    }
+}
+										</code></pre>
+
+										<h2 id="inventoryui">InventoryUI.cs</h2>
+										<p>
+											Classe responsável pelo gerenciamento da parte gráfica do Inventário. É composto pelo por um array de <a href="#slot">slots</a> e o estado da janela do inventário. Tem métodos que controla a abertura e fechamento da janela.
+										</p>
+										<pre><code>
+public class InventoryUI : MonoBehaviour {
+
+    public GameObject inventory;
+    public Slot[] slots;
+    bool opened;
+    MenuStatus menuStatus;
+
+    ...
+
+    void UpdateContent(){
+        foreach (Slot slot in slots)
+            slot.SetItem (null);
+
+            for(int i = 0, j = 0; j < User.Instance.Items.Count; ++j) {
+            if (User.Instance.Items [j] is Item) {
+                slots [i++].SetItem(((Item)User.Instance.Items [j]));
+            }
+        }
+    }
+
+    public void OpenWindow()
+    {
+        inventory.SetActive(true);
+        UpdateContent ();
+        opened = true;
+        menuStatus.open ("Inventory");
+    }
+
+    public void CloseWindow()
+    {
+        opened = false;
+        menuStatus.close ("Inventory");
+        inventory.SetActive (false);
+    }
+
+    ...
+}
+										</code></pre>
+										<p>A cada vez que janela é aberta, os itens do jogador são atualizados de acordo com o seu <a href="#userinventory">Inventário</a></p>
 								</section>
 						</div>
 					</div>
@@ -116,6 +148,7 @@
 
 							<!-- System Design section -->
 								<nav id="menu">
+
 									<header class="major">
 										<h2>Design dos Sistemas</h2>
 									</header>
@@ -145,14 +178,14 @@
 										<li>
 											<span class="opener">Inventário</span>
 											<ul>
-												<li><a href="inventory.html#genericitem">Itens Genéricos</a></li>
-												<li><a href="inventory.html#userinventory">Inventário</a></li>
-												<li><a href="inventory.html#item">Item.cs</a></li>
-												<li><a href="inventory.html#slot">Slot.cs</a></li>
-												<li><a href="inventory.html#inventoryui">UI</a></li>
+												<li><a href="#genericitem">Itens Genéricos</a></li>
+												<li><a href="#userinventory">Inventário</a></li>
+												<li><a href="#item">Item.cs</a></li>
+												<li><a href="#slot">Slot.cs</a></li>
+												<li><a href="#inventoryui">UI</a></li>
 											</ul>
 										</li>
-										<li><a href="musicplayer.html#">Music Player</a></li>
+										<li><a href="#">Music Player</a></li>
 									</ul>
 
 									<br/>
