@@ -20,7 +20,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>CinQuest</strong>, design dos sistemas, sons</a>
+									<a href="index.html" class="logo"><strong>CinQuest</strong>, design dos sistemas, user</a>
 									<ul class="icons">
 										<li><a href="https://github.com/pet-informatica/CinQuest" class="icon fa-github"><span class="label">GitHub</span></a></li>
 										<li><a href="https://pet-informatica.github.io/cinquest" class="icon fa-home"><span class="label">Home</span></a></li>
@@ -30,29 +30,24 @@
 							<!-- Banner -->
 								<section>
 										<header>
-											<h1>Sistema de Sons <i class="icon fa-book"></i></h1>
+											<h1>Informações do Jogador <i class="icon fa-book"></i></h1>
 										</header>
-										<h2>MusicPlayer.cs</h2>
-										<p>
-											Todo o gerenciamento de áudio do jogo é realizado pela classe MusicPlayer. Ela possue a capacidade de tocar faixas de músicas em loop, trocar músicas com um efeito de fade in/out e tocar efeitos sonoros de curta duração.
-										</p>
+										<h2>User.cs</h2>
+										<p>A classe user é responsável por armazenar o estado de um jogador durante uma seção de jogo. Um estado é composto por:</p>
 										<pre><code>
-public void ChangeSong(string scene, float time);
-public void PlayFX(string name);
+public class User : MonoBehavior{
+    public string nick;
+    Dictionary<int, Quest> quests;
+		List<GenericItem> items;
+
+		...
+}
 										</code></pre>
-										<p>
-											Cada música e cada efeito sonoro que será utilizado em algum momento durante o jogo deve ser declarado no Inspector do GameObject onde o script está inserido. Eles então poderão ser acessados através de uma tabela hash utilizando uma string como identificação.
-										</p>
-										<pre><code>
-Dictionary<string, AudioClip> sceneSong;
-Dictionary<string, AudioClip> soundFX;
-										</code></pre>
-										<p>
-											Para tocar um som, então, basta executar os métodos da classe MusicPlayer estáticamente de qualquer script do código.
-										</p>
-										<pre><code>
-MusicPlayer.Instance.PlayFX (“BOOM”);
-										</code></pre>
+										<ul>
+											<li><code>nick</code>: o nome do jogador</li>
+											<li><code>quests</code>: uma lista de todas as <a href="quest.html#">quests</a> que ele possue, tendo elas sido iniciadas, concluídas ou não.</li>
+											<li><code>items</code>: o <a href="inventory.html">inventário</a> do jogador</li>
+										</ul>
 								</section>
 						</div>
 					</div>
@@ -101,8 +96,8 @@ MusicPlayer.Instance.PlayFX (“BOOM”);
 												<li><a href="inventory.html#inventoryui">UI</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Music Player</a></li>
-										<li><a href="user.html#">User</a></li>
+										<li><a href="musicplayer.html#">Music Player</a></li>
+										<li><a href="#">User</a></li>
 									</ul>
 
 									<br/>
