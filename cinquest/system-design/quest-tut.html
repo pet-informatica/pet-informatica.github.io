@@ -61,35 +61,124 @@
                     <p>
                       Primeiro, abra o projeto do jogo no Unity3D e abra uma cena de sala de professor, em <code>Scene >> Cin >> TeacherRooms</code>. Aqui escolhemos a sala "TeacherRoomBig_1":
                     </p>
-                    <img style="max-width: 800px;" src="images/tut-01.png"/>
-										<h3>Criação da Quest</h3>
+                    <img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-01.png"/>
 										<p>
-											Para que a quest exista no game, ela precisa ser <a href="quest.html">declarada e criada em XML</a>. Abra o arquivo <code>Resources >> QuestCollection.xml</code> e adicione um novo bloco de quest em xml:
+											Para que a quest exista no game, ela precisa ser <a href="quest.html#xmlcollections">declarada e criada em XML</a>. Abra o arquivo <code>Resources >> QuestCollection.xml</code> e adicione um novo bloco de quest em xml:
 										</p>
-										<img style="max-width: 800px;" src="images/tut-02.png"/>
-										<img style="max-width: 800px;" src="images/tut-03.png"/>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-02.png"/>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-03.png"/>
 										<p>
 											Se estiver tudo OK, você pode rodar o jogo, e apertar <code>Q</code> para abrir a lista de quests e ver a sua nova quest listada!
 										</p>
-										<img style="max-width: 800px;" src="images/tut-04.png"/>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-04.png"/>
 										<p>
-											Ótimo! Agora que sua quest já está criada e inserida no game, precisamos de uma maneira de iniciá-la.
+											Ótimo! Agora que sua quest já está criada e inserida no game, precisamos de uma maneira de iniciá-la. Por enquanto, ela já é iniciada assim que o game começa. Mas a intenção é que as quests só sejam startadas quando o jogador interagir com alguma coisa. Geralmente o jogador precisa "pegar" as quests com algum npc.
 										</p>
+										<p>
+											Para que ela comece bloqueada, vamos voltar para o arquivo <code>QuestCollection.xml</code> e mudar o seu campo <code>Unlocked</code> de <code>true</code> para <code>false</code>. Agora, se você abrir o jogo novamente, e apertar <code>Q</code>, a janela da sua quest deverá informar "Quest Bloqueada", ao invéz de "Quest em Andamento".
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-05.png"/>
                     <!-- dialog tree section -->
 										<h2 id="dialog">Criação de Diálogos</h2>
 										<p>
+											A maneira mais fácil de iniciar uma quest, é através de um NPC capaz de iniciar <a href="dialog.html#questnodes">diálogos</a>. Vamos criar um agora!
 										</p>
-
-                    <!-- dialog tree section -->
-										<h2 id="itens">Criação de Itens</h2>
 										<p>
+											Primeiro, abra a pasta <code>Prefabs >> Scenery >> Indoor >> Objects >> Classroom</code> e arraste o prefab <code>NoticeBoard_2</code> para a cena. Adicione nele dois componentes: um <code><a href="dialog.html#interativespeaker">Interative Speaker</a></code> e um <code>BoxCollider2D</code> marcado como <code>Trigger</code>.
 										</p>
-
-                    <!-- dialog tree section -->
-										<h2 id="tree">Programação de NPC</h2>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-06.png"/>
 										<p>
+											Agora, o nosso NPC de quadro de notícias já tem a capacidade de falar. Mas precisamos definir o que ele deverá falar! Para isso, vamos criar uma <a href="dialog.html#tree">Dialog Tree</a>.
 										</p>
-
+										<p>
+											Primeiro, crie uma nova pasta para o seu NPC de quadro de notícias. Todos os diálogos dele deverão ficar organizados nela. Os díalogos do jogo estão todos armazenados na pasta <code>Text</code>, então seria bom colocar lá.
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-07.png"/>
+										<p>
+											Para criar a DialogTree, clique com o botão direito do mouse na pasta NoticeBoard, e siga o caminho <code>Create >> DialogTree</code>
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-08.png"/>
+										<p>
+											Agora, precisamos de um nó de diálogo para ser a raiz da árvore. No mesmo menu <code>Create</code>, crie um <code>Start Quest Tree Node</code>, e preencha-o como abaixo:
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-09.png"/>
+										<p>
+											Para o campo <code>Message</code>, você pode colocar algo como: "Você deseja saber mais sobre a cadeira de Álgebra Anti-Vetorial Curvada para Computação? Então fale com Xilvio, o professor logo ali!". Já no campo de <code><a href="quest.html#rewards">Rewards</a></code>, incluímos um elemento, de ID "15". Isto é uma <a href="quest.html#preconditions">precondition</a> que vamos utilizar para dizer que o jogador já falou com a notice board. Para que o NPC de Xilvio, que ainda vamos implementar, mostre os diálogos relacionados à esta quest, é preciso, primeiro, falar com a notice board para iniciar a quest. Por isso, Xilvio irá checar se o jogador já possue a precondition de ID "15".
+										</p>
+										<p>
+											Mas por que "15"?
+										</p>
+										<p>
+											Estamos utilizando uma precondition como reward, mas nós ainda não criamos ela! Assim como as quests, as preconditions devem ser instanciadas em XML. Vamos abrir o arquivo <code>Resources >> PreConditionCollection.xml</code>. Nele, já existem outras 14 preconditions utilizadas pelas quests 1 a 5, já implementadas no jogo pelo <a href="https://pet-informatica.github.io">PET-Informática</a>. Sempre que precisarmos bolar preconditions novas para controlar o fluxo de nossas novas quests, basta escolhermos um ID único que não conflite com as que já existem lá! Adicione mais uma linha no arquivo, incluindo nossa nova precondition, como abaixo:
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-13.png"/>
+										<p>
+											Por fim, precisamos criar o <a href="inventory.html#genericitem">generic item</a> que o jogador receberá de fato ao receber esta precondition, e que será inserido em seu inventario. Na pasta <code>Items</code> clique com o botão direito do mouse, e no menu create, crie um <code>NotShowableItem</code>. Depois, renomeie-o, e preencha o seu campo ID.
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-15.png"/>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-16.png"/>
+										<p>
+											Finalmente, com nosso generic item de precondition criado, precisamos adicioná-lo ao jogo. Existe um prefab responsável por armazenar informações sobre o estado do jogo, chamado de <code>Game Manager</code>. Ele possue uma lista de todos os itens que existem dentro do jogo, assim como todas as quests, e todo o conteúdo. Precisamos adicionar nosso novo item à sua lista de itens. Para isso, primeiro coloque o prefab em cena, arrastando o objeto do caminho <code>Prefabs >> GameManger</code> para a cena.
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-17.png"/>
+										<p>
+											Agora, aumente o tamanho da lista de itens que ele possue e arraste seu novo item para o slot criado:
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-18.png"/>
+										<p>
+											Por fim, clique em "apply" para aplicar as mudanças ao prefab, e delete o objeto do gamemanager da cena.
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-19.png"/>
+										<p>
+											Dito isso, podemos voltar para o inspector do Unity. Agora arraste o seu nó de start quest para ser a raiz do objeto de dialog tree criado anteriormente.
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-10.png"/>
+										<p>
+											Por fim, de volta ao prefab do seu notice board, mude o script <code>Interative Speaker</code> para comportar uma árvore de diálogo, a que você acabou de criar! Basta arrastá-la para o campo correto, após setar o size para 1.
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-11.png"/>
+										<p>
+											Agora, depois de dar play denovo no jogo, e chegar perto da notice board e apertar <code>Z</code>, sua nova quest terá sido iniciada com sucesso! Uhull!
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-12.png"/>
+										<p>
+											Vamos então programar o NPC final, que deve encerrar a quest e dar um item como reward ao jogador, Xilvio!
+										</p>
+										<p>
+											Para isso, vamos pegar um prefab de NPC pronto, na pasta <code>Prefabs >> NPCs >> People >> Static</code> e arrastá-lo para a cena. Esse NPC já possue três scripts envolvidos no seu sistema de diálogos. O <code>Interative Speaker</code>, a <code>BoxCollider2D</code> e o <code>Look At Character</code>. Tudo o que precisamos fazer é criar uma nova árvore de diálogos para ele, preencher ela com as informações de nossa nova quest, e colocá-la no seu script de <code>Interative Speaker</code>
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-14.png"/>
+										<p>
+											Seguindo os mesmos passos anteriores para a criação de uma árvore de diálogos, vamos criar a árvore, e um nó de <code>End Quest Tree Node</code>, e preenchê-lo da maneira seguinte:
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-20.png"/>
+										<p>
+											Não esqueça de setar a root da dialog tree para ser este nó!
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-21.png"/>
+										<p>
+											Agora, de volta ao nosso NPC, vamos substituir a sua árvore de diálogos pela que acabamos de criar!
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-22.png"/>
+										<p>
+											Ótimo, agora só falta uma coisinha! O nó de diálogo que nós criamos dá como reward ao jogador um generic item de id "16". Precisamos criá-lo!
+										</p>
+										<p>
+											Primeiro, precisamos criar o seu XML:
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-23.png"/>
+										<p>
+											Agora, vamos criar o prefab do item real dentro da pasta <code>Items</code>. Dessa vez, porém, queremos que este seja um item que o jogador pode realmente ver no seu inventario, e não apenas uma precondition invisivel! Para isso, ao invés de criar um NotShowAbleItem, vamos dar create em um Item, e preencher suas informações!
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-24.png"/>
+										<p>
+											Por último, basta adicionar este item novo à lista de itens do game manager. Lembre-se de colocar seu prefab em cena, fazer as alterações, dar apply, e depois remover ele da cena!
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-25.png"/>
+										<p>
+											Agora, starte o jogo, fale com a notice board, e depois com Xilvio. Você vai concluir a quest com sucesso, e receber um item no seu inventario! Aperta <code>I</code> pra ver ele!
+										</p>
+										<img style="margin-bottom: 20px; max-width: 800px;" src="images/tut-26.png"/>
 								</section>
 						</div>
 					</div>
@@ -120,12 +209,12 @@
 										<li>
 											<span class="opener">Diálogo</span>
 											<ul>
-												<li><a href="#tree">DialogTree.cs</a></li>
-												<li><a href="#nodes">DialogTreeNode.cs</a></li>
-												<li><a href="#questnodes">Quest Nodes</a></li>
-												<li><a href="#manager">DialogManager.cs</a></li>
-												<li><a href="#speaker">Speaker.cs</a></li>
-												<li><a href="#interativespeaker">Extensões do Speaker</a></li>
+												<li><a href="dialog.html#tree">DialogTree.cs</a></li>
+												<li><a href="dialog.html#nodes">DialogTreeNode.cs</a></li>
+												<li><a href="dialog.html#questnodes">Quest Nodes</a></li>
+												<li><a href="dialog.html#manager">DialogManager.cs</a></li>
+												<li><a href="dialog.html#speaker">Speaker.cs</a></li>
+												<li><a href="dialog.html#interativespeaker">Extensões do Speaker</a></li>
 											</ul>
 										</li>
 										<li>
@@ -147,37 +236,7 @@
 										<h2>Tutoriais</h2>
 									</header>
 									<ul>
-										<li>
-											<span class="opener">Quest</span>
-											<ul>
-												<li><a href="#">PreConditions</a></li>
-												<li><a href="#">Rewards</a></li>
-												<li><a href="#">Quest.cs</a></li>
-												<li><a href="#">Coleções XML</a></li>
-												<li><a href="#">Gerenciadores</a></li>
-												<li><a href="#">UI</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Diálogo</span>
-											<ul>
-												<li><a href="#">Dialog Tree</a></li>
-												<li><a href="#">Dialog Tree Node</a></li>
-												<li><a href="#">Quest Nodes</a></li>
-												<li><a href="#">Speaker</a></li>
-												<li><a href="#">Interative Speaker</a></li>
-												<li><a href="#">Auto Speaker</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Inventário</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
+											<li><a href="#">Criação de Quest</a></li>
 									</ul>
 								</nav>
 							<!-- Section -->
