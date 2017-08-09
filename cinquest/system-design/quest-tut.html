@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CinQuest - Tutorial de Criaçao de uma Quest</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>CinQuest</strong>, tutoriais, criação de quest</a>
+									<ul class="icons">
+										<li><a href="https://github.com/pet-informatica/CinQuest" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://pet-informatica.github.io/cinquest" class="icon fa-home"><span class="label">Home</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section>
+										<header>
+											<h1>Criação de uma Quest <i class="icon fa-comment"></i></h1>
+										</header>
+										<p>
+											Esse tutorial será um passo a passo que envolve todos os detalhes envolvidos na programação de uma quest totalmente do zero. Se você o seguir, no fim, terá uma nova quest 100% adicionada ao jogo, pronta para ser jogada do inicio ao fim, além de entender o que é preciso para criar qualquer outra quest que você deseje! Para criar uma quest, vamos também aprender sobre:
+										</p>
+										<ul>
+											<li><a href="#quest">Criação de Quest</a></li>
+											<li><a href="#dialog">Criação de Diálogos</a></li>
+											<li><a href="#itens">Criação de Itens</a></li>
+											<li><a href="#npc">Programação de NPCs</a></li>
+										</ul>
+
+										<!-- dialog tree section -->
+										<h2 id="quest">Criação de Quest</h2>
+										<p>
+                      Nossa nova quest deverá funcionar da seguinte forma: imagine que você é um aluno interessado em pagar Álgebra Anti-Vetorial Curvada para Computação, mas quer saber o que esperar dela antes de decidir se aventurar no siga. Você vê em um quadro de avisos que o professor Xilvio está dando informações sobre a cadeira na sala dele, e depois, deve ir até lá falar com ele para receber um informativo com a ementa da cadeira.
+										</p>
+                    <p>
+                      Logo, nossa quest vai envolver, dentre outras coisas:
+                      <ul>
+                        <li>Criar uma nova quest e adicioná-la ao jogo</li>
+  											<li>Criar o quadro de avisos que deverá startar a quest</li>
+  											<li>Criar o NPC do professor que deverá finalizar a quest e entregar o item ao jogador</li>
+  											<li>Criar um novo item e adicioná-lo ao jogo</li>
+  											<li>Criar diálogos e conversas em cada interação entre NPC e jogador</li>
+  										</ul>
+                    </p>
+                    <p>
+                      Então, vamos começar?
+                    </p>
+                    <p>
+                      Primeiro, abra o projeto do jogo no Unity3D e abra uma cena de sala de professor, em <code>Scene >> Cin >> TeacherRooms</code>. Aqui escolhemos a sala "TeacherRoomBig_1":
+                    </p>
+                    <img style="max-width: 800px;" src="images/tut-01.png"/>
+										<h3>Criação da Quest</h3>
+										<p>
+											Para que a quest exista no game, ela precisa ser <a href="quest.html">declarada e criada em XML</a>. Abra o arquivo <code>Resources >> QuestCollection.xml</code> e adicione um novo bloco de quest em xml:
+										</p>
+										<img style="max-width: 800px;" src="images/tut-02.png"/>
+										<img style="max-width: 800px;" src="images/tut-03.png"/>
+										<p>
+											Se estiver tudo OK, você pode rodar o jogo, e apertar <code>Q</code> para abrir a lista de quests e ver a sua nova quest listada!
+										</p>
+										<img style="max-width: 800px;" src="images/tut-04.png"/>
+										<p>
+											Ótimo! Agora que sua quest já está criada e inserida no game, precisamos de uma maneira de iniciá-la.
+										</p>
+                    <!-- dialog tree section -->
+										<h2 id="dialog">Criação de Diálogos</h2>
+										<p>
+										</p>
+
+                    <!-- dialog tree section -->
+										<h2 id="itens">Criação de Itens</h2>
+										<p>
+										</p>
+
+                    <!-- dialog tree section -->
+										<h2 id="tree">Programação de NPC</h2>
+										<p>
+										</p>
+
+								</section>
+						</div>
+					</div>
+
+				<!-- SideBar -->
+					<div id="sidebar">
+						<div class="inner">
+
+
+							<!-- System Design section -->
+								<nav id="menu">
+
+									<header class="major">
+										<h2>Design dos Sistemas</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">Quest</span>
+											<ul>
+												<li><a href="quest.html#preconditions">PreConditions</a></li>
+												<li><a href="quest.html#rewards">Rewards</a></li>
+												<li><a href="quest.html#questcs">Quest.cs</a></li>
+												<li><a href="quest.html#xmlcollections">Coleções XML</a></li>
+												<li><a href="quest.html#managers">Gerenciadores</a></li>
+												<li><a href="quest.html#ui">UI</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Diálogo</span>
+											<ul>
+												<li><a href="#tree">DialogTree.cs</a></li>
+												<li><a href="#nodes">DialogTreeNode.cs</a></li>
+												<li><a href="#questnodes">Quest Nodes</a></li>
+												<li><a href="#manager">DialogManager.cs</a></li>
+												<li><a href="#speaker">Speaker.cs</a></li>
+												<li><a href="#interativespeaker">Extensões do Speaker</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Inventário</span>
+											<ul>
+												<li><a href="inventory.html#genericitem">Itens Genéricos</a></li>
+												<li><a href="inventory.html#userinventory">Inventário</a></li>
+												<li><a href="inventory.html#item">Item.cs</a></li>
+												<li><a href="inventory.html#slot">Slot.cs</a></li>
+												<li><a href="inventory.html#inventoryui">UI</a></li>
+											</ul>
+										</li>
+										<li><a href="musicplayer.html#">Music Player</a></li>
+										<li><a href="user.html#">User</a></li>
+									</ul>
+
+									<br/>
+									<header class="major">
+										<h2>Tutoriais</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">Quest</span>
+											<ul>
+												<li><a href="#">PreConditions</a></li>
+												<li><a href="#">Rewards</a></li>
+												<li><a href="#">Quest.cs</a></li>
+												<li><a href="#">Coleções XML</a></li>
+												<li><a href="#">Gerenciadores</a></li>
+												<li><a href="#">UI</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Diálogo</span>
+											<ul>
+												<li><a href="#">Dialog Tree</a></li>
+												<li><a href="#">Dialog Tree Node</a></li>
+												<li><a href="#">Quest Nodes</a></li>
+												<li><a href="#">Speaker</a></li>
+												<li><a href="#">Interative Speaker</a></li>
+												<li><a href="#">Auto Speaker</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Inventário</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contate-nos</h2>
+									</header>
+									<p>O CinQuest foi desenvolvido pelo PET-Informática. Qualquer dúvida, pode falar com a gente!</p>
+									<ul class="contact">
+										<li class="fa-envelope-o">pet-informatica@cin.ufpe.br</li>
+										<li class="fa-home"><a href="https://pet-informatica.github.io">Website</a></li>
+										<li class="fa-facebook"><a href="https://www.facebook.com/petinformatica/">Facebook</a></li>
+									</ul>
+								</section>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
