@@ -2,9 +2,7 @@
   render: function(){
     return(
       <li>
-        
-          <img className="act-img" src={this.props.pic}/>
-        
+          <img className="act-img" src={this.props.pic}/>       
       </li>
     );
   }
@@ -14,11 +12,11 @@ var Slider = React.createClass({
   render: function(){
     return(
       <div className="slider">
-        <ul className="slides">
-        <a href={this.props.link}>
-          {this.props.children}
+        <a href={this.props.link} target="_blank">
+          <ul className="slides">
+            {this.props.children}            
+          </ul>
         </a>
-        </ul>
       </div>
     );
   }
@@ -101,8 +99,8 @@ var ActivityBoard = React.createClass({
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477195744/pet/guest-6_uponen.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477195742/pet/guest-7_a8lst5.jpg"/>
               </Slider>
-              <ActivityContent title="Visita dos Colégios"/>
-              <ActivityReveal title="Visita dos Colégios">
+              <ActivityContent title="Visita de Colégios"/>
+              <ActivityReveal title="Visita de Colégios">
                 <p>
                   Em parceria com o CIn, o <span className="deep-orange-text">PET-Informática</span> organiza visitas para qualquer colégio que esteja interessado em
                   mostrar o Centro para seus alunos, a fim de ajudar na escolha profissional! Para marcar a
@@ -127,7 +125,7 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider link="https://pet-informatica.github.io/programa-de-ferias">
+              <Slider link="https://pet-informatica.github.io/programa-de-ferias/#/">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477242071/pet/vacation-1_efeufj.jpg"/>
               </Slider>
@@ -176,11 +174,11 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider link="http://cinwiki.azurewebsites.net">
+              <Slider link="https://cinwiki.azurewebsites.net">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240117/pet/wiki_wzfbew.jpg"/>
               </Slider>
-              <ActivityContent title="CinWiki"/>
-              <ActivityReveal title="CinWiki">
+              <ActivityContent title="CInWiki"/>
+              <ActivityReveal title="CInWiki">
                 <p>
                   Site colaborativo feito pelo <span className="deep-orange-text">PET-Informática</span> no formato Wikipedia com informações sobre os cursos, disciplinas e quaisquer
                   atividades relacionadas ao centro de informática. Você é bem vindo para contribuir com nossa Wiki! Se achar que existem
@@ -214,7 +212,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider link="https://www.cin.ufpe.br/~pet/manual">
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477241396/pet/freshman-manual_b2uu23.jpg"/>
+                <Slide pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520210140/Manual_do_Calouro_mwm0pc.png"/>
               </Slider>
               <ActivityContent title="Manual do Calouro"/>
               <ActivityReveal title="Manual do Calouro">
@@ -241,28 +239,54 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider link="cin.ufpe.br/~pet/lib">
-                <Slide pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520207386/PETLib_mdjk1u.png"/>
+              <Slider link="https://cin.ufpe.br/~pet/lib">
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520207386/PETLib_mdjk1u.png"/>
               </Slider>
               <ActivityContent title="PETLib"/>
               <ActivityReveal title="PETLib">
                 <p>
-                  Aplicativo android realizado pelo <span className="deep-orange-text">PET-Informática</span> em parceria com o PET - Geografia (UFPE)
-                  para incentivar o estudo da geografia para provas e vestibulares, através de um jogo de perguntas e respostas.
+                  O <span className="deep-orange-text">PETLib</span> é uma iniciativa criada pelo grupo para facilitar os estudos dos alunos da graduação, possibilitando acesso rápido a materiais de estudo disponibilizados
+                  por outros alunos ou pelos próprios professores.
                 </p>
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1480342526/petutility_skf1lu.jpg"/>
+                <Slide pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520210161/PETUtility_yw5wng.png"/>
               </Slider>
-              <ActivityContent title="PetUtility"/>
-              <ActivityReveal title="PetUtility">
+              <ActivityContent title="PETUtility"/>
+              <ActivityReveal title="PETUtility">
                 <p>
                   O <span className="deep-orange-text">PETUtility</span> é um programa desenvolvido e utilizado pelo <span className="deep-orange-text">PET-Informática</span> para o gerenciamento
                   interno de suas atividades. Ele foca em modelar e organizar as atividades exercidas pelo grupo
                   de maneira mais simples e rápida através de uma aplicação web.
+                </p>
+              </ActivityReveal>
+            </ActivityCard>
+
+            <ActivityCard>
+              <Slider>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520209655/logo_petLab_mo0wbf.png"/>
+              </Slider>
+              <ActivityContent title="petLab"/>
+              <ActivityReveal title="petLab">
+                <p>
+                  O <span className="deep-orange-text">petLab</span> é uma inciativa do PET-Informática que propõe um período de intercâmbio em laboratórios de tecnologia e grupos de pesquisa da UFPE, onde os alunos envolvidos deverão 
+                  desenvolver projetos relacionados com as áreas de pesquisa por onde passarão. Neste primeiro ano, nossos parceiros são Lika, LIVE, SPG e Voxar Labs.
+                </p>
+              </ActivityReveal>
+            </ActivityCard>
+
+            <ActivityCard>
+              <Slider>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520209677/HackaPET_h0zeyn.png"/>
+              </Slider>
+              <ActivityContent title="HackaPET"/>
+              <ActivityReveal title="HackaPET">
+                <p>
+                  O <span className="deep-orange-text">HackaPET</span> é uma iniciativa do PET-Informática que consiste em promover um hackaton para alunos do CIn com o objetivo de aumentar o engajamento dos alunos, como também motivá-los a 
+                  desenvolver seus conhecimentos.
                 </p>
               </ActivityReveal>
             </ActivityCard>
