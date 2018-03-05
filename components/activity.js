@@ -2,7 +2,9 @@
   render: function(){
     return(
       <li>
-        <img className="act-img" src={this.props.pic}/>
+        
+          <img className="act-img" src={this.props.pic}/>
+        
       </li>
     );
   }
@@ -13,7 +15,9 @@ var Slider = React.createClass({
     return(
       <div className="slider">
         <ul className="slides">
+        <a href={this.props.link}>
           {this.props.children}
+        </a>
         </ul>
       </div>
     );
@@ -123,7 +127,7 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="https://pet-informatica.github.io/programa-de-ferias">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477196259/pet/vacation-2_ze698t.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477242071/pet/vacation-1_efeufj.jpg"/>
               </Slider>
@@ -134,10 +138,6 @@ var ActivityBoard = React.createClass({
                   para estimular o estudo da Ciência da Computação pelos alunos e ajudá-los desenvolverem uma base sólida de programação.
                   É um curso de introdução à uma linguagem de programação, como C/C++ e Pyton.
                 </p>
-                <br/>
-                <a className="center deep-orange" href="https://pet-informatica.github.io/programa-de-ferias" className="activator">
-                  <i className="mdi mdi-flag"></i>    Programa de Férias
-                </a>
               </ActivityReveal>
             </ActivityCard>
 
@@ -158,7 +158,7 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="https://www.cin.ufpe.br/~pet/opei/">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477243544/pet/opei-1_hlzmz9.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193983/pet/opei-3_yqsidh.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193981/pet/opei-2_rhcwm8.jpg"/>
@@ -171,16 +171,12 @@ var ActivityBoard = React.createClass({
                   de raciocínio lógico e matemática. Para alunos de ensino médio, a <span className="deep-orange-text">OPEI</span> conta também com modalidade
                   prática de programação, com linguagens como JAVA, C/C++ e Python. Para saber como inscrever
                   sua escola, veja o passo-a-passo na aba <a href="#faq-board">FAQ</a>.
-                  <br/><br/>
-                  <a className="center deep-orange" href="https://www.cin.ufpe.br/~pet/opei/" className="activator">
-                    <i className="mdi mdi-flag"></i>    OPEI
-                  </a>
                 </p>
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="http://cinwiki.azurewebsites.net">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240117/pet/wiki_wzfbew.jpg"/>
               </Slider>
               <ActivityContent title="CinWiki"/>
@@ -189,10 +185,6 @@ var ActivityBoard = React.createClass({
                   Site colaborativo feito pelo <span className="deep-orange-text">PET-Informática</span> no formato Wikipedia com informações sobre os cursos, disciplinas e quaisquer
                   atividades relacionadas ao centro de informática. Você é bem vindo para contribuir com nossa Wiki! Se achar que existem
                   informações desatualizadas, nos comunique!
-                  <br/><br/>
-                  <a className="center deep-orange" href="http://cinwiki.azurewebsites.net" className="activator">
-                    <i className="mdi mdi-flag"></i>    CinWiki
-                  </a>
                 </p>
               </ActivityReveal>
             </ActivityCard>
@@ -221,7 +213,7 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="https://www.cin.ufpe.br/~pet/manual">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477241396/pet/freshman-manual_b2uu23.jpg"/>
               </Slider>
               <ActivityContent title="Manual do Calouro"/>
@@ -230,16 +222,12 @@ var ActivityBoard = React.createClass({
                   Manual criado para auxiliar o calouro nos seus primeiros dias no Centro de Informática, explicando
                   principalmente o passo-a-passo de atividades e as oportunidades do Centro e da Universidade
                   de maneira simples e direta.
-                  <br/><br/>
-                  <a className="center deep-orange" href="https://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn" className="activator">
-                    <i className="mdi mdi-flag"></i>    Manual do Calouro
-                  </a>
                 </p>
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="https://pet-informatica.github.io/cinquest/">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
               </Slider>
               <ActivityContent title="CInQuest"/>
@@ -248,20 +236,16 @@ var ActivityBoard = React.createClass({
                   <span className="deep-orange-text">CinQuest</span> é um jogo RPG desenvolvido pelo <span className="deep-orange-text">PET-Informática</span> para
                   ajudar calouros a se encontrarem no Centro de  Informática. Nele, o aluno fará tudo o que será necessário na vida de estudante
                   do CIn, realizando as atividades num cenário fiel ao Centro real.
-                  <br/><br/>
-                  <a className="center deep-orange" href="https://pet-informatica.github.io/cinquest/" className="activator">
-                    <i className="mdi mdi-flag"></i>    CinQuest
-                  </a>
                 </p>
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1480342439/geoquest_nnw7up.jpg"/>
+              <Slider link="cin.ufpe.br/~pet/lib">
+                <Slide pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520207386/PETLib_mdjk1u.png"/>
               </Slider>
-              <ActivityContent title="GeoQuest"/>
-              <ActivityReveal title="GeoQuest">
+              <ActivityContent title="PETLib"/>
+              <ActivityReveal title="PETLib">
                 <p>
                   Aplicativo android realizado pelo <span className="deep-orange-text">PET-Informática</span> em parceria com o PET - Geografia (UFPE)
                   para incentivar o estudo da geografia para provas e vestibulares, através de um jogo de perguntas e respostas.
