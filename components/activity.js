@@ -174,7 +174,7 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider link="https://cinwiki.azurewebsites.net">
+              <Slider link="https://cin.ufpe.br/~pet/wiki">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240117/pet/wiki_wzfbew.jpg"/>
               </Slider>
               <ActivityContent title="CInWiki"/>
