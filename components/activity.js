@@ -156,7 +156,7 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider link="https://www.cin.ufpe.br/~pet/opei/">
+              <Slider link="https://pet-informatica.github.io/opei">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477243544/pet/opei-1_hlzmz9.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193983/pet/opei-3_yqsidh.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477193981/pet/opei-2_rhcwm8.jpg"/>
