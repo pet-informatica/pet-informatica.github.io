@@ -33,7 +33,7 @@ var FaqBoard = React.createClass({
               <Question title="O que é o PET Informática?">
                 <p>
                   <span className="deep-orange-text">PET-Informática</span> é o <span className="deep-orange-text">PET</span> do curso de Ciência da Computação da Universidade Federal de Pernambuco, composto por
-                  alunos bolsistas e não bolsistas, sob a orientação de um professor tutor, atualmente Prof Dr. Fernando da Fonseca da Silva.
+                  alunos bolsistas e não bolsistas, sob a orientação de um professor tutor, atualmente a professora Simone Santos.
                 </p>
               </Question>
               <Question title="Como entro no PET?">
@@ -42,7 +42,7 @@ var FaqBoard = React.createClass({
                   seletivo é divulgada na nossa página do <a href="https://www.facebook.com/petinformatica/">Facebook</a> através do lançamento do edital de Convocação. O processo seletivo
                   se resume em duas etapas: uma primeira, onde o candidato envia currículos e outros documentos sobre a vida acadêmica
                   e a segunda, onde é realizada uma dinâmica em grupo e uma entrevista individual. O processo é aberto para alunos
-                  de <span className="deep-orange-text">Ciência da Computação</span> da <span className="deep-orange-text">UFPE</span> que não tenham nenhuma reprovação no curso e que estejam entre o 2 e o 7 período.
+                  de <span className="deep-orange-text">Ciência da Computação</span> da <span className="deep-orange-text">UFPE</span> que estejam entre o 1º e o 7º período.
                 </p>
               </Question>
               <Question title="Como agender uma visita institucional?">
