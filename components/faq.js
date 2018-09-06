@@ -24,7 +24,7 @@ var FaqBoard = React.createClass({
             <ul className="collapsible popout" data-collapsible="accordion">
               <Question title="O que é o PET?">
                 <p>
-                  O programa de educação tutorial foi criado para apoiar atividades que integram ensino pesquisa e extensão.
+                  O Programa de Educação Tutorial foi criado para apoiar atividades que integram ensino pesquisa e extensão.
                   O <span className="deep-orange-text">PET</span> proporciona aos alunos, sob orientação de um tutor, a realização de atividades extracurriculares que
                   complementem a formação acadêmica dos estudantes e, ao mesmo tempo, atendam necessidades do próprio curso
                   de graduação.
@@ -40,12 +40,27 @@ var FaqBoard = React.createClass({
                 <p>
                   Periodicamente, com a saída de antigos petianos, são abertas novas vagas para o grupo. A abertura do processo
                   seletivo é divulgada na nossa página do <a href="https://www.facebook.com/petinformatica/">Facebook</a> através do lançamento do edital de Convocação. O processo seletivo
-                  se resume em duas etapas: uma primeira, onde o candidato envia currículos e outros documentos sobre a vida acadêmica
-                  e a segunda, onde é realizada uma dinâmica em grupo e uma entrevista individual. O processo é aberto para alunos
+                  se resume em três etapas: uma primeira, onde o candidato envia currículos e outros documentos sobre a vida acadêmica
+                  e a terceira, onde é realizada uma dinâmica em grupo e uma entrevista individual. O processo é aberto para alunos
                   de <span className="deep-orange-text">Ciência da Computação</span> da <span className="deep-orange-text">UFPE</span> que estejam entre o 1º e o 7º período.
                 </p>
               </Question>
-              <Question title="Como agender uma visita institucional?">
+              <Question title="Quem pode participar do PET?">
+                <p>
+                  Diretamente, apenas alunos de Ciência da Computação que não tenham nenhuma reprovação pendente no histórico escolar, mas alunos
+                  de outros cursos e funcionários são mais do que convidados a participarem como voluntários de atividades como <span className="deep-orange-text">Doação de Sangue</span> e
+                  também <span className="deep-orange-text">OPEI</span> conosco, além de assistirem as <span className="deep-orange-text">palestras</span> e
+                  aos <span className="deep-orange-text">workshops</span>.
+                </p>
+              </Question>
+              <Question title="Por que alunos de Engenharia da Computação não podem participar do PET?">
+                <p>
+                  Quando um grupo <span className="deep-orange-text">PET</span> é criado, ele fica associado a um curso de graduação da universidade e fica restrito
+                  àquele curso. Quando o <span className="deep-orange-text">PET-Informática</span> foi criado, ele foi associado ao antigo curso de Informática, que foi substituído
+                  pelo curso de Ciência da Computação e por este motivo, só pode receber alunos desse curso.
+                </p>
+              </Question>
+              <Question title="Como agendar uma visita institucional?">
                 <p>
                   Para agendar uma visita, o professor que deseja trazer a turma ao centro precisa mandar um <span className="deep-orange-text">email</span> para
                   o CIn através de <span className="deep-orange-text">ncsf@cin.ufpe.br</span> ou <span className="deep-orange-text">rvsj2@cin.ufpe.br</span> informando a instituição, o tamanho da turma, o dia e horários desejados.
@@ -64,25 +79,10 @@ var FaqBoard = React.createClass({
                  aba <span className="deep-orange-text">quero me inscrever</span> no site da <a href="https://www.cin.ufpe.br/~pet/opei/">OPEI</a> e cadastre a sua escola.
                 </p>
               </Question>
-              <Question title="Quem pode participar do PET?">
-                <p>
-                  Diretamente, apenas alunos de Ciência da Computação que não tenham nenhuma reprovação no histórico escolar, mas alunos
-                  de outros cursos e funcionários são mais do que convidados a participarem como voluntários de atividades como <span className="deep-orange-text">Doação de Sangue</span> e
-                  também <span className="deep-orange-text">OPEI</span> conosco, além de assistirem as <span className="deep-orange-text">palestras</span> e
-                  aos <span className="deep-orange-text">workshops</span>.
-                </p>
-              </Question>
-              <Question title="Por que alunos de Engenharia da Computação não podem participar do PET?">
-                <p>
-                  Quando um grupo <span className="deep-orange-text">PET</span> é criado, ele fica associado a um curso de graduação da universidade e fica restrito
-                  àquele curso. Quando o <span className="deep-orange-text">PET-Informática</span> foi criado, ele foi associado ao antigo curso de Informática, que foi substituído
-                  pelo curso de Ciência da Computação e por este motivo, só pode receber alunos desse curso.
-                </p>
-              </Question>
               <Question title="Como entro em contato?">
                 <p>
                   Você pode entrar em contato com o <span className="deep-orange-text">PET-Informática</span> através da nossa página no <a href="https://www.facebook.com/petinformatica/">Facebook</a> ou mandar e-mail
-                  para a gente: <span className="deep-orange-text">petcomputacao-l@cin.ufpe.br</span>. No Cin, você pode visitar a nossa sala que fica no <span className="deep-orange-text">Bloco A</span>,
+                  para a gente: <span className="deep-orange-text">pet@cin.ufpe.br</span>. No Cin, você pode visitar a nossa sala que fica no <span className="deep-orange-text">Bloco A</span>,
                   pertinho da <span className="deep-orange-text">Copa</span>. Você também pode falar diretamente com qualquer petiano pelos corredores ou redes sociais.
                 </p>
               </Question>

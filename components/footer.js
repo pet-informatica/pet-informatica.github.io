@@ -40,7 +40,7 @@ var Contact = React.createClass({
         <h5 className="white-text">Contato</h5>
         <ul>
           <li>
-            <p className="white-text">petcomputacao-l@cin.ufpe.com</p>
+            <p className="white-text">pet@cin.ufpe.com</p>
           </li>
           <li>
               <a className="white-text side_margin" href="https://www.facebook.com/petinformatica">
@@ -50,11 +50,6 @@ var Contact = React.createClass({
           <li>
             <a className="white-text side_margin " href="https://github.com/pet-informatica">
               <i className="small mdi mdi-github-box"></i> Github
-            </a>
-          </li>
-          <li>
-            <a className="white-text side_margin" href="https://cin.ufpe.br/~pet">
-              <i className="small mdi mdi-book-open"></i>  Wiki
             </a>
           </li>
         </ul>
@@ -75,23 +70,23 @@ var Links = React.createClass({
               </a>
           </li>
           <li>
-              <a className="white-text side_margin" href="http://cin.ufpe.br/~pet/wiki2/">
+              <a className="white-text side_margin" href="https://pet.cin.ufpe.br/wiki/">
                 <i className="small mdi mdi-flag"></i> CinWiki
               </a>
           </li>
           <li>
-              <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/opei/">
+              <a className="white-text side_margin" href="https://pet.cin.ufpe.br/opei/">
                 <i className="small mdi mdi-flag"></i> OPEI
               </a>
           </li>
           <li>
-              <a className="white-text side_margin" href="https://pet-informatica.github.io/cinquest/">
-                <i className="small mdi mdi-flag"></i> CinQuest
+              <a className="white-text side_margin" href="https://pet.cin.ufpe.br/manual/">
+                <i className="small mdi mdi-flag"></i> Manual
               </a>
           </li>
           <li>
-              <a className="white-text side_margin" href="https://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobreviv%C3%AAncia_do_CIn">
-                <i className="small mdi mdi-flag"></i> Manual
+              <a className="white-text side_margin" href="https://pet.cin.ufpe.br/lib/">
+                <i className="small mdi mdi-flag"></i> PETLib
               </a>
           </li>
         </ul>

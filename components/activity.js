@@ -78,19 +78,6 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477243125/pet/freshman-day_d6uo3h.jpg"/>
-              </Slider>
-              <ActivityContent title="Dia do Calouro"/>
-              <ActivityReveal title="Dia do Calouro">
-                <p>
-                  Ocorrendo na primeira semana de aula de cada semestre, o <span className="deep-orange-text">Dia do Calouro</span> é quando os novos alunos
-                  são apresentados, pela visão de outros alunos, aos cursos, ao Centro e as oportunidades oferecidas pela universidade.
-                </p>
-              </ActivityReveal>
-            </ActivityCard>
-
-            <ActivityCard>
-              <Slider>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477191658/pet/guest-1_rzorhm.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477195743/pet/guest-2_sekwxv.jpg"/>
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477195741/pet/guest-3_c2lers.jpg"/>
@@ -198,7 +185,7 @@ var ActivityBoard = React.createClass({
               <ActivityContent title="Palestra e Workshop"/>
               <ActivityReveal title="Palestra e Workshop">
                 <p>
-                  Buscando dar aos alunos do cIn novos conhecimentos, o <span className="deep-orange-text">PET-Informática</span> realiza bimestralmente
+                  Buscando dar aos alunos do CIn novos conhecimentos, o <span className="deep-orange-text">PET-Informática</span> realiza bimestralmente
                   palestras de temas relacionados tanto à computação quanto à temas diversificados, possibilitando
                   uma troca de conhecimentos de uma grande variedade de assuntos.
                 </p>
@@ -214,26 +201,12 @@ var ActivityBoard = React.createClass({
               <Slider link="https://www.cin.ufpe.br/~pet/manual">
                 <Slide pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520210140/Manual_do_Calouro_mwm0pc.png"/>
               </Slider>
-              <ActivityContent title="Manual do Calouro"/>
-              <ActivityReveal title="Manual do Calouro">
+              <ActivityContent title="Manual de Sobrevivência"/>
+              <ActivityReveal title="Manual de Sobrevivência">
                 <p>
                   Manual criado para auxiliar o calouro nos seus primeiros dias no Centro de Informática, explicando
                   principalmente o passo-a-passo de atividades e as oportunidades do Centro e da Universidade
                   de maneira simples e direta.
-                </p>
-              </ActivityReveal>
-            </ActivityCard>
-
-            <ActivityCard>
-              <Slider link="https://pet-informatica.github.io/cinquest/">
-                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477240116/pet/cinquest-logo_f8ndmz.jpg"/>
-              </Slider>
-              <ActivityContent title="CInQuest"/>
-              <ActivityReveal title="CInQuest">
-                <p>
-                  <span className="deep-orange-text">CinQuest</span> é um jogo RPG desenvolvido pelo <span className="deep-orange-text">PET-Informática</span> para
-                  ajudar calouros a se encontrarem no Centro de  Informática. Nele, o aluno fará tudo o que será necessário na vida de estudante
-                  do CIn, realizando as atividades num cenário fiel ao Centro real.
                 </p>
               </ActivityReveal>
             </ActivityCard>
@@ -266,27 +239,26 @@ var ActivityBoard = React.createClass({
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="https://pet.cin.ufpe.br/lab/">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520209655/logo_petLab_mo0wbf.png"/>
               </Slider>
-              <ActivityContent title="petLab"/>
-              <ActivityReveal title="petLab">
+              <ActivityContent title="PELab"/>
+              <ActivityReveal title="PETLab">
                 <p>
                   O <span className="deep-orange-text">petLab</span> é uma inciativa do PET-Informática que propõe um período de intercâmbio em laboratórios de tecnologia e grupos de pesquisa da UFPE, onde os alunos envolvidos deverão 
-                  desenvolver projetos relacionados com as áreas de pesquisa por onde passarão. Neste primeiro ano, nossos parceiros são Lika, LIVE, SPG e Voxar Labs.
+                  desenvolver projetos relacionados com as áreas de pesquisa por onde passarão. Neste primeiro ano, nossos parceiros são Lika, SPG e Voxar Labs.
                 </p>
               </ActivityReveal>
             </ActivityCard>
 
             <ActivityCard>
-              <Slider>
+              <Slider link="https://pet.cin.ufpe.br/hacka/">
                 <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520209677/HackaPET_h0zeyn.png"/>
               </Slider>
               <ActivityContent title="HackaPET"/>
               <ActivityReveal title="HackaPET">
                 <p>
-                  O <span className="deep-orange-text">HackaPET</span> é uma iniciativa do PET-Informática que consiste em promover um hackaton para alunos do CIn com o objetivo de aumentar o engajamento dos alunos, como também motivá-los a 
-                  desenvolver seus conhecimentos.
+                  O Hacka<span className="deep-orange-text">PET</span> é uma iniciativa do PET-Informática que consiste em promover um hackaton para alunos do CIn com o objetivo de fazer alunos do primeiro ao quinto período se sentirem mais confiantes nas suas habilidades de programação
                 </p>
               </ActivityReveal>
             </ActivityCard>
