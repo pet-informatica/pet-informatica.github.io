@@ -226,7 +226,7 @@ var ActivityBoard = React.createClass({
 
             <ActivityCard>
               <Slider>
-                <Slide pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520210161/PETUtility_yw5wng.png"/>
+                <Slide pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520210161/PETUtility_yw5wng.png"/>
               </Slider>
               <ActivityContent title="PETUtility"/>
               <ActivityReveal title="PETUtility">
