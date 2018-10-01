@@ -1,9 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="IPreCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_i_pre_condition.html",tooltip="Developed by: Peao (rngs); Gerenic definiton of a PreCondition; "];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="GenericPreCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_generic_pre_condition.html",tooltip="Developed by: Peao (rngs); Generic precondition. "];
-}

@@ -1,9 +1,0 @@
-digraph "QuestUI.CloseWindow"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node12 [label="QuestUI.CloseWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="QuestUI.CloseInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quest_u_i.html#aa884d62a1f8f5afdb18a6ede0d27c45a",tooltip="Close only the QuestInfo Box "];
-}
