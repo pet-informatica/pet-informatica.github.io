@@ -30,25 +30,25 @@ var Members = React.createClass({
   render: function(){
     return(
       <div className="row">
-        <Member name="Aline Gouveia" desc="amtg" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172203/aline_ebd2ui.jpg" face="https://www.facebook.com/mariatenorioo"/>        
-        <Member name="Claudio Carvalho" desc="cco2" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520211481/claudio_uu2hai.jpg" face="https://www.facebook.com/claudiocarvalhoo"/>
-        <Member name="Éden Ernandes" desc="eeas" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520211483/eden_bsjax1.jpg" face="https://www.facebook.com/edenernandes"/>
+        <Member name="Aline Gouveia" desc="amtg" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172203/aline_ebd2ui.jpg" face="https://www.facebook.com/mariatenorioo"/>        
+        <Member name="Claudio Carvalho" desc="cco2" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520211481/claudio_uu2hai.jpg" face="https://www.facebook.com/claudiocarvalhoo"/>
+        <Member name="Éden Ernandes" desc="eeas" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520211483/eden_bsjax1.jpg" face="https://www.facebook.com/edenernandes"/>
         <Member name="Edjan Michiles" desc="esvm" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477078739/pet/edjan_rdfnez.png" face="https://www.facebook.com/edjanmichiles"/>
-        <Member name="Felipe Araújo" desc="fbma" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172201/felipe_ixro6g.jpg" face="https://www.facebook.com/felipearaujo213"/>
-        <Member name="Henrique Caúla" desc="lhtc" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172200/tato_afltz1.jpg" face="https://www.facebook.com/hcaula"/>
+        <Member name="Felipe Araújo" desc="fbma" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172201/felipe_ixro6g.jpg" face="https://www.facebook.com/felipearaujo213"/>
+        <Member name="Henrique Caúla" desc="lhtc" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172200/tato_afltz1.jpg" face="https://www.facebook.com/hcaula"/>
         <Member name="Higor Cavalcanti" desc="hcmb" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477078705/pet/higor_trgodn.png" face="https://www.facebook.com/HigorCMB"/>
-        <Member name="Larícia Mota" desc="lmmc2" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520211484/laricia_ddvzpy.jpg" face="https://www.facebook.com/laricia.mota"/>
-        <Member name="Luan Brito" desc="lab7" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536189911/luan_x4zz04.jpg" face="https://www.facebook.com/luan.brito.98"/>
+        <Member name="Larícia Mota" desc="lmmc2" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520211484/laricia_ddvzpy.jpg" face="https://www.facebook.com/laricia.mota"/>
+        <Member name="Luan Brito" desc="lab7" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536189911/luan_x4zz04.jpg" face="https://www.facebook.com/luan.brito.98"/>
         <Member name="Marcela Azevedo" desc="macm3" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477078762/pet/marcela_ga1upn.png" face="https://www.facebook.com/marcelaazevedo6"/>
         <Member name="Maria Luiza" desc="mlmv" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477078740/pet/malu_qfwczh.png" face="https://www.facebook.com/mluiza.menezes"/>
-        <Member name="Matheus Borba" desc="mlbas" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172201/broba_qpijfp.jpg" face="https://www.facebook.com/MatheusBorba222"/>
-        <Member name="Pedro Basilio" desc="pcsb" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172198/basi_nyknu1.jpg" face="https://www.facebook.com/pedrocostab"/>
+        <Member name="Matheus Borba" desc="mlbas" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172201/broba_qpijfp.jpg" face="https://www.facebook.com/MatheusBorba222"/>
+        <Member name="Pedro Basilio" desc="pcsb" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172198/basi_nyknu1.jpg" face="https://www.facebook.com/pedrocostab"/>
         <Member name="Pedro Rossi" desc="pgrr" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477078785/pet/rossi_iiqcfp.png" face="https://www.facebook.com/pgrr97"/>
-        <Member name="Pedro Tôrres" desc="phts" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520211494/peu_hzuwon.jpg" face="https://www.facebook.com/t0rr3sp3dr0"/>
-        <Member name="Ramon Saboya" desc="rsg3" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172198/ramon_fhrnmq.jpg" face="https://www.facebook.com/ramonsaboyagomes"/>
-        <Member name="Simone Santos" desc="scs" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520211862/simone_edbcgo.jpg" face="https://www.linkedin.com/in/simone-santos-0562a228/"/>
-        <Member name="Ullayne Fernandes" desc="uffl" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1520211497/ullayne_idtnvf.jpg" face="https://www.facebook.com/ullayne.fernandes"/>
-        <Member name="Valdemiro Vieira" desc="vrvs" pic="http://res.cloudinary.com/dkbuneg9h/image/upload/v1536172201/vald_cbl90s.jpg" face="https://www.facebook.com/valdemiroo"/>
+        <Member name="Pedro Tôrres" desc="phts" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520211494/peu_hzuwon.jpg" face="https://www.facebook.com/t0rr3sp3dr0"/>
+        <Member name="Ramon Saboya" desc="rsg3" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172198/ramon_fhrnmq.jpg" face="https://www.facebook.com/ramonsaboyagomes"/>
+        <Member name="Simone Santos" desc="scs" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520211862/simone_edbcgo.jpg" face="https://www.linkedin.com/in/simone-santos-0562a228/"/>
+        <Member name="Ullayne Fernandes" desc="uffl" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1520211497/ullayne_idtnvf.jpg" face="https://www.facebook.com/ullayne.fernandes"/>
+        <Member name="Valdemiro Vieira" desc="vrvs" pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1536172201/vald_cbl90s.jpg" face="https://www.facebook.com/valdemiroo"/>
       </div>
     );
   }
