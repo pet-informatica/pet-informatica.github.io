@@ -11,5 +11,5 @@ var Parallax = React.createClass({
   }
 });
 
-ReactDOM.render(<Parallax pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477172565/pet/team-2_yv03cq.jpg"/>, document.getElementById('team-1'));
-ReactDOM.render(<Parallax pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1477172859/pet/team-1_abc3cz.jpg"/>, document.getElementById('team-2'));
+ReactDOM.render(<Parallax pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1538365229/opei_dream_time_hxbsn6.jpg"/>, document.getElementById('team-1'));
+ReactDOM.render(<Parallax pic="https://res.cloudinary.com/dkbuneg9h/image/upload/v1538364834/36064744_1724411950982667_933395912108015616_o_tfbjep.jpg"/>, document.getElementById('team-2'));
