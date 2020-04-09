@@ -101,7 +101,7 @@ var Members = React.createClass({
     return(
       <div className="row">
         {participants.map(participants => 
-          <Member name = {participants.name} desc={participants.desc} pic={participants.pic} face={participants.face}/>
+          <Member key={participants.desc} name = {participants.name} desc={participants.desc} pic={participants.pic} face={participants.face}/>
           )}
       </div>
     );
@@ -118,7 +118,7 @@ var ExMembers = React.createClass({
     return(
       <div className="row">
         {participants.map(participants => 
-          <Member name = {participants.name} desc={participants.desc} pic={participants.pic} face={participants.face}/>
+          <Member key={participants.desc} name = {participants.name} desc={participants.desc} pic={participants.pic} face={participants.face}/>
           )}
       </div>
     );
