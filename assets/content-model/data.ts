@@ -507,7 +507,7 @@ export const petWebsiteData: PetWebsiteData = {
     {
       question: 'O que é o PET?',
       answer:
-        'O <strong>Programa de Educação Tutorial</strong> foi criado para apoiar atividades que integram ensino, pesquisa e extensão. O PET proporciona às pessoas alunas, sob orientação de uma pessoa tutora, a realização de atividades extracurriculares que complementem a formação acadêmica dos estudantes e, ao mesmo tempo, atendam necessidades do próprio curso de graduação.',
+        'O <strong>Programa de Educação Tutorial</strong> foi criado para apoiar atividades que integram ensino, pesquisa e extensão. O PET proporciona às pessoas alunas, sob orientação de uma pessoa tutora, a realização de atividades extracurriculares que complementem a formação acadêmica da comunidade estudantil e, ao mesmo tempo, atendam necessidades do próprio curso de graduação.',
     },
     {
       question: 'O que é o PET-Informática?',
