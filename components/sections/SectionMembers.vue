@@ -10,6 +10,7 @@
 
           <nav class="flex flex-row pt-8" role="tablist">
             <button
+              type="button"
               role="tab"
               aria-controls="pet-members"
               :aria-selected="selectedOption === 'current'"
@@ -23,6 +24,7 @@
               Membros
             </button>
             <button
+              type="button"
               role="tab"
               aria-controls="pet-members"
               :aria-selected="selectedOption === 'egress'"
