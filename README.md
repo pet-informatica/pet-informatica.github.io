@@ -17,7 +17,7 @@ O site utiliza a framework Vue [Nuxt.js](https://nuxtjs.org/), além de [Tailwin
 
 ## Alterando conteúdo do site
 
-O conteúdo do site está disponível como um objeto em [`assets/content-model/data.ts`](assets/content-model/data.ts). Dados como atividades e a lista de integrantes do PET podem ser alterados diretamente através desse arquivos, e as alterações se refletirão no conteúdo do site. Os tipos referentes à esse objeto estão disponível em [`assets/content-model/content-model.ts`](assets/content-model/content-model.ts).
+O conteúdo do site está disponível como um objeto em [`assets/content-model/data.ts`](assets/content-model/data.ts). Dados como atividades e a lista de integrantes do PET podem ser alterados diretamente através desse arquivos, e as alterações se refletirão no conteúdo do site. Os tipos referentes à esse objeto estão disponíveis em [`assets/content-model/content-model.ts`](assets/content-model/content-model.ts).
 
 ## Executando localmente
 
