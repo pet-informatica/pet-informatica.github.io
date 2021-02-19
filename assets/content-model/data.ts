@@ -517,7 +517,7 @@ export const petWebsiteData: PetWebsiteData = {
     {
       question: 'Como entro no PET?',
       answer:
-        'Periodicamente, com a saída de antigos integrantes, são abertas novas vagas para o grupo. A abertura do processo seletivo é divulgada nas nossas <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="#contato">redes sociais</a> através do lançamento do Edital de Convocação. O processo seletivo se resume em três etapas: a primeira, onde o candidato envia currículos e outros documentos sobre a vida acadêmica, e outras duas, onde são realizadas dinâmicas em grupo e entrevistas. O processo é aberto para pessoas alunas de Ciência da Computação da UFPE que estejam entre o 1º e o 7º período.',
+        'Periodicamente, com a saída de antigos integrantes, são abertas novas vagas para o grupo. A abertura do processo seletivo é divulgada nas nossas <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="#contato">redes sociais</a> através do lançamento do Edital de Convocação. O processo seletivo se resume em três etapas: a primeira, onde as pessoas inscritas enviam currículos e outros documentos sobre a vida acadêmica, e outras duas, onde são realizadas dinâmicas em grupo e entrevistas. O processo é aberto para pessoas alunas de Ciência da Computação da UFPE que estejam entre o 1º e o 7º período.',
     },
     {
       question: 'Quem pode participar do PET?',
