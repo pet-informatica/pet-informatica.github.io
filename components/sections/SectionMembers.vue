@@ -212,9 +212,9 @@ export default Vue.extend({
       selectedOption: PetMemberType.Current,
       buttonStyle: {
         selected:
-          'text-laranja-internacional font-bold lowercase py-2 my-2 mr-8 block hover:text-laranja-internacional-dark focus:outline-none border-b-2 border-laranja-internacional transition-colors',
+          'text-laranja-internacional font-bold lowercase py-2 my-2 mr-8 block hover:text-laranja-internacional-dark border-b-2 border-laranja-internacional transition-colors',
         unselected:
-          'text-laranja-internacional font-medium lowercase py-2 my-2 mr-8 block hover:text-laranja-internacional-dark focus:outline-none transition-colors',
+          'text-laranja-internacional font-medium lowercase py-2 my-2 mr-8 block hover:text-laranja-internacional-dark transition-colors',
       },
     }
   },
