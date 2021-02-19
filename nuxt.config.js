@@ -73,6 +73,11 @@ export default {
     base: '/www',
   },
 
+  components: [
+    '~/components/elements',
+    '~/components/sections',
+  ],
+
   googleAnalytics: {
     id: 'UA-109129944-5',
   },
