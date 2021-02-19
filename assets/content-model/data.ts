@@ -207,7 +207,7 @@ export const petWebsiteData: PetWebsiteData = {
       name: 'Marconi Gomes',
       type: PetMemberType.Current,
       cinLogin: 'mgrf',
-      photoUrl: `${targetImageLocation}/members/marconi-gomes.png`,
+      photoUrl: `${targetImageLocation}/members/marconi-gomes.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/MarconiGRF/',
       personalWebsiteUrl: 'https://marconi.dev.br/',
     },
