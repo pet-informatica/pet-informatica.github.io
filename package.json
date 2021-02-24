@@ -21,7 +21,7 @@
   "dependencies": {
     "@diracleo/vue-enlargeable-image": "0.0.7",
     "@nuxt/content": "^1.11.1",
-    "@nuxt/typescript-runtime": "^2.0.1",
+    "@nuxt/typescript-runtime": "^2.0.2",
     "core-js": "^3.9.0",
     "nuxt": "^2.15.0"
   },
