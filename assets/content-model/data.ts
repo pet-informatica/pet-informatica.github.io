@@ -20,9 +20,9 @@ export const petWebsiteData: PetWebsiteData = {
   announcement: {
     visible: true,
     colorScheme: PetColorScheme.LaranjaGradiente,
-    shortDescription: 'A seleção 2021 do PET está aberta!',
+    shortDescription: 'A seleção 2021 do PET foi prorrogada!',
     longDescription:
-      'A seleção 2021 do PET está aberta! Inscreva-se até o dia 14 de março.',
+      'A seleção 2021 do PET foi prorrogada! Inscreva-se até o dia 21 de março.',
     callToAction: {
       text: 'Inscreva-se',
       url: 'https://pet.cin.ufpe.br/selecao',
