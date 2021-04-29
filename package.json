@@ -22,7 +22,7 @@
     "@diracleo/vue-enlargeable-image": "0.0.7",
     "@nuxt/content": "^1.11.1",
     "@nuxt/typescript-runtime": "^2.0.1",
-    "core-js": "^3.9.0",
+    "core-js": "^3.11.1",
     "nuxt": "^2.15.0"
   },
   "devDependencies": {
