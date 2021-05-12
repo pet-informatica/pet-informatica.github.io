@@ -18,7 +18,7 @@ export const targetImageLocation = imageLocations.cdn;
 
 export const petWebsiteData: PetWebsiteData = {
   announcement: {
-    visible: true,
+    visible: false,
     colorScheme: PetColorScheme.LaranjaGradiente,
     shortDescription: 'A seleção 2021 do PET foi prorrogada!',
     longDescription:
@@ -184,9 +184,43 @@ export const petWebsiteData: PetWebsiteData = {
   ],
   members: [
     {
-      name: 'Aline Gouveia',
+      name: 'Tomás Nascimento',
       type: PetMemberType.Current,
-      cinLogin: 'amtg',
+      cinLogin: 'tnpb',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1620794460/pet-website/members/tomas-nascimento.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/tom%C3%A1s-nascimento-4a2260200/',
+    },
+    {
+      name: 'Ernesto Gonçalves',
+      type: PetMemberType.Current,
+      cinLogin: 'egln',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1620794238/pet-website/members/ernesto-goncalves.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/ergdln/',
+    },
+    {
+      name: 'Josué Fidelis',
+      type: PetMemberType.Current,
+      cinLogin: 'jfon',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1620794084/pet-website/members/josue-fidelis.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/josu%C3%A9-fidelis-2059411a2/',
+    },
+    {
+      name: 'Robson Oliveira',
+      type: PetMemberType.Current,
+      cinLogin: 'ropj',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1620794459/pet-website/members/robson-oliveira.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/ropj/',
+    },
+    {
+      name: 'Matheus Alves',
+      type: PetMemberType.Current,
+      cinLogin: 'maa2',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1620794305/pet-website/members/matheus-alves.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/matheus-alves-almeida-0a2947180/',
+    },
+    {
+      name: 'Aline Gouveia',
+      type: PetMemberType.Egress,
       photoUrl: `${targetImageLocation}/members/aline-gouveia.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/aline-gouveia/',
     },
@@ -227,8 +261,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Luan Brito',
-      type: PetMemberType.Current,
-      cinLogin: 'lab7',
+      type: PetMemberType.Egress,
       photoUrl: `${targetImageLocation}/members/luan-brito.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/luan-brito-1b802a152/',
     },
