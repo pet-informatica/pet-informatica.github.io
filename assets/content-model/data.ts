@@ -22,7 +22,7 @@ export const petWebsiteData: PetWebsiteData = {
     colorScheme: PetColorScheme.BondiBlue,
     shortDescription: 'A seleção de novas petianas 2021.1 do PET está aberta!',
     longDescription:
-      'Inscreva-se até o dia 25 de julho.',
+      'Inscreva-se até o dia 1 de agosto.',
     callToAction: {
       text: 'Inscreva-se',
       url: 'https://pet.cin.ufpe.br/selecao',
