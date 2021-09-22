@@ -19,13 +19,13 @@ export const targetImageLocation = imageLocations.cdn;
 export const petWebsiteData: PetWebsiteData = {
   announcement: {
     visible: true,
-    colorScheme: PetColorScheme.BondiBlue,
-    shortDescription: 'A seleção de novas petianas 2021.1 do PET está aberta!',
+    colorScheme: PetColorScheme.Ouro,
+    shortDescription: 'As inscrições para a OPEI estão abertas!',
     longDescription:
-      'Inscreva-se até o dia 1 de agosto.',
+      '',
     callToAction: {
       text: 'Inscreva-se',
-      url: 'https://pet.cin.ufpe.br/selecao',
+      url: 'https://opei.cin.ufpe.br/',
     },
   },
   hero: {
