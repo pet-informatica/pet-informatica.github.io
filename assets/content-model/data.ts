@@ -19,13 +19,13 @@ export const targetImageLocation = imageLocations.cdn;
 export const petWebsiteData: PetWebsiteData = {
   announcement: {
     visible: true,
-    colorScheme: PetColorScheme.Ouro,
-    shortDescription: 'As inscrições para a OPEI estão abertas!',
+    colorScheme: PetColorScheme.MarAmarelo,
+    shortDescription: 'Seleção 2022.1',
     longDescription:
-      '',
+      'A seleção de novos petianos 2022.1 do PET está aberta! Inscreva-se até o dia 15 de março.',
     callToAction: {
       text: 'Inscreva-se',
-      url: 'https://opei.cin.ufpe.br/',
+      url: 'https://pet.cin.ufpe.br/selecao/',
     },
   },
   hero: {
@@ -183,6 +183,20 @@ export const petWebsiteData: PetWebsiteData = {
     },
   ],
   members: [
+    {
+      name: 'Alice Sales',
+      type: PetMemberType.Current,
+      cinLogin: 'avss2',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1646075847/pet-website/members/alice-sales.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/alice-sales123/',
+    },
+    {
+      name: 'Fernanda Pascoal',
+      type: PetMemberType.Current,
+      cinLogin: 'falp',
+      photoUrl: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1646076028/pet-website/members/fernanda-pascoal.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/fernandapascoal/',
+    },
     {
       name: 'Tomás Nascimento',
       type: PetMemberType.Current,
