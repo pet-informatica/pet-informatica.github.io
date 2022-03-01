@@ -240,7 +240,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'André Vasconcelos',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'alpvj',
       photoUrl: `${targetImageLocation}/members/andre-luis-vasconcelos.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/andrevas86/',
@@ -253,7 +253,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Marconi Gomes',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'mgrf',
       photoUrl: `${targetImageLocation}/members/marconi-gomes.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/MarconiGRF/',
@@ -269,7 +269,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Pedro Basilio',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'pcsb',
       photoUrl: `${targetImageLocation}/members/pedro-basilio.jpg`,
     },
@@ -281,7 +281,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'José Bezerra',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'jbmn2',
       photoUrl: `${targetImageLocation}/members/jose-bezerra.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/j0s3bezerra/',
