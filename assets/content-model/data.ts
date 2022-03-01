@@ -25,7 +25,7 @@ export const petWebsiteData: PetWebsiteData = {
       'A seleção de novos petianos 2022.1 do PET está aberta! Inscreva-se até o dia 15 de março.',
     callToAction: {
       text: 'Inscreva-se',
-      url: 'https://pet.cin.ufpe.br/selecao/',
+      url: 'https://forms.gle/SeDueU166fKH112W6',
     },
   },
   hero: {
