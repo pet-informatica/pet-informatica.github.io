@@ -25,7 +25,7 @@ export const petWebsiteData: PetWebsiteData = {
       'A seleção de novos petianos 2022.1 do PET está aberta! Inscreva-se até o dia 15 de março.',
     callToAction: {
       text: 'Inscreva-se',
-      url: 'https://pet.cin.ufpe.br/selecao/',
+      url: 'https://forms.gle/SeDueU166fKH112W6',
     },
   },
   hero: {
@@ -240,7 +240,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'André Vasconcelos',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'alpvj',
       photoUrl: `${targetImageLocation}/members/andre-luis-vasconcelos.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/andrevas86/',
@@ -253,7 +253,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Marconi Gomes',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'mgrf',
       photoUrl: `${targetImageLocation}/members/marconi-gomes.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/MarconiGRF/',
@@ -281,7 +281,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'José Bezerra',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'jbmn2',
       photoUrl: `${targetImageLocation}/members/jose-bezerra.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/j0s3bezerra/',
