@@ -11,7 +11,7 @@ export const petDefaultDescriptionsLibrary = {
 
 export const imageLocations = {
   local: 'images',
-  cdn: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1613622178/pet-website',
+  cdn: 'https://res.cloudinary.com/dkbuneg9h/image/upload/v1660587087/pet-website',
 }
 
 export const targetImageLocation = imageLocations.cdn;
@@ -191,18 +191,25 @@ export const petWebsiteData: PetWebsiteData = {
       linkedinUrl: 'https://www.linkedin.com/in/alice-sales123/',
     },
     {
-      name: 'Fernanda Pascoal',
+      name: 'Bruno Lima',
       type: PetMemberType.Current,
-      cinLogin: 'falp',
-      photoUrl: `${targetImageLocation}/members/fernanda-pascoal.jpg`,
-      linkedinUrl: 'https://www.linkedin.com/in/fernandapascoal/',
+      cinLogin: 'bfl3',
+      photoUrl: `${targetImageLocation}/members/bruno-lima.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/bruno-lima-91835a230',
     },
     {
-      name: 'Tomás Nascimento',
+      name: 'César Silva',
       type: PetMemberType.Current,
-      cinLogin: 'tnpb',
-      photoUrl: `${targetImageLocation}/members/tomas-nascimento.jpg`,
-      linkedinUrl: 'https://www.linkedin.com/in/tom%C3%A1s-nascimento-4a2260200/',
+      cinLogin: 'accs2',
+      photoUrl: `${targetImageLocation}/members/cesar-silva.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/acesarsilva2/',
+    },
+    {
+      name: 'Eliab Bernardino',
+      type: PetMemberType.Current,
+      cinLogin: 'ebpj',
+      photoUrl: `${targetImageLocation}/members/eliab-bernardino.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/eliab-bernardino-a58748205/',
     },
     {
       name: 'Ernesto Gonçalves',
@@ -212,11 +219,72 @@ export const petWebsiteData: PetWebsiteData = {
       linkedinUrl: 'https://www.linkedin.com/in/ergdln/',
     },
     {
+      name: 'Fernanda Pascoal',
+      type: PetMemberType.Current,
+      cinLogin: 'falp',
+      photoUrl: `${targetImageLocation}/members/fernanda-pascoal.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/fernandapascoal/',
+    },
+    {
+      name: 'Gabriel Nogueira',
+      type: PetMemberType.Current,
+      cinLogin: 'gnl2',
+      photoUrl: `${targetImageLocation}/members/gabriel-nogueira.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/gabriel-n-132451122/',
+      personalWebsiteUrl: 'https://gabrielnogueiralt.github.io/',
+    },
+    {
+      name: 'Gabriela Pinheiro',
+      type: PetMemberType.Current,
+      cinLogin: 'mgpc',
+      photoUrl: `${targetImageLocation}/members/gabriela-pinheiro.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/gabrielapinheiroc/',
+    },
+    {
       name: 'Josué Fidelis',
       type: PetMemberType.Current,
       cinLogin: 'jfon',
       photoUrl: `${targetImageLocation}/members/josue-fidelis.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/josu%C3%A9-fidelis-2059411a2/',
+    },
+    {
+      name: 'João Victor',
+      type: PetMemberType.Current,
+      cinLogin: 'jvsf',
+      photoUrl: `${targetImageLocation}/members/joao-vitor.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/jo%C3%A3o-victor-25b434235/',
+    },
+    {
+      name: 'Lucas Leonardo',
+      type: PetMemberType.Current,
+      cinLogin: 'llbs',
+      photoUrl: `${targetImageLocation}/members/lucas-leonardo.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/lucasleonardobs/',
+    },
+    {
+      name: 'Marcelo Santana',
+      type: PetMemberType.Current,
+      cinLogin: 'maos3',
+      photoUrl: `${targetImageLocation}/members/marcelo-santana.jpg`,
+    },
+    {
+      name: 'Matheus Alves',
+      type: PetMemberType.Current,
+      cinLogin: 'maa2',
+      photoUrl: `${targetImageLocation}/members/matheus-alves.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/matheus-alves-almeida-0a2947180/',
+    },
+    {
+      name: 'Monyque Lima',
+      type: PetMemberType.Current,
+      cinLogin: 'mgbl',
+      photoUrl: `${targetImageLocation}/members/monyque-lima.jpg`,
+    },
+    {
+      name: 'Robson Fidalgo',
+      type: PetMemberType.Tutor,
+      cinLogin: 'rdnf',
+      photoUrl: `${targetImageLocation}/members/robson-fidalgo.jpg`,
     },
     {
       name: 'Robson Oliveira',
@@ -226,11 +294,31 @@ export const petWebsiteData: PetWebsiteData = {
       linkedinUrl: 'https://www.linkedin.com/in/ropj/',
     },
     {
-      name: 'Matheus Alves',
+      name: 'Rodrigo Moura',
       type: PetMemberType.Current,
-      cinLogin: 'maa2',
-      photoUrl: `${targetImageLocation}/members/matheus-alves.jpg`,
-      linkedinUrl: 'https://www.linkedin.com/in/matheus-alves-almeida-0a2947180/',
+      cinLogin: 'jrsm',
+      photoUrl: `${targetImageLocation}/members/rodrigo-moura.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/rodrigo-moura-101413224/',
+    }, 
+    {        
+      name: 'Rubens Lima',
+      type: PetMemberType.Current,
+      cinLogin: 'rnl2',
+      photoUrl: `${targetImageLocation}/members/rubens-lima.jpg`,
+    },
+    {
+      name: 'Tomás Nascimento',
+      type: PetMemberType.Current,
+      cinLogin: 'tnpb',
+      photoUrl: `${targetImageLocation}/members/tomas-nascimento.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/tom%C3%A1s-nascimento-4a2260200/',
+    },
+    {        
+      name: 'Victor Luiz',
+      type: PetMemberType.Current,
+      cinLogin: 'vlpl',
+      photoUrl: `${targetImageLocation}/members/victor-luiz.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/victor-luiz-9462501a2',
     },
     {
       name: 'Aline Gouveia',
@@ -246,12 +334,6 @@ export const petWebsiteData: PetWebsiteData = {
       linkedinUrl: 'https://www.linkedin.com/in/andrevas86/',
     },
     {
-      name: 'César Silva',
-      type: PetMemberType.Current,
-      cinLogin: 'accs2',
-      photoUrl: `${targetImageLocation}/members/cesar-silva.jpg`,
-    },
-    {
       name: 'Marconi Gomes',
       type: PetMemberType.Egress,
       cinLogin: 'mgrf',
@@ -261,7 +343,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Simone Santos',
-      type: PetMemberType.Tutor,
+      type: PetMemberType.Egress,
       cinLogin: 'scs',
       photoUrl: `${targetImageLocation}/members/simone-santos.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/simone-santos-0562a228/',
@@ -287,16 +369,8 @@ export const petWebsiteData: PetWebsiteData = {
       linkedinUrl: 'https://www.linkedin.com/in/j0s3bezerra/',
     },
     {
-      name: 'Gabriel Nogueira',
-      type: PetMemberType.Current,
-      cinLogin: 'gnl2',
-      photoUrl: `${targetImageLocation}/members/gabriel-nogueira.jpg`,
-      linkedinUrl: 'https://www.linkedin.com/in/gabriel-n-132451122/',
-      personalWebsiteUrl: 'https://gabrielnogueiralt.github.io/',
-    },
-    {
       name: 'Erick Almeida',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'eaor',
       photoUrl: `${targetImageLocation}/members/erick-almeida.jpg`,
       linkedinUrl: 'https://linkedin.com/in/risodev',
@@ -548,7 +622,7 @@ export const petWebsiteData: PetWebsiteData = {
       type: PetMemberType.Egress,
       photoUrl: `${targetImageLocation}/members/wilton-ramos.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/wilton-ramos/',
-    }
+    },
   ],
   faqEntries: [
     {
