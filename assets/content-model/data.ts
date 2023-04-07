@@ -18,7 +18,7 @@ export const targetImageLocation = imageLocations.cdn;
 
 export const petWebsiteData: PetWebsiteData = {
   announcement: {
-    visible: true,
+    visible: false,
     colorScheme: PetColorScheme.MarAmarelo,
     shortDescription: 'Seleção 2022.1',
     longDescription:
@@ -32,7 +32,7 @@ export const petWebsiteData: PetWebsiteData = {
     title: null,
     text: null,
     circleImage: {
-      url: `${targetImageLocation}/photos/opei-1.jpg`,
+      url: `https://i.ibb.co/9WgGQcP/petianoss.png`,
       alternativeText:
         'Equipe da Olimpíada Pernambucana de Informática, organizada pelo PET-Informática.',
     },
@@ -68,9 +68,9 @@ export const petWebsiteData: PetWebsiteData = {
       text:
         'Ocorrendo desde 2015, a Olimpíada Pernambucana de Informática tem como objetivo despertar o interesse em Ciência da Computação em estudantes do ensino fundamental e médio, além de motivar estudantes do primeiro ano do ensino superior, através de problemas de raciocínio lógico e matemática. Para o ensino médio e superior, a OPEI conta também com modalidade prática de programação, com linguagens como <i>Java</i>, <i>C/C++</i> e <i>Python</i>.',
       images: [{
-        url: `${targetImageLocation}/photos/opei-2.jpg`,
+        url: `https://i.ibb.co/Zht0mFC/raissa-opei.jpg`,
         alternativeText:
-          'Sala com estudantes realizando a avaliação prática da OPEI em computadores. Ao centro, uma pessoa da equipe de voluntários da OPEI. Ao fundo, um relógio digital projetado no quadro da sala.',
+          'Sala com estudantes realizando a avaliação prática da OPEI em computadores. No canto direito, uma aluna aplica a prova, enquanto no meio e no canto esquerdo, alunos estão realizando a prova.',
       }],
       callToAction: {
         text: 'Saiba mais no site oficial',
@@ -82,10 +82,14 @@ export const petWebsiteData: PetWebsiteData = {
       text:
         'Em parceria com o CIn, o PET-Informática organiza visitas para qualquer colégio que esteja interessado em mostrar o Centro para sua turma, a fim de ajudar na escolha profissional! Para marcar a visita da sua escola, veja o processo na seção <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="#perguntas-frequentes">Perguntas Frequentes</a>. Durante a visita, vamos fazer um tour com as pessoas alunas pelos prédios do CIn, e também fazer uma apresentação do curso!',
       images: [{
-        url: `${targetImageLocation}/photos/visita.jpg`,
+        url: `https://i.ibb.co/vP4999y/visita-pet.jpg`,
         alternativeText:
           'Estudantes e integrantes do PET-Informática em frente do Centro de Informática sorrindo e fazendo poses divertidas após uma visita.',
       }],
+      callToAction: {
+        text: 'Agende a sua visita',
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSdKJB2H0mqj7a7nkDeBYc42l-HsPXs1MJo-vRy6S_L9jZyCjw/viewform?usp=sf_link',
+      },
     },
     {
       title: 'Férias.py',
@@ -106,9 +110,9 @@ export const petWebsiteData: PetWebsiteData = {
       text:
           'Buscando dar aos alunos do CIn novos conhecimentos, o PET-Informática realiza periodicamente palestras de temas relacionados tanto à computação quanto à temas diversificados, possibilitando uma troca de conhecimentos de uma grande variedade de assuntos. Muitas vezes, os workshops também são voltados para a descontração, criando uma oportunidade de diversão e engajamento para fugir da rotina!',
       images: [{
-        url: `${targetImageLocation}/photos/workshops.png`,
+        url: `https://i.ibb.co/dWdK0Fh/palestras.jpg`,
         alternativeText:
-          'Estudantes em uma sala com computadores assistindo à uma workshop. Ao fundo, uma pessoa ministrando a workshop, com uma apresentação projetada no quadro da sala.',
+          'Estudantes em uma sala com computadores assistindo à uma workshop.',
       }],
     },
     {
@@ -317,7 +321,7 @@ export const petWebsiteData: PetWebsiteData = {
       name: 'Victor Luiz',
       type: PetMemberType.Current,
       cinLogin: 'vlpl',
-      photoUrl: `${targetImageLocation}/members/victor-luiz.jpg`,
+      photoUrl: `https://i.ibb.co/NYHKd2Y/victor-PET.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/victor-luiz-9462501a2',
     },
     {

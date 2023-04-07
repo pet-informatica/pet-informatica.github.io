@@ -9,7 +9,7 @@
     </defs>
     <image
       class="h-full"
-      x="-110"
+      x="-25"
       y="0"
       clip-path="url(#circlePath)"
       preserveAspectRatio="none"
