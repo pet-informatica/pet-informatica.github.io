@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "build": "nuxt-ts --openssl-legacy-provider build",
+    "start": "nuxt-ts --openssl-legacy-provider start",
+    "generate": "nuxt-ts --openssl-legacy-provider generate"
   },
   "repository": {
     "type": "git",
