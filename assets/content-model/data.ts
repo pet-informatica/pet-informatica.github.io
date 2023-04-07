@@ -197,13 +197,7 @@ export const petWebsiteData: PetWebsiteData = {
       photoUrl: `${targetImageLocation}/members/bruno-lima.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/bruno-lima-91835a230',
     },
-    {
-      name: 'César Silva',
-      type: PetMemberType.Current,
-      cinLogin: 'accs2',
-      photoUrl: `${targetImageLocation}/members/cesar-silva.jpg`,
-      linkedinUrl: 'https://www.linkedin.com/in/acesarsilva2/',
-    },
+    
     {
       name: 'Eliab Bernardino',
       type: PetMemberType.Current,
@@ -225,14 +219,7 @@ export const petWebsiteData: PetWebsiteData = {
       photoUrl: `${targetImageLocation}/members/fernanda-pascoal.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/fernandapascoal/',
     },
-    {
-      name: 'Gabriel Nogueira',
-      type: PetMemberType.Current,
-      cinLogin: 'gnl2',
-      photoUrl: `${targetImageLocation}/members/gabriel-nogueira.jpg`,
-      linkedinUrl: 'https://www.linkedin.com/in/gabriel-n-132451122/',
-      personalWebsiteUrl: 'https://gabrielnogueiralt.github.io/',
-    },
+    
     {
       name: 'Gabriela Pinheiro',
       type: PetMemberType.Current,
@@ -319,6 +306,21 @@ export const petWebsiteData: PetWebsiteData = {
       cinLogin: 'vlpl',
       photoUrl: `${targetImageLocation}/members/victor-luiz.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/victor-luiz-9462501a2',
+    },
+    {
+      name: 'Gabriel Nogueira',
+      type: PetMemberType.Egress,
+      cinLogin: 'gnl2',
+      photoUrl: `${targetImageLocation}/members/gabriel-nogueira.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/gabriel-n-132451122/',
+      personalWebsiteUrl: 'https://gabrielnogueiralt.github.io/',
+    },
+    {
+      name: 'César Silva',
+      type: PetMemberType.Egress,
+      cinLogin: 'accs2',
+      photoUrl: `${targetImageLocation}/members/cesar-silva.jpg`,
+      linkedinUrl: 'https://www.linkedin.com/in/acesarsilva2/',
     },
     {
       name: 'Aline Gouveia',
@@ -633,7 +635,7 @@ export const petWebsiteData: PetWebsiteData = {
     {
       question: 'O que é o PET-Informática?',
       answer:
-        '<strong>PET-Informática</strong> é o PET do curso de Ciência da Computação da Universidade Federal de Pernambuco, composto por pessoas alunas bolsistas e não bolsistas, sob a orientação de uma pessoa professora tutora — atualmente a professora <strong>Simone Santos</strong>.',
+        '<strong>PET-Informática</strong> é o PET do curso de Ciência da Computação da Universidade Federal de Pernambuco, composto por pessoas alunas bolsistas e não bolsistas, sob a orientação de uma pessoa professora tutora — atualmente o professor <strong>Robson Fidalgo</strong>.',
     },
     {
       question: 'Como entro no PET?',
@@ -654,12 +656,12 @@ export const petWebsiteData: PetWebsiteData = {
     {
       question: 'Como agendar uma visita institucional?',
       answer:
-        'Para agendar uma visita, a pessoa professora que deseja trazer a turma ao centro precisa mandar um e-mail para o CIn através de <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="mailto:ncsf@cin.ufpe.br">ncsf@cin.ufpe.br</a> ou <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="mailto:rvsj2@cin.ufpe.br">rvsj2@cin.ufpe.br</a> informando a instituição, o tamanho da turma e o dia e horários desejados. Nós, em conjunto com o Centro, veremos a possibilidade da vaga e confirmamos a visita.',
+        'Para agendar uma visita, a pessoa professora que deseja trazer a turma ao centro precisa preencher <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" target = "blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdKJB2H0mqj7a7nkDeBYc42l-HsPXs1MJo-vRy6S_L9jZyCjw/viewform?usp=sf_link">este form</a> informando a instituição, o tamanho da turma e o dia e horários desejados. Nós, em conjunto com o Centro, avaliaremos a possibilidade da vaga e confirmaremos a visita.',
     },
     {
       question: 'Como participo da OPEI?',
       answer:
-        '<strong>Se você é uma pessoa aluna:</strong> a inscrição para a OPEI é realizada por intermédio de uma pessoa professora responsável. Caso você queira participar, verifique com a escola se existe uma pessoa professora responsável pelo cadastro de estudantes. Caso não tenha, procure uma pessoa professora que possa se responsabilizar pelo cadastro da escola através do formulário disponível no <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="https://opei.cin.ufpe.br/">site da OPEI</a>. É importante que o regulamento seja seguido pelas pessoas alunas e professoras.<br><br><strong>Se você é uma pessoa professora ou diretora:</strong> Leia o regulamento que está disponível na aba "Quero me inscrever" no <a class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="https://opei.cin.ufpe.br/">site da OPEI</a> e cadastre a sua escola.',
+        '<strong>Se você é uma pessoa aluna:</strong> a inscrição para a OPEI é realizada por intermédio de uma pessoa professora responsável. Caso você queira participar, verifique com a escola se existe uma pessoa professora responsável pelo cadastro de estudantes. Caso não tenha, procure uma pessoa professora que possa se responsabilizar pelo cadastro da escola através do formulário disponível no <a target = "blank" class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="https://opei.cin.ufpe.br/">site da OPEI</a>. É importante que o regulamento seja seguido pelas pessoas alunas e professoras.<br><br><strong>Se você é uma pessoa professora ou diretora:</strong> Leia o regulamento que está disponível na aba "Quero me inscrever" no <a target = "blank" class="font-bold text-laranja-internacional hover:text-laranja-internacional-dark transition-colors" href="https://opei.cin.ufpe.br/">site da OPEI</a> e cadastre a sua escola.',
     },
     {
       question: 'Como entro em contato?',

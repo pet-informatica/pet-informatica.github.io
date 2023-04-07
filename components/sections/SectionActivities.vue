@@ -31,7 +31,8 @@
                   v-html="activity.text"
                 ></p>
               </div>
-              <a
+              <a  
+                  target="blank"
                   v-if="activity.callToAction"
                   :href="activity.callToAction.url"
                   class="flex items-center justify-between px-4 py-3 mx-4 mb-4 border border-transparent rounded-md shadow-md text-sm font-bold text-linho bg-laranja-internacional hover:bg-laranja-internacional-dark transition-colors"
