@@ -247,7 +247,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Lucas Leonardo',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'llbs',
       photoUrl: `${targetImageLocation}/members/lucas-leonardo.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/lucasleonardobs/',
@@ -260,7 +260,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Matheus Alves',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'maa2',
       photoUrl: `${targetImageLocation}/members/matheus-alves.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/matheus-alves-almeida-0a2947180/',
@@ -299,7 +299,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Tomás Nascimento',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'tnpb',
       photoUrl: `${targetImageLocation}/members/tomas-nascimento.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/tom%C3%A1s-nascimento-4a2260200/',
