@@ -18,11 +18,11 @@ export const targetImageLocation = imageLocations.cdn;
 
 export const petWebsiteData: PetWebsiteData = {
   announcement: {
-    visible: false,
+    visible: true,
     colorScheme: PetColorScheme.MarAmarelo,
-    shortDescription: 'Seleção 2022.1',
+    shortDescription: 'Seleção 2024',
     longDescription:
-      'A seleção de novos petianos 2022.1 do PET está aberta! Inscreva-se até o dia 15 de março.',
+      'A seleção de 2024 para novos petianos está aberta! Inscreva-se até o dia 5 de fevereiro.',
     callToAction: {
       text: 'Inscreva-se',
       url: 'https://pet.cin.ufpe.br/selecao/',
