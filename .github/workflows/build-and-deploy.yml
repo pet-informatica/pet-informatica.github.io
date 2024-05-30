@@ -1,28 +1,46 @@
-name: build-and-deploy
-
+name: Build and Deploy
 on:
   push:
-    branches: [ main ]
-
+    branches: [ "main" ]
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js
         uses: actions/setup-node@v2.5.1
         with:
           node-version: v16.19.1
-
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
-
       - name: Build the website
+        shell: bash
         run: |
           npm install
           npm run generate
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+      - name: Pack static output
+        shell: bash
+        run: |
+          cd ./dist
+          tar -czvf /tmp/pet-informatica.github.io.tar.gz .
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
         with:
-          branch: gh-pages
-          folder: dist
+          name: StaticOutput
+          path: /tmp/pet-informatica.github.io.tar.gz
+  deploy:
+    needs: build
+    runs-on:
+      - self-hosted
+      - linux
+      - x64
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: StaticOutput
+      - name: Unpack and deploy
+        shell: bash
+        run: |
+          rm -rf ${{ secrets.VM_PETSITE_PATH }}/*
+          tar -xzf pet-informatica.github.io.tar.gz -C ${{ secrets.VM_PETSITE_PATH }}
+          rm -rf pet-informatica.github.io.tar.gz
