@@ -1,0 +1,19 @@
+name: Build on PR
+on:
+  pull_request:
+    types: ["opened"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version: v16.19.1
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+      - name: Build the website
+        shell: bash
+        run: |
+          npm install
+          npm run generate
