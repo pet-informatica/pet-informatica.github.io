@@ -17,17 +17,17 @@ export const imageLocations = {
 export const targetImageLocation = imageLocations.cdn;
 
 export const petWebsiteData: PetWebsiteData = {
-  announcement: {
-    visible: true,
-    colorScheme: PetColorScheme.MarAmarelo,
-    shortDescription: 'Seleção 2024',
-    longDescription:
-      'A seleção de 2024 para novos petianos está aberta! Inscreva-se até o dia 5 de fevereiro.',
-    callToAction: {
-      text: 'Inscreva-se',
-      url: 'https://pet.cin.ufpe.br/selecao/',
-    },
-  },
+//  announcement: {
+//    visible: true,
+//    colorScheme: PetColorScheme.MarAmarelo,
+//    shortDescription: 'Seleção 2024',
+//    longDescription:
+//      'A seleção de 2024 para novos petianos está aberta! Inscreva-se até o dia 5 de fevereiro.',
+//    callToAction: {
+//      text: 'Inscreva-se',
+//      url: 'https://pet.cin.ufpe.br/selecao/',
+//    },
+//  },
   hero: {
     title: null,
     text: null,
