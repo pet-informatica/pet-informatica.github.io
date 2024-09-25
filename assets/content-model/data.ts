@@ -11,8 +11,7 @@ export const petDefaultDescriptionsLibrary = {
 
 export const imageLocations = {
   local: 'images',
-  cdn: 'https://res.cloudinary.com/doiqlfqcn/image/upload/v1727260447/pet-website/',
-  
+  cdn: 'https://res.cloudinary.com/doiqlfqcn/image/upload/v1727264179/pet-website/',  
 }
 
 export const targetImageLocation = imageLocations.cdn;
