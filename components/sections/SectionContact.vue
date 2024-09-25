@@ -74,7 +74,7 @@
           <p
             class="text-perola-negra text-sm sm:text-md sm:text-center sm:text-linho px-8 pt-4 pb-12 sm:py-8"
           >
-            2021. Feito com ❤ pelo PET-Informática.
+            2024. Feito com ❤ pelo PET-Informática.
           </p>
         </div>
       </div>

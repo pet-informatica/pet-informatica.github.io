@@ -92,3 +92,9 @@ export type PetWebsiteData = {
   contactUrls: PetWebsiteContactUrl[]
   externalLinks: PetWebsiteExternalLink[]
 }
+
+
+export type ImagensGallery = {
+  url: string,
+  id: string,
+}
