@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="p-8">
           <ElementSectionTitle>
-            <span class="text-laranja-internacional">Perguntas</span> frequentes
+            Perguntas <span class="text-laranja-internacional">frequentes</span>
           </ElementSectionTitle>
 
           <ul class="grid grid-cols sm:grid-cols-2 pt-8 gap-12">

@@ -12,7 +12,7 @@
             class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 pt-8"
           >
             <div
-              v-for="activity in activities"
+              v-for="activity in sortedActivities"
               :key="activity.title"
               class="bg-branco overflow-hidden shadow-md rounded-lg w-full h-full flex flex-col flex-1 m-auto"
             >
@@ -57,6 +57,11 @@ export default Vue.extend({
     activities: {
       type: Array as () => PetWebsiteActivity[],
       required: true,
+    },
+  },
+  computed: {
+    sortedActivities(): PetWebsiteActivity[] {
+      return this.activities.slice().sort((a, b) => a.title.localeCompare(b.title));
     },
   },
 })
