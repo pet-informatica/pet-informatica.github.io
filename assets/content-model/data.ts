@@ -181,7 +181,7 @@ export const petWebsiteData: PetWebsiteData = {
   members: [
     {
       name: 'Rinaldo Junior',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'rsbj',
       photoUrl:  `${targetImageLocation}/pessoas/rinaldo.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/rinaldosbj/',
@@ -195,7 +195,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Beatriz Freire',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'bfpc',
       photoUrl:  `${targetImageLocation}/pessoas/beatriz.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/beatriz-freire-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-89b803225/',
@@ -237,7 +237,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Bruno Lima',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'bfl3',
       photoUrl: `${targetImageLocation}/pessoas/bruno.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/bruno-lima-91835a230',
@@ -266,7 +266,7 @@ export const petWebsiteData: PetWebsiteData = {
     },
     {
       name: 'Gabriela Pinheiro',
-      type: PetMemberType.Current,
+      type: PetMemberType.Egress,
       cinLogin: 'mgpc',
       photoUrl: `${targetImageLocation}/pessoas/gabriela.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/gabrielapinheiroc/',
@@ -284,6 +284,7 @@ export const petWebsiteData: PetWebsiteData = {
       cinLogin: 'jvsf',
       photoUrl: `${targetImageLocation}/pessoas/joao_victor.jpg`,
       linkedinUrl: 'https://www.linkedin.com/in/jo%C3%A3o-victor-25b434235/',
+      personalWebsiteUrl: 'https://jvs-portifolio.vercel.app/',
     },
     {
       name: 'Lucas Leonardo',
